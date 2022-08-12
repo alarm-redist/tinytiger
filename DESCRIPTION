@@ -1,0 +1,20 @@
+Package: tinytiger
+Title: Lightweight Interface to TIGER/Line Shapefiles
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9386-6860")),
+    person("Cory", "McCartan", email = "cmccartan@g.harvard.edu", role = "aut"))
+Description: Download geographic shapes from the United States Census Bureau TIGER/Line Shapefiles <https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+Imports: 
+    cli,
+    glue,
+    curl,
+    sf
+Depends: 
+    R (>= 2.10)
+LazyData: true
