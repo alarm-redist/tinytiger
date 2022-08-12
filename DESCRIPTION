@@ -18,3 +18,5 @@ Imports:
 Depends: 
     R (>= 2.10)
 LazyData: true
+URL: https://github.com/alarm-redist/tinytiger
+BugReports: https://github.com/alarm-redist/tinytiger/issues
