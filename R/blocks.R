@@ -22,10 +22,16 @@ tt_blocks <- function(state, county, year = 2021) {
     county <- county_lookup(state, county)
   }
 
-  dec_yr <- year %% 2000 - year %% 10
+  dec_yr <- as.character(year %% 2000 - (year %% 10))
+  url_adj <- ifelse(year >= 2020, dec_yr, '')
+  if (year <= 2010) {
+    dec_yr <- pad_str(dec_yr)
+    url_adj <- paste0('/20', dec_yr)
+    year <- 2010
+  }
 
   shp <- lapply(state, function(st) {
-    zip_url <- glue::glue('{base_url(year)}/TABBLOCK{dec_yr}/tl_{year}_{st}_tabblock{dec_yr}.zip')
+    zip_url <- glue::glue('{base_url(year)}/TABBLOCK{url_adj}/tl_{year}_{st}_tabblock{dec_yr}.zip')
     target <- glue::glue('tl_{year}_{st}_tabblock{dec_yr}.shp')
     tt_download_read(url = zip_url, target_file = target)
   })
