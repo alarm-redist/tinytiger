@@ -73,7 +73,7 @@
 </h1>
 </div>
 <!-- badges: start -->
-<p>The goal of <code>tinytiger</code> is to provide a lightweight interface to the US Census Bureau’s TIGER/Line Shapefiles.</p>
+<p><code>tinytiger</code> is to provide a lightweight interface to the <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" class="external-link">US Census Bureau’s TIGER/Line Shapefiles</a>.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -83,13 +83,10 @@
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p><code>tinytiger</code> provides lightweight functions to download Census Bureau TIGER/Line Shapefiles.</p>
+<p><code>tinytiger</code> provides lightweight functions to download Census Bureau TIGER/Line Shapefiles. To download a geography, simply use the function corresponding to one of the supported geographies.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/alarm-redist/tinytiger" class="external-link">tinytiger</a></span><span class="op">)</span></span>
-<span><span class="co">## basic example code</span></span></code></pre></div>
-<p>To download a geography, simply use the function corresponding to one of the supported geographies.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/tt_counties.html">tt_counties</a></span><span class="op">(</span><span class="st">'NY'</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/tt_counties.html">tt_counties</a></span><span class="op">(</span><span class="st">'NY'</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Simple feature collection with 62 features and 17 fields</span></span>
 <span><span class="co">#&gt; Geometry type: MULTIPOLYGON</span></span>
 <span><span class="co">#&gt; Dimension:     XY</span></span>
@@ -119,7 +116,7 @@
 <span><span class="co">#&gt; 445      H1 G4020   408  35620    35004        A 2359242298 3787452993</span></span>
 <span><span class="co">#&gt; 519      H1 G4020  &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;        A 4447989312  234204424</span></span>
 <span><span class="co">#&gt;        INTPTLAT     INTPTLON                       geometry</span></span>
-<span><span class="co">#&gt; 47  +42.2667252 -077.3855253 MULTIPOLYGON (((-77.20041 4...</span></span>
+<span><span class="co">#&gt; 47  +42.2667252 -077.3855253 MULTIPOLYGON (((-77.2004 41...</span></span>
 <span><span class="co">#&gt; 167 +43.1061353 -073.8553872 MULTIPOLYGON (((-73.67891 4...</span></span>
 <span><span class="co">#&gt; 175 +42.2478532 -078.0261531 MULTIPOLYGON (((-78.04342 4...</span></span>
 <span><span class="co">#&gt; 205 +43.4614431 -076.2092618 MULTIPOLYGON (((-75.90417 4...</span></span>
@@ -130,10 +127,8 @@
 <span><span class="co">#&gt; 445 +40.9435540 -072.6922183 MULTIPOLYGON (((-71.80938 4...</span></span>
 <span><span class="co">#&gt; 519 +43.6578786 -074.5024556 MULTIPOLYGON (((-74.20976 4...</span></span></code></pre></div>
 </div>
-<div class="section level2"><h2 id="supported-geographies">Supported Geographies:<a class="anchor" aria-label="anchor" href="#supported-geographies"></a>
-</h2></div>
 <div class="section level2">
-<h2 id="progress">Progress<a class="anchor" aria-label="anchor" href="#progress"></a>
+<h2 id="supported-geographies">Supported Geographies<a class="anchor" aria-label="anchor" href="#supported-geographies"></a>
 </h2>
 <ul>
 <li>
