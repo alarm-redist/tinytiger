@@ -11,6 +11,8 @@
 `tinytiger` is to provide a lightweight interface to the [US Census
 Bureau’s TIGER/Line
 Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
+It has three dependencies other than `sf`. Download caching is
+supported; [see below](#downloading-and-caching) for details.
 
 ## Installation
 
@@ -28,6 +30,7 @@ corresponding to one of the supported geographies.
 
 ``` r
 library(tinytiger)
+
 tt_counties("NY")
 #> Simple feature collection with 62 features and 17 fields
 #> Geometry type: MULTIPOLYGON
@@ -104,3 +107,14 @@ tt_counties("NY")
 -   `tt_uac()`: : Urban Areas
 -   `tt_unified_school_districts()`: Unified School Districts
 -   `tt_zcta()`: Zip Code Tabulation Areas
+
+# Downloading and Caching
+
+By default, downloading will print status messages and/or a progress
+bar. For silent downloads, set `option(tinytiger.curl_quiet = TRUE)`.
+
+Downloads will go to `option(tinytiger.cache_dir)` if it is set. If it
+is not, and `rappdirs` is installed, downloads will be cached between
+sessions in `rappdirs::user_cache_dir("tinytiger")`. If it is not
+installed, or if `option(tinytiger.use_cache = FALSE)`, then the cache
+will be in a temporary directory that does not persist between sessions.
