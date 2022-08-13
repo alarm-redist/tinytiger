@@ -16,7 +16,7 @@ tt_download <- function(url, path, overwrite = FALSE) {
     curl::curl_download(url, path)
   } else {
     cli::cli_inform(c("File already downloaded at {.path {path}}",
-                      ">"="Set {.arg overwrite = TRUE} to overwrite."))
+      ">" = "Set {.arg overwrite = TRUE} to overwrite."))
     list(status_code = 200)
   }
 }

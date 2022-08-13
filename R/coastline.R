@@ -12,8 +12,8 @@
 #' tt_coastline()
 tt_coastline <- function(year = 2021) {
 
-  zip_url <- glue::glue('{base_url(year)}/COASTLINE/tl_{year}_us_coastline.zip')
-  target <- paste0('tl_', year, '_us_coastline.shp')
+  zip_url <- glue::glue("{base_url(year)}/COASTLINE/tl_{year}_us_coastline.zip")
+  target <- paste0("tl_", year, "_us_coastline.shp")
   shp <- tt_download_read(url = zip_url, target_file = target)
 
   shp

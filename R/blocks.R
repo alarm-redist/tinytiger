@@ -11,11 +11,11 @@
 #' @concept spine
 #'
 #' @examples
-#' tt_blocks(state = 'DE', county = '001')
+#' tt_blocks(state = "DE", county = "001")
 tt_blocks <- function(state, county, year = 2021) {
 
   if (missing(state)) {
-    cli::cli_abort('{.arg state} is required for {.fn tt_block_groups}.')
+    cli::cli_abort("{.arg state} is required for {.fn tt_block_groups}.")
   }
   state <- state_lookup(state)
   if (!missing(county)) {
@@ -23,16 +23,16 @@ tt_blocks <- function(state, county, year = 2021) {
   }
 
   dec_yr <- as.character(year %% 2000 - (year %% 10))
-  url_adj <- ifelse(year >= 2020, dec_yr, '')
+  url_adj <- ifelse(year >= 2020, dec_yr, "")
   if (year <= 2010) {
     dec_yr <- pad_str(dec_yr)
-    url_adj <- paste0('/20', dec_yr)
+    url_adj <- paste0("/20", dec_yr)
     year <- 2010
   }
 
   shp <- lapply(state, function(st) {
-    zip_url <- glue::glue('{base_url(year)}/TABBLOCK{url_adj}/tl_{year}_{st}_tabblock{dec_yr}.zip')
-    target <- glue::glue('tl_{year}_{st}_tabblock{dec_yr}.shp')
+    zip_url <- glue::glue("{base_url(year)}/TABBLOCK{url_adj}/tl_{year}_{st}_tabblock{dec_yr}.zip")
+    target <- glue::glue("tl_{year}_{st}_tabblock{dec_yr}.shp")
     tt_download_read(url = zip_url, target_file = target)
   })
   shp <- do.call(rbind, shp)
