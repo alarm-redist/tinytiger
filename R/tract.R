@@ -27,7 +27,7 @@ tt_tracts <- function(state, county, year = 2021) {
     target <- glue::glue('tl_{year}_{st}_tract.shp')
     tt_download_read(url = zip_url, target_file = target)
   })
-  shp <- do.call('rbind', shp)
+  shp <- do.call(rbind, shp)
 
   if (!missing(county)) {
     shp <- shp[shp$COUNTYFP %in% county, ]

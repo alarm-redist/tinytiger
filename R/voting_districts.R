@@ -42,7 +42,7 @@ tt_voting_districts <- function(state, county, year = 2021) {
       target <- glue::glue('tl_{dec_yr}_{state}_vtd20.shp')
       tt_download_read(url = zip_url, target_file = target)
     } else {
-      do.call('rbind',
+      do.call(rbind,
               lapply(county, function(cty) {
                 zip_url <- glue::glue('{base_url(dec_yr)}{ifelse(dec_yr == 2020, "PL/LAYER", "")}/VTD/{dec_yr}/tl_{dec_yr}_{state}{cty}_vtd{dec_yr2}.zip')
                 target <- glue::glue('tl_{dec_yr}_{state}{cty}_vtd{dec_yr2}.shp')
@@ -51,7 +51,7 @@ tt_voting_districts <- function(state, county, year = 2021) {
       )
     }
   })
-  shp <- do.call('rbind', shp)
+  shp <- do.call(rbind, shp)
 
   shp
 }

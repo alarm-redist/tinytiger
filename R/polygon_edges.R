@@ -28,7 +28,7 @@ tt_polygon_edges <- function(state, county, year = 2021) {
   }
 
   shp <- lapply(state, function(st) {
-    do.call('rbind',
+    do.call(rbind,
             lapply(county, function(cty) {
               zip_url <- glue::glue('{base_url(year)}/EDGES/tl_{year}_{state}{cty}_edges.zip')
               target <- glue::glue('tl_{year}_{state}{cty}_edges.shp')
@@ -36,7 +36,7 @@ tt_polygon_edges <- function(state, county, year = 2021) {
             })
     )
   })
-  shp <- do.call('rbind', shp)
+  shp <- do.call(rbind, shp)
 
   shp
 }

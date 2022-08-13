@@ -28,7 +28,7 @@ tt_address_ranges <- function(state, county, year = 2021) {
   }
 
   shp <- lapply(state, function(st) {
-    do.call('rbind',
+    do.call(rbind,
             lapply(county, function(cty) {
               zip_url <- glue::glue('{base_url(year)}/ADDRFEAT/tl_{year}_{state}{cty}_addrfeat.zip')
               target <- glue::glue('tl_{year}_{state}{cty}_addrfeat.shp')
@@ -36,7 +36,7 @@ tt_address_ranges <- function(state, county, year = 2021) {
             })
     )
   })
-  shp <- do.call('rbind', shp)
+  shp <- do.call(rbind, shp)
 
   shp
 }

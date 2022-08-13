@@ -28,7 +28,7 @@ tt_linear_water <- function(state, county, year = 2021) {
   }
 
   shp <- lapply(state, function(st) {
-    do.call('rbind',
+    do.call(rbind,
             lapply(county, function(cty) {
               zip_url <- glue::glue('{base_url(year)}/LINEARWATER/tl_{year}_{state}{cty}_linearwater.zip')
               target <- glue::glue('tl_{year}_{state}{cty}_linearwater.shp')
@@ -36,7 +36,7 @@ tt_linear_water <- function(state, county, year = 2021) {
             })
     )
   })
-  shp <- do.call('rbind', shp)
+  shp <- do.call(rbind, shp)
 
   shp
 }

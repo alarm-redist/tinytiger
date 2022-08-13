@@ -13,7 +13,7 @@ tt_download <- function(url, path, overwrite = FALSE) {
   dir <- dirname(path)
   if (!dir.exists(dir)) dir.create(dir, recursive = TRUE)
   if (!file.exists(path) || overwrite) {
-    curl::curl_download(url = url, path)
+    curl::curl_download(url, path)
   } else {
     cli::cli_inform(c("File already downloaded at {.path {path}}",
                       ">"="Set {.arg overwrite = TRUE} to overwrite."))
