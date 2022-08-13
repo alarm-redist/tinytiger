@@ -15,7 +15,7 @@
 tt_blocks <- function(state, county, year = 2021) {
 
   if (missing(state)) {
-    cli::cli_abort("{.arg state} is required for {.fn tt_block_groups}.")
+    cli::cli_abort("{.arg state} is required for {.fn tt_blocks}.")
   }
   state <- state_lookup(state)
   if (!missing(county)) {

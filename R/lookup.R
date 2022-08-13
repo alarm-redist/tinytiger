@@ -100,7 +100,7 @@ county_lookup <- function(state, counties) {
   matched <- vapply(seq_along(matched), function(i) {
     cty <- matched[i]
     if (!is.na(cty)) return(cty)
-    grps <- grep(counties[i], st$name)
+    grps <- grep(counties[i], tolower(st$name))
     if (length(grps) == 1) {
       grps
     } else {
