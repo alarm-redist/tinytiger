@@ -7,7 +7,7 @@
 #' @return sf data.frame
 #' @export
 #'
-#' @concept landmark
+#' @concept landmarks
 #'
 #' @examples
 #' tt_point_landmarks('DE')

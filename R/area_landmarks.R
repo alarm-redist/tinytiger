@@ -7,7 +7,7 @@
 #' @return sf data.frame
 #' @export
 #'
-#' @concept roads
+#' @concept landmarks
 #'
 #' @examples
 #' tt_area_landmarks('DE')

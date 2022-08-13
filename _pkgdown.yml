@@ -18,6 +18,11 @@ reference:
   desc: "Download the boundaries for cities, towns, and other sub county units"
 - contents:
   - has_concept("cities")
+  - has_concept("city")
+- title: "Electoral Districts"
+  desc: "Download the boundaries for statewide electoral districts"
+- contents:
+  - has_concept("districts")
 - title: "Landmarks"
   desc: "Download the boundaries for landmarks"
 - contents:

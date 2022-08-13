@@ -20,4 +20,4 @@ Download TIGER shapes for Point Landmarks
 \examples{
 tt_point_landmarks('DE')
 }
-\concept{landmark}
+\concept{landmarks}

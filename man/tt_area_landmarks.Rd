@@ -20,4 +20,4 @@ Download TIGER shapes for Area Landmarks
 \examples{
 tt_area_landmarks('DE')
 }
-\concept{roads}
+\concept{landmarks}
