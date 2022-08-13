@@ -97,20 +97,10 @@ county_lookup <- function(state, counties) {
   counties <- tolower(counties)
 
   matched <- pmatch(counties, pos)
-  matched <- vapply(seq_along(matched), function(i) {
-    cty <- matched[i]
-    if (!is.na(cty)) return(cty)
-    grps <- grep(counties[i], tolower(st$name))
-    if (length(grps) == 1) {
-      grps
-    } else {
-      NA_integer_
-    }
-  }, integer(1))
 
   if (length(matched) != length(counties) || any(is.na(matched))) {
     cli::cli_abort(c("{.arg counties} could not be matched to a county for every entry.",
-      'Please supply one of the FIPS code or full name, including "County" or other equivalent for each entry.'))
+                     ">"="Please supply one of the FIPS code or full name."))
   }
   matched <- (matched %% nrow(st))
   matched[matched == 0] <- nrow(st)
