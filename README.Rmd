@@ -57,9 +57,9 @@ tt_counties('NY')
 - `tt_congressional_districts()`: Congressional Districts
 - `tt_new_england_combined_areas()`: Combined New England Towns and Cities
 - `tt_coastline()`: Coastline
-- `tt_consolidated_cities`: Consolidated Cities
-- `tt_county()`: Counties
-- `tt_county_subdivision()`: County Subdivisions
+- `tt_consolidated_cities()`: Consolidated Cities
+- `tt_counties()`: Counties
+- `tt_county_subdivisions()`: County Subdivisions
 - `tt_csa()`: Combined Statistical Areas
 - `tt_polygon_edges()`: All Polygon Edges
 - `tt_elementary_school_districts()`: Elementary School Districts (limited states)
@@ -81,7 +81,7 @@ tt_counties('NY')
 - `tt_state_leg_lower()`: Lower State Legislative Districts
 - `tt_state_leg_upper()`: Upper State Legislative Districts
 - `tt_states()`: States
-- `tt_subbarios()`: Subbarios (Puerto Rico only)
+- `tt_subbarrios()`: Subbarios (Puerto Rico only)
 - `tt_blocks()`: Blocks
 - `tt_tribal_block_groups()`: Tribal Block Groups
 - `tt_tracts()`: Tracts
