@@ -15,7 +15,8 @@ tt_download <- function(url, path, overwrite = FALSE) {
   if (!file.exists(path) || overwrite) {
     curl::curl_download(url = url, path)
   } else {
-    cli::cli_alert_info(paste0("File already downloaded at ", path, ". Set `overwrite = TRUE` to overwrite."))
+    cli::cli_inform(c("File already downloaded at {.path {path}}",
+                      ">"="Set {.arg overwrite = TRUE} to overwrite."))
     list(status_code = 200)
   }
 }
@@ -36,7 +37,7 @@ tt_download_read <- function(url, target_file, overwrite = FALSE) {
   if (!overwrite && file.exists(target_file)) {
     return(sf::st_read(target_file, quiet = TRUE))
   }
-  tf <- tempfile(fileext = '.zip')
+  tf <- tempfile(fileext = ".zip")
   tt_download(url, tf, overwrite)
   utils::unzip(tf, exdir = tempdir())
   sf::st_read(target_file, quiet = TRUE)
