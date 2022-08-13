@@ -11,8 +11,8 @@
 `tinytiger` is to provide a lightweight interface to the [US Census
 Bureau’s TIGER/Line
 Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
-It has three dependencies other than `sf`. Download caching is
-supported; [see below](#downloading-and-caching) for details.
+It has four dependencies other than `sf`. Download caching is supported;
+[see below](#downloading-and-caching) for details.
 
 ## Installation
 
