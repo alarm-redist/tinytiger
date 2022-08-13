@@ -14,6 +14,8 @@
 #' tt_block_groups(state = "DE", county = "001")
 tt_block_groups <- function(state, county, year = 2021) {
 
+  years_okay(year)
+
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_block_groups}.")
   }
@@ -22,9 +24,18 @@ tt_block_groups <- function(state, county, year = 2021) {
     county <- county_lookup(state, county)
   }
 
+  dec_yr <- pad_str(year %% 2000 - (year %% 10))
+  url_adj <- ""
+  if (year <= 2010) {
+    url_adj <- paste0("/20", dec_yr)
+    year <- 2010
+  } else {
+    dec_yr <- ""
+  }
+
   shp <- lapply(state, function(st) {
-    zip_url <- glue::glue("{base_url(year)}/BG/tl_{year}_{st}_bg.zip")
-    target <- glue::glue("tl_{year}_{st}_bg.shp")
+    zip_url <- glue::glue("{base_url(year)}/BG{url_adj}/tl_{year}_{st}_bg{dec_yr}.zip")
+    target <- glue::glue("tl_{year}_{st}_bg{dec_yr}.shp")
     tt_download_read(url = zip_url, target_file = target)
   })
   shp <- do.call(rbind, shp)

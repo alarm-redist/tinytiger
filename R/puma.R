@@ -13,6 +13,8 @@
 #' tt_puma("DE")
 tt_puma <- function(state, year = 2021) {
 
+  years_okay(year, 2012:2021)
+
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_puma}.")
   }

@@ -14,6 +14,8 @@
 #' tt_address_ranges("DE", county = "001")
 tt_address_ranges <- function(state, county, year = 2021) {
 
+  years_okay(year, okay = 2011:2021)
+
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_adress_ranges}.")
   }

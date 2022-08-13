@@ -13,6 +13,8 @@
 #' tt_primary_secondary_roads("DE")
 tt_primary_secondary_roads <- function(state, year = 2021) {
 
+  years_okay(year, 2010:2021)
+
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_primary_secondary_roads}.")
   }
