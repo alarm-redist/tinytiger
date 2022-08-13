@@ -96,7 +96,7 @@ county_lookup <- function(state, counties) {
   pos <- tolower(c(st$county, st$name))
   counties <- tolower(counties)
 
-  matched <- match(counties, pos)
+  matched <- pmatch(counties, pos)
   matched <- vapply(seq_along(matched), function(i) {
     cty <- matched[i]
     if (!is.na(cty)) return(cty)
