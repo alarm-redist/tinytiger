@@ -118,13 +118,13 @@
     <loc>https://alarm-redist.github.io/tinytiger/reference/tt_secondary_school_districts.html</loc>
   </url>
   <url>
-    <loc>https://alarm-redist.github.io/tinytiger/reference/tt_state.html</loc>
-  </url>
-  <url>
     <loc>https://alarm-redist.github.io/tinytiger/reference/tt_state_leg_lower.html</loc>
   </url>
   <url>
     <loc>https://alarm-redist.github.io/tinytiger/reference/tt_state_leg_upper.html</loc>
+  </url>
+  <url>
+    <loc>https://alarm-redist.github.io/tinytiger/reference/tt_states.html</loc>
   </url>
   <url>
     <loc>https://alarm-redist.github.io/tinytiger/reference/tt_subbarrios.html</loc>
@@ -146,6 +146,9 @@
   </url>
   <url>
     <loc>https://alarm-redist.github.io/tinytiger/reference/tt_unified_school_districts.html</loc>
+  </url>
+  <url>
+    <loc>https://alarm-redist.github.io/tinytiger/reference/tt_voting_districts.html</loc>
   </url>
   <url>
     <loc>https://alarm-redist.github.io/tinytiger/reference/tt_zcta.html</loc>
