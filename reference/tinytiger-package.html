@@ -51,6 +51,12 @@
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     <p>By default, downloading will print status messages and/or a progress bar.
 For silent downloads, set <code>option(tinytiger.curl_quiet = TRUE)</code>.</p>
+<p>Downloads will go to <code>option(tinytiger.cache_dir)</code> if it is set. If it is not,
+and <code>rappdirs</code> is installed, downloads will be cached between sessions in
+<code>rappdirs::user_cache_dir("tinytiger")</code>.
+If it is not installed, or if <code>option(tinytiger.use_cache = FALSE)</code>, then the
+cache will be in a temporary directory that does not persist between
+sessions.</p>
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
