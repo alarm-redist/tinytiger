@@ -26,7 +26,7 @@ knitr::opts_chunk$set(
 You can install the development version of `tinytiger` like so:
 
 ``` r
-remotes::install_github('alarm-redist/tinytiger)
+remotes::install_github("alarm-redist/tinytiger")
 ```
 
 ## Example
@@ -36,7 +36,7 @@ To download a geography, simply use the function corresponding to one of the sup
 
 ```{r example}
 library(tinytiger)
-tt_counties('NY')
+tt_counties("NY")
 ```
 
 ## Supported Geographies
