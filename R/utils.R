@@ -7,3 +7,8 @@ pad_str <- function(string, width = 2, pad = "0") {
   }
   string
 }
+
+adj_class <- function(shp) {
+  class(shp) <- c("sf", "tbl_df", "tbl", "data.frame")
+  shp
+}

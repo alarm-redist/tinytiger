@@ -25,5 +25,5 @@ tt_area_landmarks <- function(state, year = 2021) {
   })
   shp <- do.call(rbind, shp)
 
-  shp
+  adj_class(shp)
 }

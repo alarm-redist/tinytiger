@@ -16,5 +16,5 @@ tt_zcta <- function(year = 2021) {
   target <- paste0("tl_", year, "_us_zcta520.shp")
   shp <- tt_download_read(url = zip_url, target_file = target)
 
-  shp
+  adj_class(shp)
 }

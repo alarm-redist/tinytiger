@@ -33,5 +33,5 @@ tt_tracts <- function(state, county, year = 2021) {
     shp <- shp[shp$COUNTYFP %in% county, ]
   }
 
-  shp
+  adj_class(shp)
 }

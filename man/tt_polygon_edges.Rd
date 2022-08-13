@@ -7,11 +7,11 @@
 tt_polygon_edges(state, county, year = 2021)
 }
 \arguments{
-\item{state}{FIPs, postal codes, or full name of states.}
+\item{state}{FIPS, postal codes, or full names of states.}
 
-\item{county}{FIPs codes or full name of counties. Optional.}
+\item{county}{FIPS codes or full names of counties. Optional.}
 
-\item{year}{Integer year. Required. Years < 2012 are not currently supported.}
+\item{year}{Integer year. Required. 2012-2020 are currently supported.}
 }
 \value{
 sf data.frame
@@ -20,6 +20,6 @@ sf data.frame
 Download TIGER shapes for Polygon Edges
 }
 \examples{
-tt_polygon_edges('DE', county = '001')
+tt_polygon_edges("DE", county = "001")
 }
 \concept{other}

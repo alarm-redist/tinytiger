@@ -16,5 +16,5 @@ tt_estates <- function(year = 2021) {
   target <- paste0("tl_", year, "_78_estate.shp")
   shp <- tt_download_read(url = zip_url, target_file = target)
 
-  shp
+  adj_class(shp)
 }

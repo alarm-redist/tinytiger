@@ -25,5 +25,5 @@ tt_state_leg_upper <- function(state, year = 2021) {
   })
   shp <- do.call(rbind, shp)
 
-  shp
+  adj_class(shp)
 }

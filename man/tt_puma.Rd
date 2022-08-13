@@ -7,9 +7,9 @@
 tt_puma(state, year = 2021)
 }
 \arguments{
-\item{state}{FIPs, postal codes, or full name of states.}
+\item{state}{FIPS, postal codes, or full names of states.}
 
-\item{year}{Integer year. Required. Years < 2012 are not currently supported.}
+\item{year}{Integer year. Required. 2012-2020 are currently supported.}
 }
 \value{
 sf data.frame
@@ -18,6 +18,6 @@ sf data.frame
 Download TIGER shapes for Public Use Microdata Areas
 }
 \examples{
-tt_puma('DE')
+tt_puma("DE")
 }
 \concept{cities}

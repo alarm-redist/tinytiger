@@ -38,5 +38,5 @@ tt_linear_water <- function(state, county, year = 2021) {
   })
   shp <- do.call(rbind, shp)
 
-  shp
+  adj_class(shp)
 }

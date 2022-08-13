@@ -16,5 +16,5 @@ tt_subbarrios <- function(year = 2021) {
   target <- paste0("tl_", year, "_72_subbarrio.shp")
   shp <- tt_download_read(url = zip_url, target_file = target)
 
-  shp
+  adj_class(shp)
 }

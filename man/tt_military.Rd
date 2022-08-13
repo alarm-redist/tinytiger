@@ -7,7 +7,7 @@
 tt_military(year = 2021)
 }
 \arguments{
-\item{year}{Integer year. Required. Years < 2012 are not currently supported.}
+\item{year}{Integer year. Required. 2012-2020 are currently supported.}
 }
 \value{
 sf data.frame

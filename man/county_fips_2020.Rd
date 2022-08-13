@@ -18,6 +18,6 @@ Contains three columns:
 }
 }
 \examples{
-data('county_fips_2020')
+data("county_fips_2020")
 }
 \concept{data}

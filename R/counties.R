@@ -21,5 +21,5 @@ tt_counties <- function(state, year = 2021) {
     shp <- shp[shp$STATEFP %in% state_lookup(state), ]
   }
 
-  shp
+  adj_class(shp)
 }

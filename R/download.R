@@ -5,15 +5,16 @@
 #' @param url a URL
 #' @param path a file path
 #' @param overwrite should the file at path be overwritten if it already exists? Default is FALSE.
+#' @param quiet should output and progress bar be suppressed?
 #'
 #' @returns the `curl` request
 #'
 #' @noRd
-tt_download <- function(url, path, overwrite = FALSE) {
+tt_download <- function(url, path, overwrite = FALSE, quiet = FALSE) {
   dir <- dirname(path)
   if (!dir.exists(dir)) dir.create(dir, recursive = TRUE)
   if (!file.exists(path) || overwrite) {
-    curl::curl_download(url, path)
+    curl::curl_download(url, path, quiet = quiet)
   } else {
     cli::cli_inform(c("File already downloaded at {.path {path}}",
       ">" = "Set {.arg overwrite = TRUE} to overwrite."))
@@ -28,17 +29,19 @@ tt_download <- function(url, path, overwrite = FALSE) {
 #' @param url a URL
 #' @param target_file the short name of the file to read
 #' @param overwrite should the file at path be overwritten if it already exists? Default is FALSE.
+#' @param quiet should output and progress bar be suppressed?
 #'
 #' @return an sf data.frame
 #'
 #' @noRd
-tt_download_read <- function(url, target_file, overwrite = FALSE) {
+tt_download_read <- function(url, target_file, overwrite = FALSE,
+                             quiet = getOption("tinytiger.curl_quiet", FALSE)) {
   target_file <- file.path(tempdir(), target_file)
   if (!overwrite && file.exists(target_file)) {
     return(sf::st_read(target_file, quiet = TRUE))
   }
   tf <- tempfile(fileext = ".zip")
-  tt_download(url, tf, overwrite)
+  tt_download(url, tf, overwrite, quiet = quiet)
   utils::unzip(tf, exdir = tempdir())
-  sf::st_read(target_file, quiet = TRUE)
+   sf::st_read(target_file, quiet = TRUE)
 }
