@@ -31,7 +31,7 @@
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary"><div class="container">
     
     <a class="navbar-brand me-2" href="index.html">tinytiger</a>
 
@@ -73,7 +73,7 @@
 </h1>
 </div>
 <!-- badges: start -->
-<p><code>tinytiger</code> is to provide a lightweight interface to the <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" class="external-link">US Census Bureau’s TIGER/Line Shapefiles</a>.</p>
+<p><code>tinytiger</code> is to provide a lightweight interface to the <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" class="external-link">US Census Bureau’s TIGER/Line Shapefiles</a>. It has three dependencies other than <code>sf</code>. Download caching is supported; <a href="#downloading-and-caching">see below</a> for details.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -87,6 +87,7 @@
 <p><code>tinytiger</code> provides lightweight functions to download Census Bureau TIGER/Line Shapefiles. To download a geography, simply use the function corresponding to one of the supported geographies.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/alarm-redist/tinytiger" class="external-link">tinytiger</a></span><span class="op">)</span></span>
+<span></span>
 <span><span class="fu"><a href="reference/tt_counties.html">tt_counties</a></span><span class="op">(</span><span class="st">"NY"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Simple feature collection with 62 features and 17 fields</span></span>
 <span><span class="co">#&gt; Geometry type: MULTIPOLYGON</span></span>
@@ -205,6 +206,13 @@
 </ul>
 </div>
 </div>
+<div class="section level1">
+<h1 id="downloading-and-caching">Downloading and Caching<a class="anchor" aria-label="anchor" href="#downloading-and-caching"></a>
+</h1>
+<p>By default, downloading will print status messages and/or a progress bar. For silent downloads, set <code>option(tinytiger.curl_quiet = TRUE)</code>.</p>
+<p>Downloads will go to <code>option(tinytiger.cache_dir)</code> if it is set. If it is not, and <code>rappdirs</code> is installed, downloads will be cached between sessions in <code>rappdirs::user_cache_dir("tinytiger")</code>. If it is not installed, or if <code>option(tinytiger.use_cache = FALSE)</code>, then the cache will be in a temporary directory that does not persist between sessions. You can check the size of the cache and clear it with <code><a href="reference/tt_cache.html">tt_cache_size()</a></code> and <code><a href="reference/tt_cache.html">tt_cache_clear()</a></code>.</p>
+</div>
+
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
