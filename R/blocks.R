@@ -22,10 +22,9 @@ tt_blocks <- function(state, county, year = 2021) {
     county <- county_lookup(state, county)
   }
 
-  dec_yr <- as.character(year %% 2000 - (year %% 10))
+  dec_yr <- pad_str(year %% 2000 - (year %% 10))
   url_adj <- ifelse(year >= 2020, dec_yr, "")
   if (year <= 2010) {
-    dec_yr <- pad_str(dec_yr)
     url_adj <- paste0("/20", dec_yr)
     year <- 2010
   }

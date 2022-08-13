@@ -11,6 +11,7 @@
 #' @examples
 #' tt_cbsa()
 tt_cbsa <- function(year = 2021) {
+  years_okay(year, 2010:2021)
 
   zip_url <- glue::glue("{base_url(year)}/CBSA/tl_{year}_us_cbsa.zip")
   target <- paste0("tl_", year, "_us_cbsa.shp")

@@ -14,6 +14,8 @@
 #' tt_area_water("DE")
 tt_area_water <- function(state, county, year = 2021) {
 
+  years_okay(year, 2010:2021)
+
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_area_water}.")
   }

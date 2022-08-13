@@ -13,6 +13,8 @@
 #' tt_congressional_districts()
 tt_congressional_districts <- function(state, year = 2021) {
 
+  years_okay(year, 2011:2021)
+
   cong <- switch(
     as.character(year),
     "2021" = "116", "2020" = "116", "2019" = "116", "2018" = "116",
