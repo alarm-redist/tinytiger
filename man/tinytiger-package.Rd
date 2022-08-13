@@ -11,6 +11,13 @@ Download geographic shapes from the \href{https://www.census.gov/geographies/map
 \details{
 By default, downloading will print status messages and/or a progress bar.
 For silent downloads, set \code{option(tinytiger.curl_quiet = TRUE)}.
+
+Downloads will go to \code{option(tinytiger.cache_dir)} if it is set. If it is not,
+and \code{rappdirs} is installed, downloads will be cached between sessions in
+\code{rappdirs::user_cache_dir("tinytiger")}.
+If it is not installed, or if \code{option(tinytiger.use_cache = FALSE)}, then the
+cache will be in a temporary directory that does not persist between
+sessions.
 }
 \seealso{
 Useful links:

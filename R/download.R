@@ -36,12 +36,31 @@ tt_download <- function(url, path, overwrite = FALSE, quiet = FALSE) {
 #' @noRd
 tt_download_read <- function(url, target_file, overwrite = FALSE,
                              quiet = getOption("tinytiger.curl_quiet", FALSE)) {
-  target_file <- file.path(tempdir(), target_file)
+  base_path <- tt_download_path()
+  base_name <- basename(url)
+  subdir <- substr(base_name, 1, nchar(base_name) - 4)
+  target_file <- file.path(base_path, subdir, target_file)
   if (!overwrite && file.exists(target_file)) {
     return(sf::st_read(target_file, quiet = TRUE))
   }
-  tf <- tempfile(fileext = ".zip")
+  tf <- file.path(base_path, base_name)
   tt_download(url, tf, overwrite, quiet = quiet)
-  utils::unzip(tf, exdir = tempdir())
-   sf::st_read(target_file, quiet = TRUE)
+  utils::unzip(tf, exdir = file.path(base_path, subdir))
+  file.remove(tf)
+  sf::st_read(target_file, quiet = TRUE)
+}
+
+#' Figure out where to download things
+#'
+#' @noRd
+tt_download_path <- function() {
+  user_cache = getOption("tinytiger.cache_dir")
+  if (!is.null(user_cache)) {
+    user_cache
+  } else if (getOption("tinytiger.use_cache", TRUE) &&
+             requireNamespace("rappdirs", quietly=TRUE)) {
+    rappdirs::user_cache_dir("tinytiger")
+  } else {
+    tempdir()
+  }
 }

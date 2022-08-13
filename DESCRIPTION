@@ -8,16 +8,18 @@ Authors@R: c(
 Description: Download geographic shapes from the United States Census Bureau 
     TIGER/Line Shapefiles <https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html>.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
 Imports: 
     cli,
     glue,
     curl,
     sf
-Depends: 
-    R (>= 2.10)
+Suggests:
+    rappdirs
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
 LazyData: true
 URL: https://github.com/alarm-redist/tinytiger,
     https://alarm-redist.github.io/tinytiger/
