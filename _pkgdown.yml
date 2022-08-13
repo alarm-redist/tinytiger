@@ -1,6 +1,7 @@
 url: https://alarm-redist.github.io/tinytiger/
 template:
   bootstrap: 5
+  bootswatch: flatly
 reference:
 - title: "Primary Geographies"
   desc: "Download the geographies along the central spine of the Census"
