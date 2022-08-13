@@ -67,27 +67,7 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_csa</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 175 features and 10 fields</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: MULTIPOLYGON</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -124.042 ymin: 17.83151 xmax: -65.42271 ymax: 49.00074</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 175 × 11</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    CSAFP GEOID NAME           NAMEL…¹ LSAD  MTFCC   ALAND AWATER INTPT…² INTPT…³</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 104   104   Albany-Schene… Albany… M0    G3100 1.57<span style="color: #949494;">e</span>10 5.28<span style="color: #949494;">e</span>8 +42.95… -073.9…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 106   106   Albuquerque-S… Albuqu… M0    G3100 6.17<span style="color: #949494;">e</span>10 1.84<span style="color: #949494;">e</span>8 +35.64… -106.0…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 107   107   Altoona-Hunti… Altoon… M0    G3100 3.63<span style="color: #949494;">e</span> 9 4.11<span style="color: #949494;">e</span>7 +40.43… -078.1…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 108   108   Amarillo-Pamp… Amaril… M0    G3100 2.04<span style="color: #949494;">e</span>10 1.13<span style="color: #949494;">e</span>8 +35.39… -101.5…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 118   118   Appleton-Oshk… Applet… M0    G3100 3.60<span style="color: #949494;">e</span> 9 5.95<span style="color: #949494;">e</span>8 +44.29… -088.3…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 120   120   Asheville-Mar… Ashevi… M0    G3100 7.38<span style="color: #949494;">e</span> 9 4.08<span style="color: #949494;">e</span>7 +35.56… -082.6…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 122   122   Atlanta--Athe… Atlant… M0    G3100 3.38<span style="color: #949494;">e</span>10 6.72<span style="color: #949494;">e</span>8 +33.72… -084.3…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 140   140   Bend-Prinevil… Bend-P… M0    G3100 1.55<span style="color: #949494;">e</span>10 1.16<span style="color: #949494;">e</span>8 +44.01… -120.7…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 142   142   Birmingham-Ho… Birmin… M0    G3100 1.75<span style="color: #949494;">e</span>10 3.47<span style="color: #949494;">e</span>8 +33.52… -086.7…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 144   144   Bloomington-B… Bloomi… M0    G3100 3.18<span style="color: #949494;">e</span> 9 5.73<span style="color: #949494;">e</span>7 +39.08… -086.6…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 165 more rows, 1 more variable: geometry &lt;MULTIPOLYGON [°]&gt;, and</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   abbreviated variable names ¹​NAMELSAD, ²​INTPTLAT, ³​INTPTLON</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> Cannot open "~/.cache/tinytiger/tl_2021_us_csa/tl_2021_us_csa{dec_yr}.shp"; The file doesn't seem to exist.</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
