@@ -64,3 +64,39 @@ tt_download_path <- function() {
     tempdir()
   }
 }
+
+#' Calculate the size of the `tinytiger` cache
+#'
+#' Returns the temporary directory size if the cache is not enabled.
+#'
+#' @returns For `tt_cache_size()`, tthe size in bytes, invisbly
+#'
+#' @examples
+#' tt_cache_size()
+#'
+#' @export
+#' @rdname tt_cache
+tt_cache_size <- function() {
+  files = list.files(tt_download_path(), recursive=TRUE, full.names=TRUE)
+  x = sum(sapply(files, file.size))
+  class(x) = "object_size"
+  cat(format(x, unit="auto"), "\n", sep="")
+  invisible(as.numeric(x))
+}
+
+#' Clear the `tinytiger` cache
+#'
+#' Clears the temporary directory if the cache is not enabled.
+#'
+#' @returns For `tt_cache_clear()`, the path to the cache, invisbly.
+#'
+#' @examples
+#' tt_cache_clear()
+#'
+#' @export
+#' @rdname tt_cache
+tt_cache_clear <- function() {
+  path = tt_download_path()
+  unlink(path, recursive = TRUE)
+  invisible(path)
+}
