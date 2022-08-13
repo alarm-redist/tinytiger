@@ -8,8 +8,9 @@
 [![R-CMD-check](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of `tinytiger` is to provide a lightweight interface to the US
-Census Bureau’s TIGER/Line Shapefiles.
+`tinytiger` is to provide a lightweight interface to the [US Census
+Bureau’s TIGER/Line
+Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
 
 ## Installation
 
@@ -22,17 +23,11 @@ remotes::install_github('alarm-redist/tinytiger)
 ## Example
 
 `tinytiger` provides lightweight functions to download Census Bureau
-TIGER/Line Shapefiles.
+TIGER/Line Shapefiles. To download a geography, simply use the function
+corresponding to one of the supported geographies.
 
 ``` r
 library(tinytiger)
-## basic example code
-```
-
-To download a geography, simply use the function corresponding to one of
-the supported geographies.
-
-``` r
 tt_counties('NY')
 #> Simple feature collection with 62 features and 17 fields
 #> Geometry type: MULTIPOLYGON
@@ -63,7 +58,7 @@ tt_counties('NY')
 #> 445      H1 G4020   408  35620    35004        A 2359242298 3787452993
 #> 519      H1 G4020  <NA>   <NA>     <NA>        A 4447989312  234204424
 #>        INTPTLAT     INTPTLON                       geometry
-#> 47  +42.2667252 -077.3855253 MULTIPOLYGON (((-77.20041 4...
+#> 47  +42.2667252 -077.3855253 MULTIPOLYGON (((-77.2004 41...
 #> 167 +43.1061353 -073.8553872 MULTIPOLYGON (((-73.67891 4...
 #> 175 +42.2478532 -078.0261531 MULTIPOLYGON (((-78.04342 4...
 #> 205 +43.4614431 -076.2092618 MULTIPOLYGON (((-75.90417 4...
@@ -75,9 +70,7 @@ tt_counties('NY')
 #> 519 +43.6578786 -074.5024556 MULTIPOLYGON (((-74.20976 4...
 ```
 
-## Supported Geographies:
-
-## Progress
+## Supported Geographies
 
 -   `tt_address_ranges()`: Address Ranges
 -   `tt_ai_an_nh_areas()`: American Indian / Alaska Native / Native

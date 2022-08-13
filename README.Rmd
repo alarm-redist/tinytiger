@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of `tinytiger` is to provide a lightweight interface to the US Census Bureau's TIGER/Line Shapefiles.
+`tinytiger` is to provide a lightweight interface to the [US Census Bureau's TIGER/Line Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
 
 ## Installation
 
@@ -32,20 +32,14 @@ remotes::install_github('alarm-redist/tinytiger)
 ## Example
 
 `tinytiger` provides lightweight functions to download Census Bureau TIGER/Line Shapefiles.
+To download a geography, simply use the function corresponding to one of the supported geographies.
 
 ```{r example}
 library(tinytiger)
-## basic example code
-```
-
-To download a geography, simply use the function corresponding to one of the supported geographies.
-```{r}
 tt_counties('NY')
 ```
 
-
-## Supported Geographies:
-## Progress
+## Supported Geographies
 - `tt_address_ranges()`: Address Ranges
 - `tt_ai_an_nh_areas()`: American Indian / Alaska Native / Native Hawaiian Areas
 - `tt_tribal_subdivisions()`: Tribal Subdivisions
