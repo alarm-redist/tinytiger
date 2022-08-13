@@ -1,0 +1,37 @@
+url: https://alarm-redist.github.io/tinytiger/
+template:
+  bootstrap: 5
+reference:
+- title: "Primary Geographies"
+  desc: "Download the geographies along the central spine of the Census"
+- contents:
+  - has_concept("spine")
+- title: "Transportation"
+  desc: "Download the geographies for transportation routes"
+- contents:
+  - has_concept("roads")
+- title: "Schools"
+  desc: "Download the boundaries for public school districts"
+- contents:
+  - has_concept("schools")
+- title: "Cities"
+  desc: "Download the boundaries for cities, towns, and other sub county units"
+- contents:
+  - has_concept("cities")
+- title: "Landmarks"
+  desc: "Download the boundaries for landmarks"
+- contents:
+  - has_concept("landmarks")
+- title: "Tribal Land"
+  desc: "Download the boundaries for variants of tribal and native lands"
+- contents:
+  - has_concept("tribal")
+- title: "Water"
+  desc: "Download the boundaries for water areas and lines"
+- contents:
+  - has_concept("water")
+- title: "Other"
+  desc: "Download the boundaries for public school districts"
+- contents:
+  - has_concept("other")
+  - has_concept("data")
