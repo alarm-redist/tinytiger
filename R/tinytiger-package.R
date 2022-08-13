@@ -13,6 +13,7 @@
 #' cache will be in a temporary directory that does not persist between
 #' sessions.
 #'
+#' @importFrom rlang expr
 #' @keywords internal
 "_PACKAGE"
 
