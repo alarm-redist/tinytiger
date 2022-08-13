@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# tinytiger
+# tinytiger <a href="https://alarm-redist.github.io/tinytiger/"><img src="man/figures/logo.png" align="right" height="138" /></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml)
