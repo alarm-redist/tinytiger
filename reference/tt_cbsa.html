@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,40 +72,23 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -178.4436 ymin: 17.83151 xmax: -65.42271 ymax: 65.45352</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    CSAFP CBSAFP GEOID                                 NAME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1    122  12020 12020             Athens-Clarke County, GA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    122  12060 12060 Atlanta-Sandy Springs-Alpharetta, GA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    428  12100 12100          Atlantic City-Hammonton, NJ</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4    426  12120 12120                           Atmore, AL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5    258  12140 12140                           Auburn, IN</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6    532  12180 12180                           Auburn, NY</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7    194  12220 12220                   Auburn-Opelika, AL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8   &lt;NA&gt;  12260 12260       Augusta-Richmond County, GA-SC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9   &lt;NA&gt;  12300 12300               Augusta-Waterville, ME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10   462  12380 12380                           Austin, MN</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                           NAMELSAD LSAD MEMI MTFCC       ALAND</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1              Athens-Clarke County, GA Metro Area   M1    1 G3110  2654607902</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  Atlanta-Sandy Springs-Alpharetta, GA Metro Area   M1    1 G3110 22495873026</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3           Atlantic City-Hammonton, NJ Metro Area   M1    1 G3110  1438775279</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                            Atmore, AL Micro Area   M2    2 G3110  2448595161</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                            Auburn, IN Micro Area   M2    2 G3110   939731961</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                            Auburn, NY Micro Area   M2    2 G3110  1791201989</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7                    Auburn-Opelika, AL Metro Area   M1    1 G3110  1573526818</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8        Augusta-Richmond County, GA-SC Metro Area   M1    1 G3110  9015018014</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9                Augusta-Waterville, ME Micro Area   M2    2 G3110  2246754883</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10                           Austin, MN Micro Area   M2    2 G3110  1842187921</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       AWATER    INTPTLAT     INTPTLON                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1   26109459 +33.9439840 -083.2138965 MULTIPOLYGON (((-83.36003 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  386782308 +33.6937280 -084.3999113 MULTIPOLYGON (((-84.27014 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  301270067 +39.4693555 -074.6337591 MULTIPOLYGON (((-74.5864 39...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   20024887 +31.1222867 -087.1684097 MULTIPOLYGON (((-87.36388 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5    2657419 +41.3967596 -085.0026969 MULTIPOLYGON (((-85.0778 41...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  445696708 +43.0085456 -076.5745866 MULTIPOLYGON (((-76.49267 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7   21516747 +32.6040644 -085.3530477 MULTIPOLYGON (((-85.16535 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  262412034 +33.4603713 -081.9828327 MULTIPOLYGON (((-81.65176 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  216775743 +44.4170119 -069.7657639 MULTIPOLYGON (((-69.60575 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10    617235 +43.6662486 -092.7595136 MULTIPOLYGON (((-92.92963 4...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 939 × 13</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    CSAFP CBSAFP GEOID NAME      NAMEL…¹ LSAD  MEMI  MTFCC   ALAND AWATER INTPT…²</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 122   12020  12020 Athens-C… Athens… M1    1     G3110 2.65<span style="color: #949494;">e</span> 9 2.61<span style="color: #949494;">e</span>7 +33.94…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 122   12060  12060 Atlanta-… Atlant… M1    1     G3110 2.25<span style="color: #949494;">e</span>10 3.87<span style="color: #949494;">e</span>8 +33.69…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 428   12100  12100 Atlantic… Atlant… M1    1     G3110 1.44<span style="color: #949494;">e</span> 9 3.01<span style="color: #949494;">e</span>8 +39.46…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 426   12120  12120 Atmore, … Atmore… M2    2     G3110 2.45<span style="color: #949494;">e</span> 9 2.00<span style="color: #949494;">e</span>7 +31.12…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 258   12140  12140 Auburn, … Auburn… M2    2     G3110 9.40<span style="color: #949494;">e</span> 8 2.66<span style="color: #949494;">e</span>6 +41.39…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 532   12180  12180 Auburn, … Auburn… M2    2     G3110 1.79<span style="color: #949494;">e</span> 9 4.46<span style="color: #949494;">e</span>8 +43.00…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 194   12220  12220 Auburn-O… Auburn… M1    1     G3110 1.57<span style="color: #949494;">e</span> 9 2.15<span style="color: #949494;">e</span>7 +32.60…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> <span style="color: #BB0000;">NA</span>    12260  12260 Augusta-… August… M1    1     G3110 9.02<span style="color: #949494;">e</span> 9 2.62<span style="color: #949494;">e</span>8 +33.46…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> <span style="color: #BB0000;">NA</span>    12300  12300 Augusta-… August… M2    2     G3110 2.25<span style="color: #949494;">e</span> 9 2.17<span style="color: #949494;">e</span>8 +44.41…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 462   12380  12380 Austin, … Austin… M2    2     G3110 1.84<span style="color: #949494;">e</span> 9 6.17<span style="color: #949494;">e</span>5 +43.66…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 929 more rows, 2 more variables: INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names ¹​NAMELSAD,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​INTPTLAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

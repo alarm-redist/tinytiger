@@ -54,15 +54,15 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>state</dt>
-<dd><p>FIPs, postal codes, or full name of states.</p></dd>
+<dd><p>FIPS, postal codes, or full names of states.</p></dd>
 
 
 <dt>county</dt>
-<dd><p>FIPs codes or full name of counties. Optional.</p></dd>
+<dd><p>FIPS codes or full names of counties. Optional.</p></dd>
 
 
 <dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -74,57 +74,33 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_polygon_edges</span><span class="op">(</span><span class="st">'DE'</span>, county <span class="op">=</span> <span class="st">'001'</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_polygon_edges</span><span class="op">(</span><span class="st">"DE"</span>, county <span class="op">=</span> <span class="st">"001"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 22076 features and 30 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: LINESTRING</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.76007 ymin: 38.82985 xmax: -75.13846 ymax: 39.38756</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP COUNTYFP      TLID     TFIDL     TFIDR MTFCC       FULLNAME SMID</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       10      001  68091968 211662053 211662055 S1400   Carolina Ave 4379</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       10      001  68091982 211662056 224044874 S1400   Carolina Ave 4379</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       10      001  68091989 211662057 211662057 S1400 Connecticut Ln &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       10      001 617124820 229161457 229161457 S1400      Farmer Ct &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       10      001 646522177 265002909 265002913 H3010    Tidbury Crk 5364</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       10      001 653161105 265002866 211662076 P0001           &lt;NA&gt; &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       10      001 617128757 229164562 229163137 S1400       Topaz Ln &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       10      001 641078295 265002866 265002909 S1200   S Dupont Hwy 4379</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       10      001 635011671 265002425 265002909 S1200   S Dupont Hwy 4379</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      10      001 617130275 229163799 258930498 S1400      Kemble Dr &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    LFROMADD LTOADD RFROMADD RTOADD  ZIPL  ZIPR FEATCAT HYDROFLG RAILFLG ROADFLG</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      &lt;NA&gt;   &lt;NA&gt;     4600   4698  &lt;NA&gt; 19901       S        N       N       Y</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;       S        N       N       Y</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      4198   4100     4199   4101 19901 19901       S        N       N       Y</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;       S        N       N       Y</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;       H        Y       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;        N       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       139    299      148    198 19934 19934       S        N       N       Y</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8      &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;       S        N       N       Y</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9      &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;       S        N       N       Y</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10     &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;       S        N       N       Y</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    OLFFLG PASSFLG EXTTYP TTYP DECKEDROAD ARTPATH PERSIST GCSEFLG OFFSETL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       N    &lt;NA&gt;      N &lt;NA&gt;          N       N    &lt;NA&gt;       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       N    &lt;NA&gt;      N &lt;NA&gt;          N       N    &lt;NA&gt;       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       N    &lt;NA&gt;      N &lt;NA&gt;          N       N    &lt;NA&gt;       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       N    &lt;NA&gt;      N &lt;NA&gt;       &lt;NA&gt;       N    &lt;NA&gt;       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       N    &lt;NA&gt;      N &lt;NA&gt;       &lt;NA&gt;       N       P       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       N    &lt;NA&gt;      N &lt;NA&gt;       &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       N    &lt;NA&gt;      N &lt;NA&gt;       &lt;NA&gt;       N    &lt;NA&gt;       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       N    &lt;NA&gt;      N &lt;NA&gt;          N       N    &lt;NA&gt;       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       N    &lt;NA&gt;      N &lt;NA&gt;          N       N    &lt;NA&gt;       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      N    &lt;NA&gt;      N &lt;NA&gt;       &lt;NA&gt;       N    &lt;NA&gt;       N       N</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    OFFSETR     TNIDF     TNIDT                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        N 100792217 100792209 LINESTRING (-75.50314 39.10...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        N 100792225 100792219 LINESTRING (-75.5049 39.105...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        N 100792230 100792226 LINESTRING (-75.50608 39.10...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4        N 408855030 408855040 LINESTRING (-75.50544 39.08...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        N 426381896 100796473 LINESTRING (-75.55001 39.08...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        N 100797750 426382711 LINESTRING (-75.55162 39.09...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7        N 408857212 408857202 LINESTRING (-75.58532 39.08...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8        N 424810955 100797755 LINESTRING (-75.54733 39.09...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9        N 423110034 423110036 LINESTRING (-75.54628 39.09...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10       N 408858085 408858086 LINESTRING (-75.51381 39.08...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 22,076 × 31</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP COUNTYFP      TLID    TFIDL  TFIDR MTFCC FULLN…¹ SMID  LFROM…² LTOADD</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 10      001       68<span style="text-decoration: underline;">091</span>968   2.12<span style="color: #949494;">e</span>8 2.12<span style="color: #949494;">e</span>8 S1400 Caroli… 4379  <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 10      001       68<span style="text-decoration: underline;">091</span>982   2.12<span style="color: #949494;">e</span>8 2.24<span style="color: #949494;">e</span>8 S1400 Caroli… 4379  <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 10      001       68<span style="text-decoration: underline;">091</span>989   2.12<span style="color: #949494;">e</span>8 2.12<span style="color: #949494;">e</span>8 S1400 Connec… <span style="color: #BB0000;">NA</span>    4198    4100  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 10      001      617<span style="text-decoration: underline;">124</span>820   2.29<span style="color: #949494;">e</span>8 2.29<span style="color: #949494;">e</span>8 S1400 Farmer… <span style="color: #BB0000;">NA</span>    <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 10      001      646<span style="text-decoration: underline;">522</span>177   2.65<span style="color: #949494;">e</span>8 2.65<span style="color: #949494;">e</span>8 H3010 Tidbur… 5364  <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 10      001      653<span style="text-decoration: underline;">161</span>105   2.65<span style="color: #949494;">e</span>8 2.12<span style="color: #949494;">e</span>8 P0001 <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>    <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 10      001      617<span style="text-decoration: underline;">128</span>757   2.29<span style="color: #949494;">e</span>8 2.29<span style="color: #949494;">e</span>8 S1400 Topaz … <span style="color: #BB0000;">NA</span>    139     299   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 10      001      641<span style="text-decoration: underline;">078</span>295   2.65<span style="color: #949494;">e</span>8 2.65<span style="color: #949494;">e</span>8 S1200 S Dupo… 4379  <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 10      001      635<span style="text-decoration: underline;">011</span>671   2.65<span style="color: #949494;">e</span>8 2.65<span style="color: #949494;">e</span>8 S1200 S Dupo… 4379  <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 10      001      617<span style="text-decoration: underline;">130</span>275   2.29<span style="color: #949494;">e</span>8 2.59<span style="color: #949494;">e</span>8 S1400 Kemble… <span style="color: #BB0000;">NA</span>    <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 22,066 more rows, 21 more variables: RFROMADD &lt;chr&gt;, RTOADD &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ZIPL &lt;chr&gt;, ZIPR &lt;chr&gt;, FEATCAT &lt;chr&gt;, HYDROFLG &lt;chr&gt;, RAILFLG &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ROADFLG &lt;chr&gt;, OLFFLG &lt;chr&gt;, PASSFLG &lt;chr&gt;, EXTTYP &lt;chr&gt;, TTYP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   DECKEDROAD &lt;chr&gt;, ARTPATH &lt;chr&gt;, PERSIST &lt;chr&gt;, GCSEFLG &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   OFFSETL &lt;chr&gt;, OFFSETR &lt;chr&gt;, TNIDF &lt;dbl&gt;, TNIDT &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;LINESTRING [°]&gt;, and abbreviated variable names ¹​FULLNAME,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​LFROMADD</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

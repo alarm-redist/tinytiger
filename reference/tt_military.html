@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,29 +72,22 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -159.7881 ymin: 13.30706 xmax: 174.156 ymax: 64.87795</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    ANSICODE        AREAID                   FULLNAME MTFCC    ALAND AWATER</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      &lt;NA&gt;  110509768024   Tripler Army Medical Ctr K2110  1443458      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      &lt;NA&gt;  110509768183           Aliamanu Mil Res K2110  2104133      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      &lt;NA&gt;  110509768096        Waianae-Kai Mil Res K2110    34407      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      &lt;NA&gt;  110509768142 Schofield Barracks Mil Res K2110 20509112      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      &lt;NA&gt;  110509768059           Helemano Mil Res K2110  1204608      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      &lt;NA&gt; 1108310958136        Ng Florence Mil Res K2110 75993617      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7      &lt;NA&gt;  110435324283        Stone Ranch Mil Res K2110  7440946      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8      &lt;NA&gt;  110509767829              Makua Mil Res K2110 17406401      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9      &lt;NA&gt;  110507841923  Ng Havre de Grace Mil Res K2110   304109      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10     &lt;NA&gt; 1108310660208   Ng Mta Gunpowder Mil Res K2110  1032570  10372</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       INTPTLAT     INTPTLON                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  +21.3620086 -157.8896492 MULTIPOLYGON (((-157.8982 2...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  +21.3609483 -157.9117716 MULTIPOLYGON (((-157.9238 2...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  +21.4469221 -158.1909990 MULTIPOLYGON (((-158.1931 2...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  +21.4993768 -158.0824984 MULTIPOLYGON (((-158.1151 2...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  +21.5361123 -158.0194801 MULTIPOLYGON (((-158.0267 2...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  +33.1375881 -111.3291098 MULTIPOLYGON (((-111.3878 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  +41.3654109  -72.2716641 MULTIPOLYGON (((-72.26356 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  +21.5307680 -158.2068764 MULTIPOLYGON (((-158.2406 2...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  +39.5327115  -76.1041621 MULTIPOLYGON (((-76.11008 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 +39.4306656  -76.5068215 MULTIPOLYGON (((-76.51083 3...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 858 × 9</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    ANSICODE AREAID        FULLNAME           MTFCC  ALAND AWATER INTPT…¹ INTPT…²</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> <span style="color: #BB0000;">NA</span>       110509768024  Tripler Army Medi… K2110 1.44<span style="color: #949494;">e</span>6      0 +21.36… -157.8…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> <span style="color: #BB0000;">NA</span>       110509768183  Aliamanu Mil Res   K2110 2.10<span style="color: #949494;">e</span>6      0 +21.36… -157.9…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> <span style="color: #BB0000;">NA</span>       110509768096  Waianae-Kai Mil R… K2110 3.44<span style="color: #949494;">e</span>4      0 +21.44… -158.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> <span style="color: #BB0000;">NA</span>       110509768142  Schofield Barrack… K2110 2.05<span style="color: #949494;">e</span>7      0 +21.49… -158.0…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> <span style="color: #BB0000;">NA</span>       110509768059  Helemano Mil Res   K2110 1.20<span style="color: #949494;">e</span>6      0 +21.53… -158.0…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> <span style="color: #BB0000;">NA</span>       1108310958136 Ng Florence Mil R… K2110 7.60<span style="color: #949494;">e</span>7      0 +33.13… -111.3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> <span style="color: #BB0000;">NA</span>       110435324283  Stone Ranch Mil R… K2110 7.44<span style="color: #949494;">e</span>6      0 +41.36… -72.27…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> <span style="color: #BB0000;">NA</span>       110509767829  Makua Mil Res      K2110 1.74<span style="color: #949494;">e</span>7      0 +21.53… -158.2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> <span style="color: #BB0000;">NA</span>       110507841923  Ng Havre de Grace… K2110 3.04<span style="color: #949494;">e</span>5      0 +39.53… -76.10…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> <span style="color: #BB0000;">NA</span>       1108310660208 Ng Mta Gunpowder … K2110 1.03<span style="color: #949494;">e</span>6  <span style="text-decoration: underline;">10</span>372 +39.43… -76.50…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 848 more rows, 1 more variable: geometry &lt;MULTIPOLYGON [°]&gt;, and</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   abbreviated variable names ¹​INTPTLAT, ²​INTPTLON</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

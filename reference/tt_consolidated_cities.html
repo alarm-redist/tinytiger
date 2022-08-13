@@ -54,11 +54,11 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>state</dt>
-<dd><p>FIPs, postal codes, or full name of states.</p></dd>
+<dd><p>FIPS, postal codes, or full names of states.</p></dd>
 
 
 <dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -70,18 +70,20 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_consolidated_cities</span><span class="op">(</span><span class="st">'CT'</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_consolidated_cities</span><span class="op">(</span><span class="st">"CT"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 1 feature and 14 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: POLYGON</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -73.12245 ymin: 41.1686 xmax: -72.97905 ymax: 41.2766</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   STATEFP CONCTYFP CONCTYNS   GEOID    NAME     NAMELSAD LSAD CLASSFP MTFCC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      09    47500 02378334 0947500 Milford Milford city   25      C3 G4120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   FUNCSTAT    ALAND   AWATER    INTPTLAT     INTPTLON</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        A 57444044 10216676 +41.2250861 -073.0611101</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                         geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 POLYGON ((-73.12245 41.1829...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1 × 15</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   STATEFP CONCT…¹ CONCT…² GEOID NAME  NAMEL…³ LSAD  CLASSFP MTFCC FUNCS…⁴  ALAND</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> 09      47500   023783… 0947… Milf… Milfor… 25    C3      G4120 A       5.74<span style="color: #949494;">e</span>7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 4 more variables: AWATER &lt;dbl&gt;, INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;POLYGON [°]&gt;, and abbreviated variable names ¹​CONCTYFP,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​CONCTYNS, ³​NAMELSAD, ⁴​FUNCSTAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

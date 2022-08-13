@@ -54,11 +54,11 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>state</dt>
-<dd><p>FIPs, postal codes, or full name of states.</p></dd>
+<dd><p>FIPS, postal codes, or full names of states.</p></dd>
 
 
 <dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -70,46 +70,30 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_places</span><span class="op">(</span><span class="st">'DE'</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_places</span><span class="op">(</span><span class="st">"DE"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 79 features and 16 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: MULTIPOLYGON</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.78901 ymin: 38.45121 xmax: -75.04871 ymax: 39.81891</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP PLACEFP  PLACENS   GEOID            NAME             NAMELSAD LSAD</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       10   64840 02391407 1064840      Selbyville      Selbyville town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       10   67050 02391412 1067050 Slaughter Beach Slaughter Beach town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       10   67700 02391420 1067700   South Bethany   South Bethany town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       10   29090 02390203 1029090      Georgetown      Georgetown town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       10   07250 02390741 1007250          Bowers          Bowers town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       10   10760 02390765 1010760          Camden          Camden town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       10   14660 02390786 1014660        Cheswold        Cheswold town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       10   25840 02390176 1025840      Farmington      Farmington town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       10   81350 02391496 1081350         Wyoming         Wyoming town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      10   24020 02390169 1024020       Ellendale       Ellendale town   43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    CLASSFP PCICBSA PCINECTA MTFCC FUNCSTAT    ALAND AWATER    INTPTLAT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       C1       N        N G4110        A  9292568  19781 +38.4621805</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       C1       N        N G4110        A  3675898  63711 +38.9183067</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       C1       N        N G4110        A  1302586  52955 +38.5162686</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       C1       N        N G4110        A 13006382      0 +38.6894495</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       C1       N        N G4110        A   806667  18620 +39.0621639</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       C1       N        N G4110        A  9701872      0 +39.0991988</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       C1       N        N G4110        A  4759875      0 +39.2188126</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       C1       N        N G4110        A   188339      0 +38.8699108</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       C1       N        N G4110        A  2710823  41272 +39.1124070</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      C1       N        N G4110        A  1100180      0 +38.8101290</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        INTPTLON                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  -075.2147712 MULTIPOLYGON (((-75.25513 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  -075.3133034 MULTIPOLYGON (((-75.32333 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  -075.0580975 MULTIPOLYGON (((-75.06809 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  -075.3872288 MULTIPOLYGON (((-75.41871 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  -075.4029096 MULTIPOLYGON (((-75.40724 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  -075.5569420 MULTIPOLYGON (((-75.54694 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  -075.5882014 MULTIPOLYGON (((-75.5792 39...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  -075.5790035 MULTIPOLYGON (((-75.58177 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  -075.5649157 MULTIPOLYGON (((-75.57813 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 -075.4249068 MULTIPOLYGON (((-75.43272 3...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 79 × 17</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP PLACEFP PLACENS  GEOID   NAME   NAMEL…¹ LSAD  CLASSFP PCICBSA PCINE…²</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 10      64840   02391407 1064840 Selby… Selbyv… 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 10      67050   02391412 1067050 Slaug… Slaugh… 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 10      67700   02391420 1067700 South… South … 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 10      29090   02390203 1029090 Georg… George… 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 10      07250   02390741 1007250 Bowers Bowers… 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 10      10760   02390765 1010760 Camden Camden… 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 10      14660   02390786 1014660 Chesw… Cheswo… 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 10      25840   02390176 1025840 Farmi… Farmin… 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 10      81350   02391496 1081350 Wyomi… Wyomin… 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 10      24020   02390169 1024020 Ellen… Ellend… 43    C1      N       N      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 69 more rows, 7 more variables: MTFCC &lt;chr&gt;, FUNCSTAT &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ALAND &lt;dbl&gt;, AWATER &lt;dbl&gt;, INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names ¹​NAMELSAD,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​PCINECTA</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

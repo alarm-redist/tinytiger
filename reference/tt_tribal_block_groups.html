@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,29 +72,22 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -131.7133 ymin: 25.75745 xmax: -67.03552 ymax: 55.29469</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    AIANNHCE TTRACTCE TBLKGPCE       GEOID             NAMELSAD MTFCC     ALAND</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      1185   T00100        A 1185T00100A Tribal Block Group A G2410 119741396</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      1185   T00100        B 1185T00100B Tribal Block Group B G2410 165166220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      1185   T00100        C 1185T00100C Tribal Block Group C G2410 662404396</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      1185   T00100        D 1185T00100D Tribal Block Group D G2410  15525796</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      1185   T00100        E 1185T00100E Tribal Block Group E G2410 477517190</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      1185   T00100        F 1185T00100F Tribal Block Group F G2410 668325184</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7      0680   T00100        A 0680T00100A Tribal Block Group A G2410 112433824</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8      0680   T00100        B 0680T00100B Tribal Block Group B G2410  95394597</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9      2430   T03800        A 2430T03800A Tribal Block Group A G2410 668209452</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10     2430   T03100        B 2430T03100B Tribal Block Group B G2410 890066571</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      AWATER    INTPTLAT     INTPTLON                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  89526968 +42.9996415 -112.5831362 MULTIPOLYGON (((-112.7523 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2   1452214 +43.0857723 -112.4519179 MULTIPOLYGON (((-112.5724 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  13888935 +42.7681940 -112.6483140 MULTIPOLYGON (((-112.7385 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4     24887 +43.0246813 -112.4220207 MULTIPOLYGON (((-112.4567 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   2396677 +42.9753621 -112.1828263 MULTIPOLYGON (((-111.9601 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6     68004 +43.0955365 -112.1516775 MULTIPOLYGON (((-112.3918 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7   4836770 +35.6267252 -106.3589302 MULTIPOLYGON (((-106.4425 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8         0 +35.6037034 -106.2740714 MULTIPOLYGON (((-106.3577 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9         0 +36.2773799 -111.2734220 MULTIPOLYGON (((-111.4606 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10  1904211 +35.3136550 -111.1158656 MULTIPOLYGON (((-111.2585 3...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 934 × 11</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    AIANNHCE TTRACTCE TBLKGPCE GEOID  NAMEL…¹ MTFCC  ALAND AWATER INTPT…² INTPT…³</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 1185     T00100   A        1185T… Tribal… G2410 1.20<span style="color: #949494;">e</span>8 8.95<span style="color: #949494;">e</span>7 +42.99… -112.5…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 1185     T00100   B        1185T… Tribal… G2410 1.65<span style="color: #949494;">e</span>8 1.45<span style="color: #949494;">e</span>6 +43.08… -112.4…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 1185     T00100   C        1185T… Tribal… G2410 6.62<span style="color: #949494;">e</span>8 1.39<span style="color: #949494;">e</span>7 +42.76… -112.6…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 1185     T00100   D        1185T… Tribal… G2410 1.55<span style="color: #949494;">e</span>7 2.49<span style="color: #949494;">e</span>4 +43.02… -112.4…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 1185     T00100   E        1185T… Tribal… G2410 4.78<span style="color: #949494;">e</span>8 2.40<span style="color: #949494;">e</span>6 +42.97… -112.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 1185     T00100   F        1185T… Tribal… G2410 6.68<span style="color: #949494;">e</span>8 6.80<span style="color: #949494;">e</span>4 +43.09… -112.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 0680     T00100   A        0680T… Tribal… G2410 1.12<span style="color: #949494;">e</span>8 4.84<span style="color: #949494;">e</span>6 +35.62… -106.3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 0680     T00100   B        0680T… Tribal… G2410 9.54<span style="color: #949494;">e</span>7 0   <span style="color: #949494;"> </span>  +35.60… -106.2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 2430     T03800   A        2430T… Tribal… G2410 6.68<span style="color: #949494;">e</span>8 0   <span style="color: #949494;"> </span>  +36.27… -111.2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 2430     T03100   B        2430T… Tribal… G2410 8.90<span style="color: #949494;">e</span>8 1.90<span style="color: #949494;">e</span>6 +35.31… -111.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 924 more rows, 1 more variable: geometry &lt;MULTIPOLYGON [°]&gt;, and</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   abbreviated variable names ¹​NAMELSAD, ²​INTPTLAT, ³​INTPTLON</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

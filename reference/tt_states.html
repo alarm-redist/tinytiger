@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,40 +72,23 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -179.2311 ymin: -14.60181 xmax: 179.8597 ymax: 71.43979</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    REGION DIVISION STATEFP  STATENS GEOID STUSPS           NAME LSAD MTFCC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       3        5      54 01779805    54     WV  West Virginia   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       3        5      12 00294478    12     FL        Florida   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       2        3      17 01779784    17     IL       Illinois   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       2        4      27 00662849    27     MN      Minnesota   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       3        5      24 01714934    24     MD       Maryland   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       1        1      44 01219835    44     RI   Rhode Island   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       4        8      16 01779783    16     ID          Idaho   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       1        1      33 01779794    33     NH  New Hampshire   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       3        5      37 01027616    37     NC North Carolina   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      1        1      50 01779802    50     VT        Vermont   00 G4000</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    FUNCSTAT        ALAND      AWATER    INTPTLAT     INTPTLON</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1         A  62266298634   489204185 +38.6472854 -080.6183274</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2         A 138961722096 45972570361 +28.3989775 -082.5143005</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3         A 143778561906  6216493488 +40.1028754 -089.1526108</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4         A 206232627084 18949394733 +46.3159573 -094.1996043</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5         A  25151992308  6979074857 +38.9466584 -076.6744939</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6         A   2677763359  1323686988 +41.5964850 -071.5264901</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7         A 214049931578  2391569647 +44.3484222 -114.5588538</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8         A  23190115212  1025971768 +43.6726907 -071.5843145</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9         A 125933327733 13456093195 +35.5397100 -079.1308636</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10        A  23872569964  1030754609 +44.0589536 -072.6710173</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                          geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  MULTIPOLYGON (((-80.85847 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  MULTIPOLYGON (((-83.10874 2...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  MULTIPOLYGON (((-89.17208 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  MULTIPOLYGON (((-92.74568 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  MULTIPOLYGON (((-75.76659 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  MULTIPOLYGON (((-71.67881 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  MULTIPOLYGON (((-111.0455 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  MULTIPOLYGON (((-71.24548 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  MULTIPOLYGON (((-76.91598 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 MULTIPOLYGON (((-72.43462 4...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 56 × 15</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    REGION DIVIS…¹ STATEFP STATENS GEOID STUSPS NAME  LSAD  MTFCC FUNCS…²   ALAND</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 3      5       54      017798… 54    WV     West… 00    G4000 A       6.23<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 3      5       12      002944… 12    FL     Flor… 00    G4000 A       1.39<span style="color: #949494;">e</span>11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 2      3       17      017797… 17    IL     Illi… 00    G4000 A       1.44<span style="color: #949494;">e</span>11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 2      4       27      006628… 27    MN     Minn… 00    G4000 A       2.06<span style="color: #949494;">e</span>11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 3      5       24      017149… 24    MD     Mary… 00    G4000 A       2.52<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 1      1       44      012198… 44    RI     Rhod… 00    G4000 A       2.68<span style="color: #949494;">e</span> 9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 4      8       16      017797… 16    ID     Idaho 00    G4000 A       2.14<span style="color: #949494;">e</span>11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 1      1       33      017797… 33    NH     New … 00    G4000 A       2.32<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 3      5       37      010276… 37    NC     Nort… 00    G4000 A       1.26<span style="color: #949494;">e</span>11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 1      1       50      017798… 50    VT     Verm… 00    G4000 A       2.39<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 46 more rows, 4 more variables: AWATER &lt;dbl&gt;, INTPTLAT &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   INTPTLON &lt;chr&gt;, geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ¹​DIVISION, ²​FUNCSTAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

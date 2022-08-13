@@ -54,15 +54,15 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>state</dt>
-<dd><p>FIPs, postal codes, or full name of states.</p></dd>
+<dd><p>FIPS, postal codes, or full names of states.</p></dd>
 
 
 <dt>county</dt>
-<dd><p>FIPs codes or full name of counties. Optional.</p></dd>
+<dd><p>FIPS codes or full names of counties. Optional.</p></dd>
 
 
 <dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -74,79 +74,33 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_polygon_faces</span><span class="op">(</span><span class="st">'DE'</span>, county <span class="op">=</span> <span class="st">'001'</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_polygon_faces</span><span class="op">(</span><span class="st">"DE"</span>, county <span class="op">=</span> <span class="st">"001"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 6604 features and 44 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: POLYGON</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.76007 ymin: 38.82985 xmax: -75.13846 ymax: 39.38756</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         TFID STATEFP20 COUNTYFP20 TRACTCE20 BLKGRPCE20 BLOCKCE20 SUFFIX1CE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  211663361        10        001    040900          1      1024      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  211665693        10        001    041802          3      3000      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  211665698        10        001    041803          1      1000      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  211666774        10        001    043400          1      1036      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  211666780        10        001    042500          1      1000      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  211663098        10        001    043202          1      1003      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  211664693        10        001    041702          2      2017      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  211664851        10        001    043100          1      1062      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  211663769        10        001    040203          3      3015      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 264981124        10        001    043400          1      1017      &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    ZCTA5CE20 UACE10 PUMACE10 STATEFP COUNTYFP TRACTCE BLKGRPCE COUSUBFP</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      19904  24580    00200      10      001  040900        1    90740</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      19904  24580    00200      10      001  041802        3    90740</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      19904  24580    00200      10      001  041803        1    90740</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      19943   &lt;NA&gt;    00200      10      001  043400        1    92220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      19963  57196    00200      10      001  042500        1    92220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      19977   &lt;NA&gt;    00200      10      001  043202        1    93700</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7      19934  24580    00200      10      001  041702        2    90740</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8      19952   &lt;NA&gt;    00200      10      001  043100        1    91332</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9      19977  24580    00200      10      001  040203        3    93700</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10     19946   &lt;NA&gt;    00200      10      001  043400        1    92220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    SUBMCDFP ESTATEFP CONCTYFP PLACEFP AIANNHFP AIANNHCE COMPTYP TRSUBFP TRSUBCE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;   21200     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7      &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8      &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9      &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;   67310     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10     &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;   28440     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    ANRCFP TTRACTCE TBLKGPCE ELSDLEA SCSDLEA UNSDLEA CD116FP SLDUST SLDLST CSAFP</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   00190      00    017    031   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   00190      00    017    029   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   00190      00    015    029   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   00790      00    016    033   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   01080      00    018    033   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   01620      00    014    028   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   00180      00    016    034   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   00790      00    015    030   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9    &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   01620      00    014    028   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10   &lt;NA&gt;     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;    &lt;NA&gt;   00790      00    016    033   428</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    CBSAFP METDIVFP CNECTAFP NECTAFP NCTADVFP LWFLAG OFFSET  ATOTAL    INTPTLAT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1   20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      L      N   10072 +39.1694417</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2   20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      L      N     928 +39.1552622</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      L      N    9672 +39.2326147</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      P      N  158189 +38.9879194</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      L      N   11822 +38.9341760</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6   20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      P      N  102736 +39.2976885</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7   20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      L      N   28836 +39.1053375</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8   20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      L      N   70231 +38.9259727</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9   20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      L      N    5896 +39.2982452</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10  20100     &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;     &lt;NA&gt;      L      N 1616004 +39.0134156</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       INTPTLON                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  -75.5297356 POLYGON ((-75.53034 39.1701...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  -75.5874660 POLYGON ((-75.58794 39.1552...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  -75.5838229 POLYGON ((-75.58466 39.2326...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  -75.4874940 POLYGON ((-75.49429 38.9892...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  -75.3986109 POLYGON ((-75.39937 38.9322...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  -75.4441940 POLYGON ((-75.45172 39.2952...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  -75.5267957 POLYGON ((-75.52799 39.1054...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  -75.7102714 POLYGON ((-75.71431 38.9271...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  -75.6002342 POLYGON ((-75.60098 39.2990...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 -75.4760062 POLYGON ((-75.48709 39.0110...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6,604 × 45</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      TFID STATE…¹ COUNT…² TRACT…³ BLKGR…⁴ BLOCK…⁵ SUFFI…⁶ ZCTA5…⁷ UACE10 PUMAC…⁸</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 2.12<span style="color: #949494;">e</span>8 10      001     040900  1       1024    <span style="color: #BB0000;">NA</span>      19904   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 2.12<span style="color: #949494;">e</span>8 10      001     041802  3       3000    <span style="color: #BB0000;">NA</span>      19904   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 2.12<span style="color: #949494;">e</span>8 10      001     041803  1       1000    <span style="color: #BB0000;">NA</span>      19904   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 2.12<span style="color: #949494;">e</span>8 10      001     043400  1       1036    <span style="color: #BB0000;">NA</span>      19943   <span style="color: #BB0000;">NA</span>     00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 2.12<span style="color: #949494;">e</span>8 10      001     042500  1       1000    <span style="color: #BB0000;">NA</span>      19963   57196  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 2.12<span style="color: #949494;">e</span>8 10      001     043202  1       1003    <span style="color: #BB0000;">NA</span>      19977   <span style="color: #BB0000;">NA</span>     00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 2.12<span style="color: #949494;">e</span>8 10      001     041702  2       2017    <span style="color: #BB0000;">NA</span>      19934   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 2.12<span style="color: #949494;">e</span>8 10      001     043100  1       1062    <span style="color: #BB0000;">NA</span>      19952   <span style="color: #BB0000;">NA</span>     00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 2.12<span style="color: #949494;">e</span>8 10      001     040203  3       3015    <span style="color: #BB0000;">NA</span>      19977   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 2.65<span style="color: #949494;">e</span>8 10      001     043400  1       1017    <span style="color: #BB0000;">NA</span>      19946   <span style="color: #BB0000;">NA</span>     00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 6,594 more rows, 35 more variables: STATEFP &lt;chr&gt;, COUNTYFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   TRACTCE &lt;chr&gt;, BLKGRPCE &lt;chr&gt;, COUSUBFP &lt;chr&gt;, SUBMCDFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ESTATEFP &lt;chr&gt;, CONCTYFP &lt;chr&gt;, PLACEFP &lt;chr&gt;, AIANNHFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   AIANNHCE &lt;chr&gt;, COMPTYP &lt;chr&gt;, TRSUBFP &lt;chr&gt;, TRSUBCE &lt;chr&gt;, ANRCFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   TTRACTCE &lt;chr&gt;, TBLKGPCE &lt;chr&gt;, ELSDLEA &lt;chr&gt;, SCSDLEA &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   UNSDLEA &lt;chr&gt;, CD116FP &lt;chr&gt;, SLDUST &lt;chr&gt;, SLDLST &lt;chr&gt;, CSAFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   CBSAFP &lt;chr&gt;, METDIVFP &lt;chr&gt;, CNECTAFP &lt;chr&gt;, NECTAFP &lt;chr&gt;, …</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

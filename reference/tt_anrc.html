@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,51 +72,25 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -179.2311 ymin: 51.17509 xmax: 179.8597 ymax: 71.43979</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP ANRCFP   ANRCNS   GEOID           NAME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       02  41640 02418991 0241640         Koniag</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       02  01570 02419297 0201570          Aleut</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       02  06370 02419308 0206370 Bering Straits</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       02  09800 02419328 0209800        Calista</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       02  00590 02419295 0200590          Ahtna</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       02  20010 02418929 0220010          Doyon</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       02  67940 02419136 0267940       Sealaska</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       02  03950 02419300 0203950   Arctic Slope</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       02  09040 02419321 0209040    Bristol Bay</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      02  52120 02419029 0252120           NANA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                             NAMELSAD LSAD CLASSFP MTFCC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1          Koniag Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2           Aleut Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  Bering Straits Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4         Calista Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5           Ahtna Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6           Doyon Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7        Sealaska Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8    Arctic Slope Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9     Bristol Bay Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10           NANA Alaska Native Regional Corporation   77      E7 G2200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    FUNCSTAT        ALAND      AWATER    INTPTLAT     INTPTLON</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1         N  18772360362 21363018467 +57.3667816 -154.7116365</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2         N  28831444153 45356671463 +51.9594469 +178.3388130</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3         N  59490634310 13780758093 +64.7836858 -164.1889119</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4         N 142464876475 19389800572 +61.2224278 -161.8654548</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5         N  74027413736  1391256190 +61.9170968 -144.3768352</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6         N 515792784611  7134280478 +65.2328790 -150.0815097</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7         N  91073671898 41754696921 +57.3783977 -134.2790424</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8         N 217009412252 15522237401 +69.5790095 -154.2222177</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9         N 104110270639 25993444733 +58.8186346 -157.9760005</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10        N  92367472817 12837268666 +67.0050655 -160.0210864</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                          geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  MULTIPOLYGON (((-152.4665 5...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  MULTIPOLYGON (((179.3887 51...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  MULTIPOLYGON (((-161.4369 6...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  MULTIPOLYGON (((-166.2864 6...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  MULTIPOLYGON (((-149.3841 6...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  MULTIPOLYGON (((-161.0482 6...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  MULTIPOLYGON (((-141.0018 6...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  MULTIPOLYGON (((-166.9717 6...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  MULTIPOLYGON (((-160.0976 5...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 MULTIPOLYGON (((-165.592 68...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 12 × 15</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP ANRCFP ANRCNS GEOID NAME  NAMEL…¹ LSAD  CLASSFP MTFCC FUNCS…²   ALAND</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 02      41640  02418… 0241… Koni… Koniag… 77    E7      G2200 N       1.88<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 02      01570  02419… 0201… Aleut Aleut … 77    E7      G2200 N       2.88<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 02      06370  02419… 0206… Beri… Bering… 77    E7      G2200 N       5.95<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 02      09800  02419… 0209… Cali… Calist… 77    E7      G2200 N       1.42<span style="color: #949494;">e</span>11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 02      00590  02419… 0200… Ahtna Ahtna … 77    E7      G2200 N       7.40<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 02      20010  02418… 0220… Doyon Doyon … 77    E7      G2200 N       5.16<span style="color: #949494;">e</span>11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 02      67940  02419… 0267… Seal… Sealas… 77    E7      G2200 N       9.11<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 02      03950  02419… 0203… Arct… Arctic… 77    E7      G2200 N       2.17<span style="color: #949494;">e</span>11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 02      09040  02419… 0209… Bris… Bristo… 77    E7      G2200 N       1.04<span style="color: #949494;">e</span>11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 02      52120  02419… 0252… NANA  NANA A… 77    E7      G2200 N       9.24<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">11</span> 02      14410  02419… 0214… Chug… Chugac… 77    E7      G2200 N       3.83<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">12</span> 02      17140  02418… 0217… Cook… Cook I… 77    E7      G2200 N       9.64<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 4 more variables: AWATER &lt;dbl&gt;, INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names ¹​NAMELSAD,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​FUNCSTAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

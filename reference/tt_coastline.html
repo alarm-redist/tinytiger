@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,18 +72,21 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -179.1472 ymin: -14.5487 xmax: 179.7785 ymax: 71.39038</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         NAME MTFCC                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  Atlántico L4150 LINESTRING (-67.16026 18.41...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  Atlántico L4150 LINESTRING (-66.1984 18.467...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  Atlántico L4150 LINESTRING (-66.03667 18.45...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  Atlántico L4150 LINESTRING (-66.53321 18.48...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  Atlántico L4150 LINESTRING (-65.9928 18.458...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  Atlántico L4150 LINESTRING (-66.58681 18.48...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  Atlántico L4150 LINESTRING (-65.9928 18.458...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  Atlántico L4150 LINESTRING (-66.34969 18.48...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  Atlántico L4150 LINESTRING (-65.74997 18.38...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 Atlántico L4150 LINESTRING (-66.53321 18.48...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4,234 × 3</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    NAME      MTFCC                                                      geometry</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                              <span style="color: #949494; font-style: italic;">&lt;LINESTRING [°]&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Atlántico L4150 (-67.16026 18.41564, -67.1601 18.41574, -67.15973 18.41601, …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Atlántico L4150                       (-66.1984 18.46785, -66.19843 18.46785)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Atlántico L4150 (-66.03667 18.4501, -66.03669 18.45014, -66.03683 18.45033, …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Atlántico L4150 (-66.53321 18.48155, -66.53323 18.48161, -66.53324 18.48185,…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Atlántico L4150 (-65.9928 18.45854, -65.99323 18.45779, -65.99337 18.45765, …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Atlántico L4150 (-66.58681 18.48476, -66.58701 18.4849, -66.5871 18.48496, -…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Atlántico L4150 (-65.9928 18.45854, -65.99266 18.45868, -65.99267 18.45889, …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Atlántico L4150 (-66.34969 18.48393, -66.34987 18.48407, -66.35018 18.48426,…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Atlántico L4150 (-65.74997 18.38509, -65.74988 18.3848, -65.74983 18.38475, …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Atlántico L4150 (-66.53321 18.48155, -66.53319 18.4814, -66.53323 18.4814, -…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 4,224 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

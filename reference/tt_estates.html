@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,40 +72,23 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -65.06434 ymin: 17.67393 xmax: -64.56519 ymax: 18.41538</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP COUNTYFP ESTATEFP ESTATENS      GEOID                       NAME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       78      010    77100 02631827 7801077100            Strawberry Hill</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       78      010    57530 01994438 7801057530           Montpellier East</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       78      010    14840 01994174 7801014840            Catherines Hope</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       78      010    49700 02631811 7801049700 Jerusalem and Figtree Hill</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       78      010    07650 01994091 7801007650                Bettys Hope</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       78      010    66060 01994367 7801066060                  Rose Hill</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       78      010    63300 01994328 7801063300                    Parasol</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       78      010    45050 01994218 7801045050                    Granard</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       78      010    47600 01994235 7801047600                  Hermitage</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      78      010    74400 01994249 7801074400        South Grapetree Bay</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                             NAMELSAD LSAD CLASSFP MTFCC FUNCSTAT   ALAND AWATER</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1             Estate Strawberry Hill   52      Z1 G4050        N  928680      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2            Estate Montpellier East   52      Z1 G4050        N 1317022      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3             Estate Catherines Hope   52      Z1 G4050        N  592343      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  Estate Jerusalem and Figtree Hill   52      Z1 G4050        N 2781996      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                 Estate Bettys Hope   52      Z1 G4050        N 1835946      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                   Estate Rose Hill   52      Z1 G4050        N  287197      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7                     Estate Parasol   52      Z1 G4050        N  517633      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8                     Estate Granard   52      Z1 G4050        N 2868936  27972</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9                   Estate Hermitage   52      Z1 G4050        N 1477787      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10        Estate South Grapetree Bay   52      Z1 G4050        N  496410      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       INTPTLAT     INTPTLON                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  +17.7314007 -064.7587628 MULTIPOLYGON (((-64.76246 1...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  +17.7644241 -064.7564645 MULTIPOLYGON (((-64.75305 1...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  +17.7480567 -064.6143854 MULTIPOLYGON (((-64.61859 1...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  +17.7073158 -064.7476994 MULTIPOLYGON (((-64.75689 1...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  +17.6954933 -064.8169366 MULTIPOLYGON (((-64.82509 1...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  +17.7514937 -064.8589993 MULTIPOLYGON (((-64.86174 1...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  +17.7559230 -064.8168233 MULTIPOLYGON (((-64.82062 1...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  +17.7179379 -064.7040991 MULTIPOLYGON (((-64.72275 1...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  +17.7504703 -064.8049888 MULTIPOLYGON (((-64.81322 1...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 +17.7487418 -064.5911554 MULTIPOLYGON (((-64.5967 17...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 416 × 16</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP COUNTYFP ESTATEFP ESTATENS GEOID    NAME  NAMEL…¹ LSAD  CLASSFP MTFCC</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 78      010      77100    02631827 7801077… Stra… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 78      010      57530    01994438 7801057… Mont… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 78      010      14840    01994174 7801014… Cath… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 78      010      49700    02631811 7801049… Jeru… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 78      010      07650    01994091 7801007… Bett… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 78      010      66060    01994367 7801066… Rose… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 78      010      63300    01994328 7801063… Para… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 78      010      45050    01994218 7801045… Gran… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 78      010      47600    01994235 7801047… Herm… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 78      010      74400    01994249 7801074… Sout… Estate… 52    Z1      G4050</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 406 more rows, 6 more variables: FUNCSTAT &lt;chr&gt;, ALAND &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   AWATER &lt;dbl&gt;, INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;, geometry &lt;MULTIPOLYGON [°]&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   and abbreviated variable name ¹​NAMELSAD</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

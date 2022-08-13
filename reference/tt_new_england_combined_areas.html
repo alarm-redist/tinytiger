@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,38 +72,19 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -73.72777 ymin: 40.95094 xmax: -69.33964 ymax: 44.69986</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   CNECTAFP GEOID                                        NAME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      710   710                      Augusta-Waterville, ME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      715   715 Boston-Worcester-Providence, MA-RI-NH-CT-ME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      720   720           Bridgeport-New Haven-Stamford, CT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      725   725                    Lebanon-Claremont, NH-VT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      770   770               Pittsfield-North Adams, MA-VT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      775   775        Portland-Lewiston-South Portland, ME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7      790   790   Springfield-Hartford-East Hartford, MA-CT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                     NAMELSAD LSAD MTFCC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                      Augusta-Waterville, ME Combined NECTA   M4 G3200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 Boston-Worcester-Providence, MA-RI-NH-CT-ME Combined NECTA   M4 G3200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3           Bridgeport-New Haven-Stamford, CT Combined NECTA   M4 G3200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                    Lebanon-Claremont, NH-VT Combined NECTA   M4 G3200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5               Pittsfield-North Adams, MA-VT Combined NECTA   M4 G3200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        Portland-Lewiston-South Portland, ME Combined NECTA   M4 G3200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7   Springfield-Hartford-East Hartford, MA-CT Combined NECTA   M4 G3200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         ALAND     AWATER    INTPTLAT     INTPTLON</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  2155056550  183916956 +44.4092939 -069.6901717</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 21419136256 3005007067 +42.3307869 -071.3296644</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  3939856867  374600689 +41.3603421 -073.1284227</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  3032350557   58162981 +43.6727226 -072.2484543</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  1524342565   24516395 +42.5337519 -073.1678825</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  6255802933 1536819921 +43.8562034 -070.3192682</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  8709721508  257195724 +42.0359069 -072.6213616</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                         geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 MULTIPOLYGON (((-69.39599 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 MULTIPOLYGON (((-70.5375 41...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 MULTIPOLYGON (((-72.98672 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 MULTIPOLYGON (((-72.2695 43...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5 MULTIPOLYGON (((-72.95104 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 MULTIPOLYGON (((-70.06981 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7 MULTIPOLYGON (((-72.21911 4...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 7 × 11</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   CNECTAFP GEOID NAME         NAMEL…¹ LSAD  MTFCC   ALAND AWATER INTPT…² INTPT…³</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> 710      710   Augusta-Wat… August… M4    G3200 2.16<span style="color: #949494;">e</span> 9 1.84<span style="color: #949494;">e</span>8 +44.40… -069.6…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> 715      715   Boston-Worc… Boston… M4    G3200 2.14<span style="color: #949494;">e</span>10 3.01<span style="color: #949494;">e</span>9 +42.33… -071.3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> 720      720   Bridgeport-… Bridge… M4    G3200 3.94<span style="color: #949494;">e</span> 9 3.75<span style="color: #949494;">e</span>8 +41.36… -073.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> 725      725   Lebanon-Cla… Lebano… M4    G3200 3.03<span style="color: #949494;">e</span> 9 5.82<span style="color: #949494;">e</span>7 +43.67… -072.2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> 770      770   Pittsfield-… Pittsf… M4    G3200 1.52<span style="color: #949494;">e</span> 9 2.45<span style="color: #949494;">e</span>7 +42.53… -073.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> 775      775   Portland-Le… Portla… M4    G3200 6.26<span style="color: #949494;">e</span> 9 1.54<span style="color: #949494;">e</span>9 +43.85… -070.3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> 790      790   Springfield… Spring… M4    G3200 8.71<span style="color: #949494;">e</span> 9 2.57<span style="color: #949494;">e</span>8 +42.03… -072.6…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 1 more variable: geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   names ¹​NAMELSAD, ²​INTPTLAT, ³​INTPTLON</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

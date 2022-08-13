@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,51 +72,23 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -71.85505 ymin: 41.70016 xmax: -70.51636 ymax: 43.0214</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    CNECTAFP NECTAFP NCTADVFP      GEOID</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       715   71650    71634 7165071634</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       715   71650    72104 7165072104</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       715   71650    73104 7165073104</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       715   71650    73604 7165073604</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       715   71650    74204 7165074204</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       715   71650    74804 7165074804</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       715   71650    74854 7165074854</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       715   71650    75404 7165075404</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       715   71650    76524 7165076524</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      715   71650    76684 7165076684</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                          NAME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                 Boston-Cambridge-Newton, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        Brockton-Bridgewater Town-Easton, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                              Framingham, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  Haverhill-Newburyport-Amesbury Town, MA-NH</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  Lawrence-Methuen Town-North Andover, MA-NH</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6          Lowell-Billerica-Chelmsford, MA-NH</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7                   Lynn-Salem-Marblehead, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8                               Nashua, NH-MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9              Peabody-Beverly-Gloucester, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10              Plymouth-Pembroke-Duxbury, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                     NAMELSAD LSAD MTFCC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                 Boston-Cambridge-Newton, MA NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        Brockton-Bridgewater Town-Easton, MA NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                              Framingham, MA NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  Haverhill-Newburyport-Amesbury Town, MA-NH NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  Lawrence-Methuen Town-North Andover, MA-NH NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6          Lowell-Billerica-Chelmsford, MA-NH NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7                   Lynn-Salem-Marblehead, MA NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8                               Nashua, NH-MA NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9              Peabody-Beverly-Gloucester, MA NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10              Plymouth-Pembroke-Duxbury, MA NECTA Division   M7 G3220</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         ALAND    AWATER    INTPTLAT     INTPTLON                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  2860347068 425757253 +42.3149834 -071.1675691 MULTIPOLYGON (((-70.98127 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2   321545374   7531881 +42.0341015 -071.0157590 MULTIPOLYGON (((-70.97523 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   503220194  23246707 +42.2638445 -071.5106679 MULTIPOLYGON (((-71.37769 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   938908003  56404046 +42.8429020 -071.0224861 MULTIPOLYGON (((-70.94859 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   207887679   9752445 +42.7281251 -071.1632265 MULTIPOLYGON (((-71.11558 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6   542144814  20181384 +42.6303724 -071.3662554 MULTIPOLYGON (((-71.33254 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7    71248678 119749125 +42.4759260 -070.8857445 MULTIPOLYGON (((-70.83862 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  1244962561  20160392 +42.8520335 -071.5198762 MULTIPOLYGON (((-71.54254 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9   466892258 153917480 +42.6160552 -070.8185167 MULTIPOLYGON (((-70.56785 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10  591866277 153634043 +41.9416950 -070.6992089 MULTIPOLYGON (((-70.74972 4...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 11 × 13</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    CNECT…¹ NECTAFP NCTAD…² GEOID NAME  NAMEL…³ LSAD  MTFCC  ALAND AWATER INTPT…⁴</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 715     71650   71634   7165… Bost… Boston… M7    G3220 2.86<span style="color: #949494;">e</span>9 4.26<span style="color: #949494;">e</span>8 +42.31…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 715     71650   72104   7165… Broc… Brockt… M7    G3220 3.22<span style="color: #949494;">e</span>8 7.53<span style="color: #949494;">e</span>6 +42.03…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 715     71650   73104   7165… Fram… Framin… M7    G3220 5.03<span style="color: #949494;">e</span>8 2.32<span style="color: #949494;">e</span>7 +42.26…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 715     71650   73604   7165… Have… Haverh… M7    G3220 9.39<span style="color: #949494;">e</span>8 5.64<span style="color: #949494;">e</span>7 +42.84…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 715     71650   74204   7165… Lawr… Lawren… M7    G3220 2.08<span style="color: #949494;">e</span>8 9.75<span style="color: #949494;">e</span>6 +42.72…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 715     71650   74804   7165… Lowe… Lowell… M7    G3220 5.42<span style="color: #949494;">e</span>8 2.02<span style="color: #949494;">e</span>7 +42.63…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 715     71650   74854   7165… Lynn… Lynn-S… M7    G3220 7.12<span style="color: #949494;">e</span>7 1.20<span style="color: #949494;">e</span>8 +42.47…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 715     71650   75404   7165… Nash… Nashua… M7    G3220 1.24<span style="color: #949494;">e</span>9 2.02<span style="color: #949494;">e</span>7 +42.85…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 715     71650   76524   7165… Peab… Peabod… M7    G3220 4.67<span style="color: #949494;">e</span>8 1.54<span style="color: #949494;">e</span>8 +42.61…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 715     71650   76684   7165… Plym… Plymou… M7    G3220 5.92<span style="color: #949494;">e</span>8 1.54<span style="color: #949494;">e</span>8 +41.94…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">11</span> 715     71650   78254   7165… Taun… Taunto… M7    G3220 7.78<span style="color: #949494;">e</span>8 4.93<span style="color: #949494;">e</span>7 +41.86…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 2 more variables: INTPTLON &lt;chr&gt;, geometry &lt;MULTIPOLYGON [°]&gt;, and</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   abbreviated variable names ¹​CNECTAFP, ²​NCTADVFP, ³​NAMELSAD, ⁴​INTPTLAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

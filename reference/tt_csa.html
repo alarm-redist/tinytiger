@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,51 +72,22 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -124.042 ymin: 17.83151 xmax: -65.42271 ymax: 49.00074</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    CSAFP GEOID                                                NAME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1    104   104                              Albany-Schenectady, NY</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    106   106                  Albuquerque-Santa Fe-Las Vegas, NM</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    107   107                              Altoona-Huntingdon, PA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4    108   108                           Amarillo-Pampa-Borger, TX</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5    118   118                         Appleton-Oshkosh-Neenah, WI</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6    120   120                        Asheville-Marion-Brevard, NC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7    122   122 Atlanta--Athens-Clarke County--Sandy Springs, GA-AL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8    140   140                                 Bend-Prineville, OR</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9    142   142                     Birmingham-Hoover-Talladega, AL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10   144   144                             Bloomington-Bedford, IN</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                   NAMELSAD LSAD MTFCC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                               Albany-Schenectady, NY CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                   Albuquerque-Santa Fe-Las Vegas, NM CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                               Altoona-Huntingdon, PA CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                            Amarillo-Pampa-Borger, TX CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                          Appleton-Oshkosh-Neenah, WI CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                         Asheville-Marion-Brevard, NC CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  Atlanta--Athens-Clarke County--Sandy Springs, GA-AL CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8                                  Bend-Prineville, OR CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9                      Birmingham-Hoover-Talladega, AL CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10                             Bloomington-Bedford, IN CSA   M0 G3100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          ALAND    AWATER    INTPTLAT     INTPTLON</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  15652459349 527598213 +42.9540614 -073.9005139</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  61671595471 183599610 +35.6438233 -106.0299689</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   3625795409  41146759 +40.4391336 -078.1133892</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  20430948213 113498377 +35.3963177 -101.5947616</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   3601389268 595054344 +44.2906032 -088.3723255</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6   7383885739  40821589 +35.5602062 -082.6008055</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  33807675888 671845180 +33.7282990 -084.3477277</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  15530984014 115712214 +44.0117119 -120.7652458</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  17485848101 346514229 +33.5274555 -086.7482873</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10  3182998522  57287133 +39.0898578 -086.6013674</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                          geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  MULTIPOLYGON (((-73.35243 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  MULTIPOLYGON (((-105.2908 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  MULTIPOLYGON (((-78.11652 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  MULTIPOLYGON (((-101.0863 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  MULTIPOLYGON (((-88.73977 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  MULTIPOLYGON (((-82.16905 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  MULTIPOLYGON (((-83.40619 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  MULTIPOLYGON (((-119.8974 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  MULTIPOLYGON (((-86.45302 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 MULTIPOLYGON (((-86.31747 3...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 175 × 11</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    CSAFP GEOID NAME           NAMEL…¹ LSAD  MTFCC   ALAND AWATER INTPT…² INTPT…³</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 104   104   Albany-Schene… Albany… M0    G3100 1.57<span style="color: #949494;">e</span>10 5.28<span style="color: #949494;">e</span>8 +42.95… -073.9…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 106   106   Albuquerque-S… Albuqu… M0    G3100 6.17<span style="color: #949494;">e</span>10 1.84<span style="color: #949494;">e</span>8 +35.64… -106.0…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 107   107   Altoona-Hunti… Altoon… M0    G3100 3.63<span style="color: #949494;">e</span> 9 4.11<span style="color: #949494;">e</span>7 +40.43… -078.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 108   108   Amarillo-Pamp… Amaril… M0    G3100 2.04<span style="color: #949494;">e</span>10 1.13<span style="color: #949494;">e</span>8 +35.39… -101.5…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 118   118   Appleton-Oshk… Applet… M0    G3100 3.60<span style="color: #949494;">e</span> 9 5.95<span style="color: #949494;">e</span>8 +44.29… -088.3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 120   120   Asheville-Mar… Ashevi… M0    G3100 7.38<span style="color: #949494;">e</span> 9 4.08<span style="color: #949494;">e</span>7 +35.56… -082.6…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 122   122   Atlanta--Athe… Atlant… M0    G3100 3.38<span style="color: #949494;">e</span>10 6.72<span style="color: #949494;">e</span>8 +33.72… -084.3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 140   140   Bend-Prinevil… Bend-P… M0    G3100 1.55<span style="color: #949494;">e</span>10 1.16<span style="color: #949494;">e</span>8 +44.01… -120.7…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 142   142   Birmingham-Ho… Birmin… M0    G3100 1.75<span style="color: #949494;">e</span>10 3.47<span style="color: #949494;">e</span>8 +33.52… -086.7…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 144   144   Bloomington-B… Bloomi… M0    G3100 3.18<span style="color: #949494;">e</span> 9 5.73<span style="color: #949494;">e</span>7 +39.08… -086.6…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 165 more rows, 1 more variable: geometry &lt;MULTIPOLYGON [°]&gt;, and</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   abbreviated variable names ¹​NAMELSAD, ²​INTPTLAT, ³​INTPTLON</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

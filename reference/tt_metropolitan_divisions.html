@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,51 +72,23 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -123.1738 ymin: 25.13742 xmax: -70.32252 ymax: 48.29899</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    CSAFP CBSAFP METDIVFP      GEOID                                      NAME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1    348  31080    11244 3108011244              Anaheim-Santa Ana-Irvine, CA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    148  14460    14454 1446014454                                Boston, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    148  14460    15764 1446015764           Cambridge-Newton-Framingham, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4    428  37980    15804 3798015804                                Camden, NJ</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5    176  16980    16984 1698016984           Chicago-Naperville-Evanston, IL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6    206  19100    19124 1910019124                   Dallas-Plano-Irving, TX</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7    220  19820    19804 1982019804              Detroit-Dearborn-Livonia, MI</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8    176  16980    20994 1698020994                                 Elgin, IL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9    370  33100    22744 3310022744 Fort Lauderdale-Pompano Beach-Sunrise, FL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10   206  19100    23104 1910023104        Fort Worth-Arlington-Grapevine, TX</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                    NAMELSAD LSAD MTFCC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1               Anaheim-Santa Ana-Irvine, CA Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                 Boston, MA Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3            Cambridge-Newton-Framingham, MA Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                                 Camden, NJ Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5            Chicago-Naperville-Evanston, IL Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                    Dallas-Plano-Irving, TX Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7               Detroit-Dearborn-Livonia, MI Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8                                  Elgin, IL Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  Fort Lauderdale-Pompano Beach-Sunrise, FL Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10        Fort Worth-Arlington-Grapevine, TX Metro Division   M3 G3120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          ALAND     AWATER    INTPTLAT     INTPTLON</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1   2053476505  406279630 +33.6756872 -117.7772068</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2   2882299149 1411559231 +42.0625498 -070.8754261</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   3393879858  945474656 +42.5637220 -071.1285896</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   3477457549  108064718 +39.8279529 -074.8339800</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   8106981329 1895151185 +41.7921868 -087.9717839</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  13667596693  672122105 +32.8745220 -096.6133896</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7   1584700910  157700644 +42.2846636 -083.2619533</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8   3809716865   26172980 +41.8434323 -088.5869529</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9   3115343227  273469971 +26.1935353 -080.4766834</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10  8801267287  187539416 +32.8073714 -097.5371593</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                          geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  MULTIPOLYGON (((-117.6367 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  MULTIPOLYGON (((-70.65872 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  MULTIPOLYGON (((-71.02584 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  MULTIPOLYGON (((-75.05991 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  MULTIPOLYGON (((-87.52571 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  MULTIPOLYGON (((-96.45237 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  MULTIPOLYGON (((-82.88521 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  MULTIPOLYGON (((-88.26195 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  MULTIPOLYGON (((-80.19084 2...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 MULTIPOLYGON (((-97.39846 3...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 31 × 13</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    CSAFP CBSAFP METDIVFP GEOID  NAME  NAMEL…¹ LSAD  MTFCC   ALAND AWATER INTPT…²</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 348   31080  11244    31080… Anah… Anahei… M3    G3120 2.05<span style="color: #949494;">e</span> 9 4.06<span style="color: #949494;">e</span>8 +33.67…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 148   14460  14454    14460… Bost… Boston… M3    G3120 2.88<span style="color: #949494;">e</span> 9 1.41<span style="color: #949494;">e</span>9 +42.06…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 148   14460  15764    14460… Camb… Cambri… M3    G3120 3.39<span style="color: #949494;">e</span> 9 9.45<span style="color: #949494;">e</span>8 +42.56…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 428   37980  15804    37980… Camd… Camden… M3    G3120 3.48<span style="color: #949494;">e</span> 9 1.08<span style="color: #949494;">e</span>8 +39.82…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 176   16980  16984    16980… Chic… Chicag… M3    G3120 8.11<span style="color: #949494;">e</span> 9 1.90<span style="color: #949494;">e</span>9 +41.79…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 206   19100  19124    19100… Dall… Dallas… M3    G3120 1.37<span style="color: #949494;">e</span>10 6.72<span style="color: #949494;">e</span>8 +32.87…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 220   19820  19804    19820… Detr… Detroi… M3    G3120 1.58<span style="color: #949494;">e</span> 9 1.58<span style="color: #949494;">e</span>8 +42.28…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 176   16980  20994    16980… Elgi… Elgin,… M3    G3120 3.81<span style="color: #949494;">e</span> 9 2.62<span style="color: #949494;">e</span>7 +41.84…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 370   33100  22744    33100… Fort… Fort L… M3    G3120 3.12<span style="color: #949494;">e</span> 9 2.73<span style="color: #949494;">e</span>8 +26.19…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 206   19100  23104    19100… Fort… Fort W… M3    G3120 8.80<span style="color: #949494;">e</span> 9 1.88<span style="color: #949494;">e</span>8 +32.80…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 21 more rows, 2 more variables: INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names ¹​NAMELSAD,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​INTPTLAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

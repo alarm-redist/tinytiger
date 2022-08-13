@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,29 +72,22 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -176.6967 ymin: -14.37378 xmax: 145.8305 ymax: 71.34132</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    ZCTA5CE20 GEOID20 CLASSFP20 MTFCC20 FUNCSTAT20   ALAND20 AWATER20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      47236   47236        B5   G6350          S   1029067        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      47870   47870        B5   G6350          S      8830        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      47851   47851        B5   G6350          S     53547        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      47337   47337        B5   G6350          S    303089        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      47435   47435        B5   G6350          S     13302        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      47514   47514        B5   G6350          S  18245786        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7      46045   46045        B5   G6350          S    195344        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8      46206   46206        B5   G6350          S     42569        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9      46704   46704        B5   G6350          S    173718        0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10     47585   47585        B5   G6350          S 103975568  2125606</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     INTPTLAT20   INTPTLON20                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  +39.1517426 -085.7252769 MULTIPOLYGON (((-85.7341 39...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  +39.3701518 -087.4735141 MULTIPOLYGON (((-87.47414 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  +39.5735818 -087.2459626 MULTIPOLYGON (((-87.2477 39...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  +39.8027537 -085.4372850 MULTIPOLYGON (((-85.44357 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  +39.2657557 -086.2951577 MULTIPOLYGON (((-86.29592 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  +38.1486002 -086.5940164 MULTIPOLYGON (((-86.63181 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  +40.2896097 -086.1486593 MULTIPOLYGON (((-86.15212 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  +39.7602668 -086.1610711 MULTIPOLYGON (((-86.16194 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  +41.1036603 -085.2921417 MULTIPOLYGON (((-85.29828 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 +38.2683502 -087.1580825 MULTIPOLYGON (((-87.25213 3...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 33,791 × 10</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    ZCTA5CE20 GEOID20 CLASSFP20 MTFCC20 FUNCSTA…¹ ALAND20 AWATE…² INTPT…³ INTPT…⁴</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 47236     47236   B5        G6350   S          1.03<span style="color: #949494;">e</span>6       0 +39.15… -085.7…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 47870     47870   B5        G6350   S          8.83<span style="color: #949494;">e</span>3       0 +39.37… -087.4…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 47851     47851   B5        G6350   S          5.35<span style="color: #949494;">e</span>4       0 +39.57… -087.2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 47337     47337   B5        G6350   S          3.03<span style="color: #949494;">e</span>5       0 +39.80… -085.4…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 47435     47435   B5        G6350   S          1.33<span style="color: #949494;">e</span>4       0 +39.26… -086.2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 47514     47514   B5        G6350   S          1.82<span style="color: #949494;">e</span>7       0 +38.14… -086.5…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 46045     46045   B5        G6350   S          1.95<span style="color: #949494;">e</span>5       0 +40.28… -086.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 46206     46206   B5        G6350   S          4.26<span style="color: #949494;">e</span>4       0 +39.76… -086.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 46704     46704   B5        G6350   S          1.74<span style="color: #949494;">e</span>5       0 +41.10… -085.2…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 47585     47585   B5        G6350   S          1.04<span style="color: #949494;">e</span>8 2<span style="text-decoration: underline;">125</span>606 +38.26… -087.1…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 33,781 more rows, 1 more variable: geometry &lt;MULTIPOLYGON [°]&gt;, and</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   abbreviated variable names ¹​FUNCSTAT20, ²​AWATER20, ³​INTPTLAT20, ⁴​INTPTLON20</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

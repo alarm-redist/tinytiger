@@ -54,7 +54,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -72,51 +72,23 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -73.72777 ymin: 40.95094 xmax: -68.20225 ymax: 45.66082</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    CNECTAFP NECTAFP GEOID                            NAME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       715   70450 70450                       Athol, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       710   70600 70600                     Augusta, ME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      &lt;NA&gt;   70750 70750                      Bangor, ME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       715   70900 70900             Barnstable Town, MA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      &lt;NA&gt;   71050 71050                       Barre, VT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      &lt;NA&gt;   71350 71350                  Bennington, VT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7      &lt;NA&gt;   71500 71500                      Berlin, NH</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       715   71650 71650  Boston-Cambridge-Newton, MA-NH</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       720   71950 71950 Bridgeport-Stamford-Norwalk, CT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10      775   72250 72250                   Brunswick, ME</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                              NAMELSAD LSAD NMEMI MTFCC</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                        Athol, MA Micropolitan NECTA   M6     2 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                      Augusta, ME Micropolitan NECTA   M6     2 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                       Bangor, ME Metropolitan NECTA   M5     1 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4              Barnstable Town, MA Metropolitan NECTA   M5     1 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                        Barre, VT Micropolitan NECTA   M6     2 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                   Bennington, VT Micropolitan NECTA   M6     2 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7                       Berlin, NH Micropolitan NECTA   M6     2 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8   Boston-Cambridge-Newton, MA-NH Metropolitan NECTA   M5     1 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  Bridgeport-Stamford-Norwalk, CT Metropolitan NECTA   M5     1 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10                   Brunswick, ME Micropolitan NECTA   M6     2 G3210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         ALAND     AWATER    INTPTLAT     INTPTLON</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1   379435578    7870139 +42.6381713 -072.2584801</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  1644721618  165889022 +44.3602768 -069.7286675</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  4569506777  195987592 +45.0041529 -068.7830182</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  1150377509  371437958 +41.7335795 -070.3353854</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  1160959555   13052380 +44.2632544 -072.4847537</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6   463792807    1998919 +42.8901464 -073.1781568</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7   776442799   10872456 +44.4915310 -071.2261426</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  8526630528 1039679917 +42.4047869 -071.1493237</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  1514413834  237609547 +41.2232437 -073.3371782</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10  920232630  595603602 +43.8816153 -069.8782047</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                          geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  MULTIPOLYGON (((-72.28305 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  MULTIPOLYGON (((-69.52822 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3  MULTIPOLYGON (((-68.81579 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4  MULTIPOLYGON (((-70.03749 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5  MULTIPOLYGON (((-72.49324 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6  MULTIPOLYGON (((-73.13711 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7  MULTIPOLYGON (((-71.16203 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8  MULTIPOLYGON (((-71.18679 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  MULTIPOLYGON (((-73.23264 4...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 MULTIPOLYGON (((-69.8819 43...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 40 × 13</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    CNECTAFP NECTAFP GEOID NAME   NAMEL…¹ LSAD  NMEMI MTFCC  ALAND AWATER INTPT…²</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 715      70450   70450 Athol… Athol,… M6    2     G3210 3.79<span style="color: #949494;">e</span>8 7.87<span style="color: #949494;">e</span>6 +42.63…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 710      70600   70600 Augus… August… M6    2     G3210 1.64<span style="color: #949494;">e</span>9 1.66<span style="color: #949494;">e</span>8 +44.36…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> <span style="color: #BB0000;">NA</span>       70750   70750 Bango… Bangor… M5    1     G3210 4.57<span style="color: #949494;">e</span>9 1.96<span style="color: #949494;">e</span>8 +45.00…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 715      70900   70900 Barns… Barnst… M5    1     G3210 1.15<span style="color: #949494;">e</span>9 3.71<span style="color: #949494;">e</span>8 +41.73…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> <span style="color: #BB0000;">NA</span>       71050   71050 Barre… Barre,… M6    2     G3210 1.16<span style="color: #949494;">e</span>9 1.31<span style="color: #949494;">e</span>7 +44.26…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> <span style="color: #BB0000;">NA</span>       71350   71350 Benni… Bennin… M6    2     G3210 4.64<span style="color: #949494;">e</span>8 2.00<span style="color: #949494;">e</span>6 +42.89…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> <span style="color: #BB0000;">NA</span>       71500   71500 Berli… Berlin… M6    2     G3210 7.76<span style="color: #949494;">e</span>8 1.09<span style="color: #949494;">e</span>7 +44.49…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 715      71650   71650 Bosto… Boston… M5    1     G3210 8.53<span style="color: #949494;">e</span>9 1.04<span style="color: #949494;">e</span>9 +42.40…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 720      71950   71950 Bridg… Bridge… M5    1     G3210 1.51<span style="color: #949494;">e</span>9 2.38<span style="color: #949494;">e</span>8 +41.22…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 775      72250   72250 Bruns… Brunsw… M6    2     G3210 9.20<span style="color: #949494;">e</span>8 5.96<span style="color: #949494;">e</span>8 +43.88…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 30 more rows, 2 more variables: INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names ¹​NAMELSAD,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​INTPTLAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

@@ -54,15 +54,15 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>state</dt>
-<dd><p>FIPs, postal codes, or full name of states.</p></dd>
+<dd><p>FIPS, postal codes, or full names of states.</p></dd>
 
 
 <dt>county</dt>
-<dd><p>FIPs codes or full name of counties. Optional.</p></dd>
+<dd><p>FIPS codes or full names of counties. Optional.</p></dd>
 
 
 <dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -74,35 +74,29 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_block_groups</span><span class="op">(</span>state <span class="op">=</span> <span class="st">'DE'</span>, county <span class="op">=</span> <span class="st">'001'</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_block_groups</span><span class="op">(</span>state <span class="op">=</span> <span class="st">"DE"</span>, county <span class="op">=</span> <span class="st">"001"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 102 features and 12 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: MULTIPOLYGON</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.76007 ymin: 38.82985 xmax: -75.13846 ymax: 39.38756</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     STATEFP COUNTYFP TRACTCE BLKGRPCE        GEOID      NAMELSAD MTFCC FUNCSTAT</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155      10      001  043300        2 100010433002 Block Group 2 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 156      10      001  040700        2 100010407002 Block Group 2 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 157      10      001  040502        2 100010405022 Block Group 2 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 158      10      001  040203        1 100010402031 Block Group 1 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 159      10      001  040502        1 100010405021 Block Group 1 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 160      10      001  043202        1 100010432021 Block Group 1 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 161      10      001  040501        2 100010405012 Block Group 2 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 162      10      001  041200        2 100010412002 Block Group 2 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 163      10      001  041200        1 100010412001 Block Group 1 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 164      10      001  040501        1 100010405011 Block Group 1 G5030        S</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         ALAND   AWATER    INTPTLAT     INTPTLON                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 155   1563746   278718 +39.1766517 -075.5411180 MULTIPOLYGON (((-75.55358 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 156    778141        0 +39.1707566 -075.5541052 MULTIPOLYGON (((-75.56227 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 157   5946398        0 +39.1909886 -075.5007381 MULTIPOLYGON (((-75.52531 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 158  55315976  1058666 +39.2858685 -075.5508360 MULTIPOLYGON (((-75.59669 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 159  25780624   273847 +39.2226789 -075.5428920 MULTIPOLYGON (((-75.5816 39...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 160 168931521 50007925 +39.2279103 -075.4449347 MULTIPOLYGON (((-75.54956 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 161   3830146        0 +39.1958547 -075.5404198 MULTIPOLYGON (((-75.55914 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 162   1775895   174697 +39.1366073 -075.5142778 MULTIPOLYGON (((-75.52273 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 163   3316250   531950 +39.1270085 -075.5017998 MULTIPOLYGON (((-75.51785 3...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 164   2732942        0 +39.1793007 -075.5172722 MULTIPOLYGON (((-75.52954 3...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 102 × 13</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP COUNTYFP TRACTCE BLKGRPCE GEOID   NAMEL…¹ MTFCC FUNCS…²  ALAND AWATER</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 10      001      043300  2        100010… Block … G5030 S       1.56<span style="color: #949494;">e</span>6 2.79<span style="color: #949494;">e</span>5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 10      001      040700  2        100010… Block … G5030 S       7.78<span style="color: #949494;">e</span>5 0   <span style="color: #949494;"> </span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 10      001      040502  2        100010… Block … G5030 S       5.95<span style="color: #949494;">e</span>6 0   <span style="color: #949494;"> </span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 10      001      040203  1        100010… Block … G5030 S       5.53<span style="color: #949494;">e</span>7 1.06<span style="color: #949494;">e</span>6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 10      001      040502  1        100010… Block … G5030 S       2.58<span style="color: #949494;">e</span>7 2.74<span style="color: #949494;">e</span>5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 10      001      043202  1        100010… Block … G5030 S       1.69<span style="color: #949494;">e</span>8 5.00<span style="color: #949494;">e</span>7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 10      001      040501  2        100010… Block … G5030 S       3.83<span style="color: #949494;">e</span>6 0   <span style="color: #949494;"> </span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 10      001      041200  2        100010… Block … G5030 S       1.78<span style="color: #949494;">e</span>6 1.75<span style="color: #949494;">e</span>5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 10      001      041200  1        100010… Block … G5030 S       3.32<span style="color: #949494;">e</span>6 5.32<span style="color: #949494;">e</span>5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 10      001      040501  1        100010… Block … G5030 S       2.73<span style="color: #949494;">e</span>6 0   <span style="color: #949494;"> </span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 92 more rows, 3 more variables: INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names ¹​NAMELSAD,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​FUNCSTAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

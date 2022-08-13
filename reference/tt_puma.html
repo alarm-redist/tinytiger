@@ -54,11 +54,11 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>state</dt>
-<dd><p>FIPs, postal codes, or full name of states.</p></dd>
+<dd><p>FIPS, postal codes, or full names of states.</p></dd>
 
 
 <dt>year</dt>
-<dd><p>Integer year. Required. Years &lt; 2012 are not currently supported.</p></dd>
+<dd><p>Integer year. Required. 2012-2020 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -70,40 +70,24 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_puma</span><span class="op">(</span><span class="st">'DE'</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_puma</span><span class="op">(</span><span class="st">"DE"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 6 features and 10 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: POLYGON</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.78902 ymin: 38.45113 xmax: -74.98416 ymax: 39.83952</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   STATEFP10 PUMACE10 GEOID10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        10    00103 1000103</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        10    00102 1000102</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        10    00104 1000104</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4        10    00200 1000200</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        10    00300 1000300</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        10    00101 1000101</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                        NAMELSAD10 MTFCC10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  New Castle County (West Central)--Newark City &amp; Brookside PUMA   G6120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                       New Castle County (North)--Hockessin PUMA   G6120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 New Castle County (South)--Middletown Town, Bear &amp; Glasgow PUMA   G6120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                                    Kent County--Dover City PUMA   G6120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                                              Sussex County PUMA   G6120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6          New Castle County (East Central)--Wilmington City PUMA   G6120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   FUNCSTAT10    ALAND10  AWATER10  INTPTLAT10   INTPTLON10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1          S  151206506    685110 +39.6831906 -075.6946338</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2          S  219650835   5949428 +39.7863530 -075.5964732</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3          S  674040094 163209449 +39.4817620 -075.6299533</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4          S 1517888720 549776917 +39.0970884 -075.5029819</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5          S 2424633519 674085951 +38.6732275 -075.3370237</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6          S   59316135   5472815 +39.7313861 -075.5630332</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                         geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 POLYGON ((-75.6782 39.62502...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 POLYGON ((-75.54262 39.7646...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 POLYGON ((-75.66581 39.2905...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 POLYGON ((-75.55482 38.8358...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5 POLYGON ((-74.9941 38.61444...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 POLYGON ((-75.56475 39.7086...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 11</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   STATEFP10 PUMACE10 GEOID10 NAMELSAD10  MTFCC10 FUNCS…¹ ALAND10 AWATE…² INTPT…³</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> 10        00103    1000103 New Castle… G6120   S        1.51<span style="color: #949494;">e</span>8  6.85<span style="color: #949494;">e</span>5 +39.68…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> 10        00102    1000102 New Castle… G6120   S        2.20<span style="color: #949494;">e</span>8  5.95<span style="color: #949494;">e</span>6 +39.78…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> 10        00104    1000104 New Castle… G6120   S        6.74<span style="color: #949494;">e</span>8  1.63<span style="color: #949494;">e</span>8 +39.48…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> 10        00200    1000200 Kent Count… G6120   S        1.52<span style="color: #949494;">e</span>9  5.50<span style="color: #949494;">e</span>8 +39.09…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> 10        00300    1000300 Sussex Cou… G6120   S        2.42<span style="color: #949494;">e</span>9  6.74<span style="color: #949494;">e</span>8 +38.67…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> 10        00101    1000101 New Castle… G6120   S        5.93<span style="color: #949494;">e</span>7  5.47<span style="color: #949494;">e</span>6 +39.73…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 2 more variables: INTPTLON10 &lt;chr&gt;, geometry &lt;POLYGON [°]&gt;, and</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   abbreviated variable names ¹​FUNCSTAT10, ²​AWATER10, ³​INTPTLAT10</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
