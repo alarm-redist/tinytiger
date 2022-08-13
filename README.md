@@ -4,6 +4,8 @@
 # tinytiger
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `tinytiger` is to provide a lightweight interface to the US
