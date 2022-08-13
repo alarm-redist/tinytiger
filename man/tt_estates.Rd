@@ -7,7 +7,7 @@
 tt_estates(year = 2021)
 }
 \arguments{
-\item{year}{Integer year. Required. 2012-2020 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2021 are currently supported.}
 }
 \value{
 sf data.frame
