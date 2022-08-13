@@ -118,3 +118,5 @@ is not, and `rappdirs` is installed, downloads will be cached between
 sessions in `rappdirs::user_cache_dir("tinytiger")`. If it is not
 installed, or if `option(tinytiger.use_cache = FALSE)`, then the cache
 will be in a temporary directory that does not persist between sessions.
+You can check the size of the cache and clear it with `tt_cache_size()`
+and `tt_cache_clear()`.

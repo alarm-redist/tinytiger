@@ -74,6 +74,7 @@ tt_download_path <- function() {
 #' @examples
 #' tt_cache_size()
 #'
+#' @concept other
 #' @export
 #' @rdname tt_cache
 tt_cache_size <- function() {
@@ -93,6 +94,7 @@ tt_cache_size <- function() {
 #' @examples
 #' tt_cache_clear()
 #'
+#' @concept other
 #' @export
 #' @rdname tt_cache
 tt_cache_clear <- function() {
