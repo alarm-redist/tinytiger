@@ -20,52 +20,6 @@ knitr::opts_chunk$set(
 
 The goal of `tinytiger` is to provide a lightweight interface to the US Census Bureau's TIGER/Line Shapefiles.
 
-## Progress
-- [ ] ADDRFEAT
-- [x] AIANNH
-- [x] AITSN
-- [x] ANRC
-- [x] AREALM
-- [x] AREAWATER
-- [x] BG
-- [x] CBSA
-- [x] CD
-- [x] CNECTA
-- [x] COASTLINE
-- [x] CONCITY
-- [x] COUNTY
-- [x] COUSUB
-- [x] CSA
-- [x] EDGES
-- [x] ELSD
-- [x] ESTATE
-- [x] FACES
-- [x] LINEARWATER
-- [x] METDIV
-- [x] MIL
-- [x] NECTA
-- [x] NECTADIV
-- [x] PLACE
-- [x] POINTLM
-- [x] PRIMARYROADS
-- [x] PRISECROADS
-- [x] PUMA
-- [x] RAILS
-- [x] ROADS
-- [x] SCSD
-- [x] SLDL
-- [x] SLDU
-- [x] STATE
-- [x] SUBBARRIO
-- [x] TABBLOCK20
-- [x] TBG
-- [x] TRACT
-- [x] TTRACT
-- [x] UAC
-- [x] UNSD
-- [x] ZCTA520
-
-
 ## Installation
 
 You can install the development version of `tinytiger` like so:
@@ -76,25 +30,61 @@ remotes::install_github('alarm-redist/tinytiger)
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+`tinytiger` provides lightweight functions to download Census Bureau TIGER/Line Shapefiles.
 
 ```{r example}
 library(tinytiger)
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
+To download a geography, simply use the function corresponding to one of the supported geographies.
+```{r}
+tt_counties('NY')
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
 
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+## Supported Geographies:
+## Progress
+- `tt_address_ranges()`: Address Ranges
+- `tt_ai_an_nh_areas()`: American Indian / Alaska Native / Native Hawaiian Areas
+- `tt_tribal_subdivisions()`: Tribal Subdivisions
+- `tt_anrc()`: Alaskan Native Regional Corporations
+- `tt_area_landmarks()`: Area Landmarks
+- `tt_area_water():` Area Water
+- `tt_block_groups()`: Block Groups
+- `tt_cbsa()`: Core Based Statistical Areas
+- `tt_congressional_districts()`: Congressional Districts
+- `tt_new_england_combined_areas()`: Combined New England Towns and Cities
+- `tt_coastline()`: Coastline
+- `tt_consolidated_cities`: Consolidated Cities
+- `tt_county()`: Counties
+- `tt_county_subdivision()`: County Subdivisions
+- `tt_csa()`: Combined Statistical Areas
+- `tt_polygon_edges()`: All Polygon Edges
+- `tt_elementary_school_districts()`: Elementary School Districts (limited states)
+- `tt_estates()`: Estates (Virgin Islands only)
+- `tt_polygon_faces()`: All Polygon Faces
+- `tt_linear_water():` Linear Water
+- `tt_metropolitan_divisions()`: Metropolitan Divisions
+- `tt_military()`: Military Installations
+- `tt_new_england_cities()`: New England Cities and Towns
+- `tt_new_england_city_divisions()`: New England Cities and Towns Divisions
+- `tt_places()`: Census Places
+- `tt_point_landmarks()`: Point Landmarks
+- `tt_primary_roads()`: Primary Roads
+- `tt_primary_secondary_roads()`: Primary and Secondary Roads
+- `tt_puma()`: Public Use Microdata Areas
+- `tt_rails()`: Railroads
+- `tt_roads()`: Roads
+- `tt_secondary_school_districts()`: Secondary School Districts (limited states)
+- `tt_state_leg_lower()`: Lower State Legislative Districts
+- `tt_state_leg_upper()`: Upper State Legislative Districts
+- `tt_states()`: States
+- `tt_subbarios()`: Subbarios (Puerto Rico only)
+- `tt_blocks()`: Blocks
+- `tt_tribal_block_groups()`: Tribal Block Groups
+- `tt_tracts()`: Tracts
+- `tt_tribal_tracts()`: Tribal Tracts
+- `tt_uac()`: : Urban Areas
+- `tt_unified_school_districts()`: Unified School Districts
+- `tt_zcta()`: Zip Code Tabulation Areas
