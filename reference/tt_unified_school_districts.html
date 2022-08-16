@@ -73,9 +73,34 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
-<span class="r-in"><span><span class="fu">tt_unified_school_districts</span><span class="op">(</span><span class="st">"DE"</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="op">}</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_unified_school_districts</span><span class="op">(</span><span class="st">"DE"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 16 features and 14 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: MULTIPOLYGON</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.78902 ymin: 38.45113 xmax: -74.98416 ymax: 39.83952</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 16 × 15</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP UNSDLEA GEOID  NAME  LSAD  LOGRADE HIGRADE MTFCC SDTYP FUNCS…¹  ALAND</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 10      00080   10000… Appo… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       3.28<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 10      00170   10001… Cape… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       4.19<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 10      00180   10001… Caes… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       2.80<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 10      00190   10001… Capi… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       2.94<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 10      00200   10002… Chri… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       1.72<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 10      00230   10002… Colo… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       2.04<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 10      00270   10002… Delm… 00    KG      12      G5420 <span style="color: #BB0000;">NA</span>    E       1.19<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 10      00680   10006… Indi… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       8.57<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 10      00790   10007… Lake… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       4.17<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 10      00810   10008… Laur… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       2.82<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">11</span> 10      01080   10010… Milf… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       4.24<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">12</span> 10      01240   10012… Bran… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       8.39<span style="color: #949494;">e</span>7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">13</span> 10      01300   10013… Red … 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       1.70<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">14</span> 10      01530   10015… Seaf… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       1.91<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">15</span> 10      01620   10016… Smyr… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       4.36<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">16</span> 10      01850   10018… Wood… 00    PK      12      G5420 <span style="color: #BB0000;">NA</span>    E       3.70<span style="color: #949494;">e</span>8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 4 more variables: AWATER &lt;dbl&gt;, INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable name ¹​FUNCSTAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `colnames()` to see all variable names</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
