@@ -1,6 +1,5 @@
 test_that("downloads work", {
   skip_on_cran()
-  skip_if(TRUE)
   skip_on_ci()
 
   expect_s3_class(tt_states(), "sf")
