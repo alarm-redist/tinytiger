@@ -14,6 +14,7 @@
 #' sessions.
 #'
 #' @importFrom rlang expr
+#' @importFrom utils data
 #' @keywords internal
 "_PACKAGE"
 
