@@ -16,6 +16,8 @@ sf data.frame
 Download TIGER shapes for Urban Area
 }
 \examples{
+\dontrun{
 tt_uac()
+}
 }
 \concept{other}

@@ -8,8 +8,9 @@
 #'
 #' @concept city
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_new_england_cities()
+#' }
 tt_new_england_cities <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

@@ -11,10 +11,8 @@
 #' @return tibble
 #'
 #' @usage
-#' data('county_fips_2020')
-#'
-#' @examples
 #' data("county_fips_2020")
+#'
 #' @md
 #' @concept data
 NULL

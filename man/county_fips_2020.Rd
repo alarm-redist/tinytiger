@@ -4,7 +4,7 @@
 \alias{county_fips_2020}
 \title{Counties FIPS 2020}
 \usage{
-data('county_fips_2020')
+data("county_fips_2020")
 }
 \value{
 tibble
@@ -16,8 +16,5 @@ Contains three columns:
 \item county: county FIPS
 \item name: county name
 }
-}
-\examples{
-data("county_fips_2020")
 }
 \concept{data}

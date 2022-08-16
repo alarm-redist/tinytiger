@@ -8,8 +8,9 @@
 #'
 #' @concept spine
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_states()
+#' }
 tt_states <- function(year = 2021) {
 
   years_okay(year)

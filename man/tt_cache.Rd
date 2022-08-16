@@ -3,26 +3,32 @@
 \name{tt_cache_size}
 \alias{tt_cache_size}
 \alias{tt_cache_clear}
-\title{Calculate the size of the \code{tinytiger} cache}
+\alias{tt_cache_loc}
+\title{Work with the the \code{tinytiger} cache}
 \usage{
 tt_cache_size()
 
 tt_cache_clear()
+
+tt_cache_loc()
 }
 \value{
 For \code{tt_cache_size()}, tthe size in bytes, invisbly
 
 For \code{tt_cache_clear()}, the path to the cache, invisbly.
+
+For \code{tt_cache_loc()}, the path to the cache
 }
 \description{
-Returns the temporary directory size if the cache is not enabled.
-
-Clears the temporary directory if the cache is not enabled.
+Functions to inspect and clear the cache. If the cache is not enabled, uses a
+temporary directory.
 }
 \examples{
 tt_cache_size()
 
 tt_cache_clear()
+
+tt_cache_loc()
 
 }
 \concept{other}

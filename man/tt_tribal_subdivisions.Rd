@@ -16,6 +16,8 @@ sf data.frame
 Download TIGER shapes for American Indian Tribal Subdivision National
 }
 \examples{
+\dontrun{
 tt_tribal_subdivisions()
+}
 }
 \concept{tribal}

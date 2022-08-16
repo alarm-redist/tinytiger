@@ -8,8 +8,9 @@
 #'
 #' @concept tribal
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_tribal_tracts()
+#' }
 tt_tribal_tracts <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

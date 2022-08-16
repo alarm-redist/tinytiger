@@ -78,7 +78,7 @@ state_lookup <- function(state) {
     }
     x
   }, "")
-  matched <- match(state, pos)
+  matched <- pmatch(state, pos, duplicates.ok=FALSE)
 
   if (length(matched) != length(state) || any(is.na(matched))) {
     cli::cli_abort(c("{.arg state} could not be matched to a state for every entry.",

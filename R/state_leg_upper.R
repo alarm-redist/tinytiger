@@ -9,8 +9,9 @@
 #'
 #' @concept districts
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_state_leg_lower("DE")
+#' }
 tt_state_leg_upper <- function(state, year = 2021) {
 
   years_okay(year)

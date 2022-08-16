@@ -8,8 +8,9 @@
 #'
 #' @concept other
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_estates()
+#' }
 tt_estates <- function(year = 2021) {
 
   years_okay(year, 2012:2021)

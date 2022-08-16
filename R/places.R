@@ -9,8 +9,9 @@
 #'
 #' @concept cities
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_places("DE")
+#' }
 tt_places <- function(state, year = 2021) {
 
   years_okay(year)

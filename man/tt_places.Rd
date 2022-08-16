@@ -18,6 +18,8 @@ sf data.frame
 Download TIGER shapes for Places
 }
 \examples{
+\dontrun{
 tt_places("DE")
+}
 }
 \concept{cities}

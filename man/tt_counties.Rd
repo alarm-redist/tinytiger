@@ -18,6 +18,8 @@ sf data.frame
 Download TIGER shapes for counties
 }
 \examples{
+\dontrun{
 tt_counties(state = "DE")
+}
 }
 \concept{spine}

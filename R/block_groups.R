@@ -10,8 +10,9 @@
 #'
 #' @concept spine
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_block_groups(state = "DE", county = "001")
+#' }
 tt_block_groups <- function(state, county, year = 2021) {
 
   years_okay(year)

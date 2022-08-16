@@ -9,8 +9,9 @@
 #'
 #' @concept schools
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_elementary_school_districts("AZ")
+#' }
 tt_elementary_school_districts <- function(state, year = 2021) {
 
   years_okay(year)

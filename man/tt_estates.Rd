@@ -16,6 +16,8 @@ sf data.frame
 Download TIGER shapes for Estates (US Virgin Islands)
 }
 \examples{
+\dontrun{
 tt_estates()
+}
 }
 \concept{other}

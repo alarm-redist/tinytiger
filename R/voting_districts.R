@@ -10,8 +10,9 @@
 #'
 #' @concept districts
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_voting_districts("DE", county = "001")
+#' }
 tt_voting_districts <- function(state, county, year = 2021) {
 
   year <- year - (year %% 10)

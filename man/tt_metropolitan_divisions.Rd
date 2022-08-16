@@ -16,6 +16,8 @@ sf data.frame
 Download TIGER shapes for Metropolitan Divisions
 }
 \examples{
+\dontrun{
 tt_metropolitan_divisions()
+}
 }
 \concept{other}

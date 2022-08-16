@@ -16,6 +16,8 @@ sf data.frame
 Download TIGER shapes for Tribal Block Groups
 }
 \examples{
+\dontrun{
 tt_tribal_block_groups()
+}
 }
 \concept{tribal}

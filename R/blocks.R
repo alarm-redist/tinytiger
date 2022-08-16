@@ -10,8 +10,9 @@
 #'
 #' @concept spine
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_blocks(state = "DE", county = "001")
+#' }
 tt_blocks <- function(state, county, year = 2021) {
 
   if (missing(state)) {

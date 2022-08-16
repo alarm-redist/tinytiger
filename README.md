@@ -106,6 +106,7 @@ tt_counties("NY")
 -   `tt_tribal_tracts()`: Tribal Tracts
 -   `tt_uac()`: : Urban Areas
 -   `tt_unified_school_districts()`: Unified School Districts
+-   `tt_voting_districts()`: Voting Districts
 -   `tt_zcta()`: Zip Code Tabulation Areas
 
 # Downloading and Caching

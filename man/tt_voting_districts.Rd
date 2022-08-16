@@ -20,6 +20,8 @@ sf data.frame
 Download TIGER shapes for Voting Districts
 }
 \examples{
+\dontrun{
 tt_voting_districts("DE", county = "001")
+}
 }
 \concept{districts}

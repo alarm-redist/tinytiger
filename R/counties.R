@@ -9,8 +9,9 @@
 #'
 #' @concept spine
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_counties(state = "DE")
+#' }
 tt_counties <- function(state, year = 2021) {
 
   years_okay(year)

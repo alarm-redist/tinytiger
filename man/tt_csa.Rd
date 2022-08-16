@@ -16,6 +16,8 @@ sf data.frame
 Download TIGER shapes for Combined Statistical Area
 }
 \examples{
+\dontrun{
 tt_csa()
+}
 }
 \concept{other}
