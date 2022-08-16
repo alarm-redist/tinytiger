@@ -20,3 +20,8 @@
 ## usethis namespace: start
 ## usethis namespace: end
 NULL
+
+# load table names for autocomplete
+.onLoad <- function(libname, pkgname) {
+  data("county_fips_2020", package=pkgname, envir=parent.env(environment()))
+}
