@@ -16,8 +16,6 @@ sf data.frame
 Download TIGER shapes for Zip Code Tabulation Areas
 }
 \examples{
-\dontrun{
 tt_zcta()
-}
 }
 \concept{other}

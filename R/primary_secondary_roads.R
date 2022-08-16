@@ -9,9 +9,8 @@
 #'
 #' @concept roads
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_primary_secondary_roads("DE")
-#' }
 tt_primary_secondary_roads <- function(state, year = 2021) {
 
   years_okay(year, 2010:2021)

@@ -18,8 +18,6 @@ sf data.frame
 Download TIGER shapes for Unified School Districts
 }
 \examples{
-\dontrun{
 tt_unified_school_districts("DE")
-}
 }
 \concept{schools}

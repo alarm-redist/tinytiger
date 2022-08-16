@@ -8,9 +8,8 @@
 #'
 #' @concept tribal
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_anrc()
-#' }
 tt_anrc <- function(year = 2021) {
 
   years_okay(year)

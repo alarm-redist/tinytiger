@@ -8,9 +8,8 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_military()
-#' }
 tt_military <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

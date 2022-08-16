@@ -16,8 +16,6 @@ sf data.frame
 Download TIGER shapes for Tribal Tracts
 }
 \examples{
-\dontrun{
 tt_tribal_tracts()
-}
 }
 \concept{tribal}

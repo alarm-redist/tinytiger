@@ -8,9 +8,8 @@
 #'
 #' @concept water
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_coastline()
-#' }
 tt_coastline <- function(year = 2021) {
 
   years_okay(year, 2016:2021)

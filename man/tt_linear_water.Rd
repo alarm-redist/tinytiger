@@ -20,8 +20,6 @@ sf data.frame
 Download TIGER Shapes for Linear Water
 }
 \examples{
-\dontrun{
 tt_linear_water("DE")
-}
 }
 \concept{water}

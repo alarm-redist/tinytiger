@@ -20,8 +20,6 @@ sf data.frame
 Download TIGER shapes for Polygon Edges
 }
 \examples{
-\dontrun{
 tt_polygon_edges("DE", county = "001")
-}
 }
 \concept{other}

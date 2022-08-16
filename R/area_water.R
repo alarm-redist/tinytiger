@@ -10,9 +10,8 @@
 #'
 #' @concept water
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_area_water("DE")
-#' }
 tt_area_water <- function(state, county, year = 2021) {
 
   years_okay(year, 2010:2021)

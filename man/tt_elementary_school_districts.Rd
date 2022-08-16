@@ -18,8 +18,6 @@ sf data.frame
 Download TIGER shapes for Elementary School Districts
 }
 \examples{
-\dontrun{
 tt_elementary_school_districts("AZ")
-}
 }
 \concept{schools}

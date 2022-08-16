@@ -18,8 +18,6 @@ sf data.frame
 Download TIGER shapes for Public Use Microdata Areas
 }
 \examples{
-\dontrun{
 tt_puma("DE")
-}
 }
 \concept{cities}

@@ -8,9 +8,8 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_cbsa()
-#' }
 tt_cbsa <- function(year = 2021) {
   years_okay(year, 2010:2021)
 

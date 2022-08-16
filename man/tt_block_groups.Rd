@@ -20,8 +20,6 @@ sf data.frame
 Download TIGER shapes for block groups
 }
 \examples{
-\dontrun{
 tt_block_groups(state = "DE", county = "001")
-}
 }
 \concept{spine}

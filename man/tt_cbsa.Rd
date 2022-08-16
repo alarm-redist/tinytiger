@@ -16,8 +16,6 @@ sf data.frame
 Download TIGER shapes for Core Based Statistical Areas
 }
 \examples{
-\dontrun{
 tt_cbsa()
-}
 }
 \concept{other}

@@ -16,8 +16,6 @@ sf data.frame
 Download TIGER shapes for Rails
 }
 \examples{
-\dontrun{
 tt_rails()
-}
 }
 \concept{roads}

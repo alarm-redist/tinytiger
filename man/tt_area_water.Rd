@@ -20,8 +20,6 @@ sf data.frame
 Download TIGER Shapes for Area Water
 }
 \examples{
-\dontrun{
 tt_area_water("DE")
-}
 }
 \concept{water}

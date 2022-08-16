@@ -8,9 +8,8 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_metropolitan_divisions()
-#' }
 tt_metropolitan_divisions <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

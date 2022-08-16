@@ -8,9 +8,8 @@
 #'
 #' @concept roads
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_rails()
-#' }
 tt_rails <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

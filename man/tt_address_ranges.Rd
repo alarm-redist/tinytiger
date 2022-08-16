@@ -20,8 +20,6 @@ sf data.frame
 Download TIGER shapes for Address Ranges
 }
 \examples{
-\dontrun{
 tt_address_ranges("DE", county = "001")
-}
 }
 \concept{other}

@@ -16,8 +16,6 @@ sf data.frame
 Download TIGER shapes for Subbarrios (Puerto Rico)
 }
 \examples{
-\dontrun{
 tt_subbarrios()
-}
 }
 \concept{other}

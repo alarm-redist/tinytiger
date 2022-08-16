@@ -18,8 +18,6 @@ sf data.frame
 Download TIGER shapes for Public Use Microdata Areas
 }
 \examples{
-\dontrun{
 tt_consolidated_cities("CT")
-}
 }
 \concept{cities}

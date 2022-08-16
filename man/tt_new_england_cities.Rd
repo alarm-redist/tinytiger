@@ -16,8 +16,6 @@ sf data.frame
 Download TIGER shapes for New England City and Town Area
 }
 \examples{
-\dontrun{
 tt_new_england_cities()
-}
 }
 \concept{city}

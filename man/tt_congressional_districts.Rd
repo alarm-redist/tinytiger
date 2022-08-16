@@ -18,8 +18,6 @@ sf data.frame
 Download TIGER shapes for congressional districts
 }
 \examples{
-\dontrun{
 tt_congressional_districts()
-}
 }
 \concept{districts}

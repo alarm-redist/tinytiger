@@ -16,8 +16,6 @@ sf data.frame
 Download TIGER shapes for Coastlines
 }
 \examples{
-\dontrun{
 tt_coastline()
-}
 }
 \concept{water}

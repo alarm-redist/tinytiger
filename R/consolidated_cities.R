@@ -9,9 +9,8 @@
 #'
 #' @concept cities
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_consolidated_cities("CT")
-#' }
 tt_consolidated_cities <- function(state, year = 2021) {
 
   years_okay(year)

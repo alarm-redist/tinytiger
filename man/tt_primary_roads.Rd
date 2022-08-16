@@ -16,8 +16,6 @@ sf data.frame
 Download TIGER shapes for Primary Roads
 }
 \examples{
-\dontrun{
 tt_primary_roads()
-}
 }
 \concept{roads}

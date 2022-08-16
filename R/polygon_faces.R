@@ -10,9 +10,8 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples
 #' tt_polygon_faces("DE", county = "001")
-#' }
 tt_polygon_faces <- function(state, county, year = 2021) {
 
   years_okay(year, 2010:2021)

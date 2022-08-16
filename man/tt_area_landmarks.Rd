@@ -18,8 +18,6 @@ sf data.frame
 Download TIGER shapes for Area Landmarks
 }
 \examples{
-\dontrun{
 tt_area_landmarks("DE")
-}
 }
 \concept{landmarks}

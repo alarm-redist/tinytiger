@@ -20,8 +20,6 @@ sf data.frame
 Download TIGER shapes for tracts
 }
 \examples{
-\dontrun{
 tt_tracts(state = "DE", county = "001")
-}
 }
 \concept{spine}
