@@ -8,7 +8,9 @@
 #'
 #' @concept city
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_new_england_combined_areas()
 #' }
 tt_new_england_combined_areas <- function(year = 2021) {

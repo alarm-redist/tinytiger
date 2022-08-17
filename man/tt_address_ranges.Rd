@@ -21,6 +21,7 @@ Download TIGER shapes for Address Ranges
 }
 \examples{
 \dontrun{
+## requires internet
 tt_address_ranges("DE", county = "001")
 }
 }

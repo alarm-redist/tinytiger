@@ -8,7 +8,9 @@
 #'
 #' @concept city
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_new_england_cities()
 #' }
 tt_new_england_cities <- function(year = 2021) {

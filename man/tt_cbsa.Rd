@@ -17,6 +17,7 @@ Download TIGER shapes for Core Based Statistical Areas
 }
 \examples{
 \dontrun{
+## requires internet
 tt_cbsa()
 }
 }

@@ -17,6 +17,7 @@ Download TIGER shapes for Subbarrios (Puerto Rico)
 }
 \examples{
 \dontrun{
+## requires internet
 tt_subbarrios()
 }
 }

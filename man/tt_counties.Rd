@@ -19,6 +19,7 @@ Download TIGER shapes for counties
 }
 \examples{
 \dontrun{
+## requires internet
 tt_counties(state = "DE")
 }
 }

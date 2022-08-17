@@ -21,6 +21,7 @@ Download TIGER shapes for Polygon Faces
 }
 \examples{
 \dontrun{
+## requires internet
 tt_polygon_faces("DE", county = "001")
 }
 }

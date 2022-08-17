@@ -19,6 +19,7 @@ Download TIGER shapes for Area Landmarks
 }
 \examples{
 \dontrun{
+## requires internet
 tt_area_landmarks("DE")
 }
 }

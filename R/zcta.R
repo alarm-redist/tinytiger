@@ -8,7 +8,9 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_zcta()
 #' }
 tt_zcta <- function(year = 2021) {

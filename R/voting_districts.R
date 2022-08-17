@@ -10,7 +10,9 @@
 #'
 #' @concept districts
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_voting_districts("DE", county = "001")
 #' }
 tt_voting_districts <- function(state, county, year = 2021) {

@@ -9,7 +9,9 @@
 #'
 #' @concept cities
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_consolidated_cities("CT")
 #' }
 tt_consolidated_cities <- function(state, year = 2021) {

@@ -19,6 +19,7 @@ Download TIGER shapes for Point Landmarks
 }
 \examples{
 \dontrun{
+## requires internet
 tt_point_landmarks("DE")
 }
 }

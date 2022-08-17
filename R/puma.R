@@ -9,7 +9,9 @@
 #'
 #' @concept cities
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_puma("DE")
 #' }
 tt_puma <- function(state, year = 2021) {

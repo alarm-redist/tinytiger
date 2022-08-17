@@ -21,6 +21,7 @@ Download TIGER shapes for tracts
 }
 \examples{
 \dontrun{
+## requires internet
 tt_tracts(state = "DE", county = "001")
 }
 }

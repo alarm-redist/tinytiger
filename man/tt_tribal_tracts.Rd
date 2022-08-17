@@ -17,6 +17,7 @@ Download TIGER shapes for Tribal Tracts
 }
 \examples{
 \dontrun{
+## requires internet
 tt_tribal_tracts()
 }
 }

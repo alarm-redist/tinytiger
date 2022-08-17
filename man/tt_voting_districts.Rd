@@ -21,6 +21,7 @@ Download TIGER shapes for Voting Districts
 }
 \examples{
 \dontrun{
+## requires internet
 tt_voting_districts("DE", county = "001")
 }
 }

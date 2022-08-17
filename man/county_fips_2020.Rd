@@ -4,7 +4,7 @@
 \alias{county_fips_2020}
 \title{Counties FIPS 2020}
 \usage{
-utils::data("county_fips_2020")
+data("county_fips_2020")
 }
 \value{
 tibble

@@ -17,6 +17,7 @@ Download TIGER shapes for Metropolitan Divisions
 }
 \examples{
 \dontrun{
+## requires internet
 tt_metropolitan_divisions()
 }
 }

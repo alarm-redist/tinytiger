@@ -19,6 +19,7 @@ Download TIGER shapes for lower state legislative districts
 }
 \examples{
 \dontrun{
+## requires internet
 tt_state_leg_lower("DE")
 }
 }

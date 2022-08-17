@@ -8,7 +8,9 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_metropolitan_divisions()
 #' }
 tt_metropolitan_divisions <- function(year = 2021) {

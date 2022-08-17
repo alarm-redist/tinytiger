@@ -17,6 +17,7 @@ Download TIGER shapes for Combined Statistical Area
 }
 \examples{
 \dontrun{
+## requires internet
 tt_csa()
 }
 }

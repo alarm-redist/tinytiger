@@ -9,7 +9,9 @@
 #'
 #' @concept spine
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_counties(state = "DE")
 #' }
 tt_counties <- function(state, year = 2021) {

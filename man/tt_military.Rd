@@ -17,6 +17,7 @@ Download TIGER shapes for Military Installations
 }
 \examples{
 \dontrun{
+## requires internet
 tt_military()
 }
 }

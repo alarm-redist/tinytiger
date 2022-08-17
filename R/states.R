@@ -8,7 +8,9 @@
 #'
 #' @concept spine
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_states()
 #' }
 tt_states <- function(year = 2021) {

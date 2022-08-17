@@ -9,7 +9,9 @@
 #'
 #' @concept roads
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_primary_secondary_roads("DE")
 #' }
 tt_primary_secondary_roads <- function(state, year = 2021) {

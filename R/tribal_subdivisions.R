@@ -8,7 +8,9 @@
 #'
 #' @concept tribal
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_tribal_subdivisions()
 #' }
 tt_tribal_subdivisions <- function(year = 2021) {

@@ -17,6 +17,7 @@ Download TIGER shapes for Estates (US Virgin Islands)
 }
 \examples{
 \dontrun{
+## requires internet
 tt_estates()
 }
 }

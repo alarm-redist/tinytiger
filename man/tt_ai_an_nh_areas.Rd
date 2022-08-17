@@ -17,6 +17,7 @@ Download TIGER shapes for American Indian / Alaska Native / Native Hawaiian Area
 }
 \examples{
 \dontrun{
+## requires internet
 tt_ai_an_nh_areas()
 }
 }

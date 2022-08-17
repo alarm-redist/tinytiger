@@ -21,6 +21,7 @@ Download TIGER Shapes for Area Water
 }
 \examples{
 \dontrun{
+## requires internet
 tt_area_water("DE")
 }
 }

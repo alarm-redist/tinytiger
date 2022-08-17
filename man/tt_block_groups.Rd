@@ -21,6 +21,7 @@ Download TIGER shapes for block groups
 }
 \examples{
 \dontrun{
+## requires internet
 tt_block_groups(state = "DE", county = "001")
 }
 }

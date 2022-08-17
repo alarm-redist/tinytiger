@@ -9,7 +9,9 @@
 #'
 #' @concept cities
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_county_subdivisions("DE")
 #' }
 tt_county_subdivisions <- function(state, year = 2021) {

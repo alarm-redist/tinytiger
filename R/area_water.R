@@ -10,7 +10,9 @@
 #'
 #' @concept water
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_area_water("DE")
 #' }
 tt_area_water <- function(state, county, year = 2021) {

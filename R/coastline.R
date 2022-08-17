@@ -8,7 +8,9 @@
 #'
 #' @concept water
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_coastline()
 #' }
 tt_coastline <- function(year = 2021) {

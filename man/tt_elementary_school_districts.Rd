@@ -19,6 +19,7 @@ Download TIGER shapes for Elementary School Districts
 }
 \examples{
 \dontrun{
+## requires internet
 tt_elementary_school_districts("AZ")
 }
 }

@@ -9,7 +9,9 @@
 #'
 #' @concept districts
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_state_leg_lower("DE")
 #' }
 tt_state_leg_lower <- function(state, year = 2021) {

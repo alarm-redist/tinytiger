@@ -17,6 +17,7 @@ Download TIGER shapes for American Indian Tribal Subdivision National
 }
 \examples{
 \dontrun{
+## requires internet
 tt_tribal_subdivisions()
 }
 }

@@ -8,7 +8,9 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_cbsa()
 #' }
 tt_cbsa <- function(year = 2021) {

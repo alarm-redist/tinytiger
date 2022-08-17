@@ -9,7 +9,9 @@
 #'
 #' @concept cities
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_places("DE")
 #' }
 tt_places <- function(state, year = 2021) {

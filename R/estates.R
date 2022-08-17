@@ -8,7 +8,9 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_estates()
 #' }
 tt_estates <- function(year = 2021) {

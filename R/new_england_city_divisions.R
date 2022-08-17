@@ -8,7 +8,9 @@
 #'
 #' @concept city
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_new_england_city_divisions()
 #' }
 tt_new_england_city_divisions <- function(year = 2021) {

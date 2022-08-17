@@ -17,6 +17,7 @@ Download TIGER shapes for Urban Area
 }
 \examples{
 \dontrun{
+## requires internet
 tt_uac()
 }
 }

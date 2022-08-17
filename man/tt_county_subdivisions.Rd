@@ -19,6 +19,7 @@ Download TIGER shapes for County Subdivisions
 }
 \examples{
 \dontrun{
+## requires internet
 tt_county_subdivisions("DE")
 }
 }

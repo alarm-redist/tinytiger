@@ -17,6 +17,7 @@ Download TIGER shapes for states
 }
 \examples{
 \dontrun{
+## requires internet
 tt_states()
 }
 }

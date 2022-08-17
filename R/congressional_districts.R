@@ -9,7 +9,9 @@
 #'
 #' @concept districts
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_congressional_districts()
 #' }
 tt_congressional_districts <- function(state, year = 2021) {

@@ -17,6 +17,7 @@ Download TIGER shapes for Coastlines
 }
 \examples{
 \dontrun{
+## requires internet
 tt_coastline()
 }
 }

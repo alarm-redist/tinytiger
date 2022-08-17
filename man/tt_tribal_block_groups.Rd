@@ -17,6 +17,7 @@ Download TIGER shapes for Tribal Block Groups
 }
 \examples{
 \dontrun{
+## requires internet
 tt_tribal_block_groups()
 }
 }

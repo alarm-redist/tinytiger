@@ -21,6 +21,7 @@ Download TIGER shapes for Polygon Edges
 }
 \examples{
 \dontrun{
+## requires internet
 tt_polygon_edges("DE", county = "001")
 }
 }

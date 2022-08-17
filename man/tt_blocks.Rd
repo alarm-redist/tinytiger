@@ -21,6 +21,7 @@ Download TIGER shapes for blocks
 }
 \examples{
 \dontrun{
+## requires internet
 tt_blocks(state = "DE", county = "001")
 }
 }

@@ -11,7 +11,7 @@
 #' @return tibble
 #'
 #' @usage
-#' utils::data("county_fips_2020")
+#' data("county_fips_2020")
 #'
 #' @md
 #' @concept data

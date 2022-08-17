@@ -19,6 +19,7 @@ Download TIGER shapes for Public Use Microdata Areas
 }
 \examples{
 \dontrun{
+## requires internet
 tt_puma("DE")
 }
 }

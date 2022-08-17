@@ -8,7 +8,9 @@
 #'
 #' @concept tribal
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_ai_an_nh_areas()
 #' }
 tt_ai_an_nh_areas <- function(year = 2021) {

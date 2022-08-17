@@ -10,7 +10,9 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_address_ranges("DE", county = "001")
 #' }
 tt_address_ranges <- function(state, county, year = 2021) {

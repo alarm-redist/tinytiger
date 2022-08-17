@@ -17,6 +17,7 @@ Download TIGER shapes for Zip Code Tabulation Areas
 }
 \examples{
 \dontrun{
+## requires internet
 tt_zcta()
 }
 }

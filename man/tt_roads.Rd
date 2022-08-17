@@ -21,6 +21,7 @@ Download TIGER shapes for Roads
 }
 \examples{
 \dontrun{
+## requires internet
 tt_roads("DE")
 }
 }

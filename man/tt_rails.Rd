@@ -17,6 +17,7 @@ Download TIGER shapes for Rails
 }
 \examples{
 \dontrun{
+## requires internet
 tt_rails()
 }
 }

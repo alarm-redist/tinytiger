@@ -8,7 +8,9 @@
 #'
 #' @concept roads
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_rails()
 #' }
 tt_rails <- function(year = 2021) {

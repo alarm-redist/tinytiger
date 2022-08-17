@@ -19,6 +19,7 @@ Download TIGER shapes for congressional districts
 }
 \examples{
 \dontrun{
+## requires internet
 tt_congressional_districts()
 }
 }

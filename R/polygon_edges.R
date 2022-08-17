@@ -10,7 +10,9 @@
 #'
 #' @concept other
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_polygon_edges("DE", county = "001")
 #' }
 tt_polygon_edges <- function(state, county, year = 2021) {

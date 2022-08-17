@@ -19,6 +19,7 @@ Download TIGER shapes for Primary and Secondary Roads
 }
 \examples{
 \dontrun{
+## requires internet
 tt_primary_secondary_roads("DE")
 }
 }

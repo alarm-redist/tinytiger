@@ -9,7 +9,9 @@
 #'
 #' @concept landmarks
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_point_landmarks("DE")
 #' }
 tt_point_landmarks <- function(state, year = 2021) {

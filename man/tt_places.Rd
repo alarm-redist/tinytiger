@@ -19,6 +19,7 @@ Download TIGER shapes for Places
 }
 \examples{
 \dontrun{
+## requires internet
 tt_places("DE")
 }
 }

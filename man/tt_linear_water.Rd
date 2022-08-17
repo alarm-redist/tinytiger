@@ -21,6 +21,7 @@ Download TIGER Shapes for Linear Water
 }
 \examples{
 \dontrun{
+## requires internet
 tt_linear_water("DE")
 }
 }

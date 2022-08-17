@@ -9,7 +9,9 @@
 #'
 #' @concept schools
 #'
-#' @examples \dontrun{
+#' @examples 
+#'\dontrun{
+#' ## requires internet
 #' tt_secondary_school_districts("AZ")
 #' }
 tt_secondary_school_districts <- function(state, year = 2021) {
