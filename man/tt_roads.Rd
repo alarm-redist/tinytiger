@@ -20,6 +20,8 @@ sf data.frame
 Download TIGER shapes for Roads
 }
 \examples{
+\dontrun{
 tt_roads("DE")
+}
 }
 \concept{roads}

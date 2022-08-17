@@ -9,8 +9,9 @@
 #'
 #' @concept cities
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_puma("DE")
+#' }
 tt_puma <- function(state, year = 2021) {
 
   years_okay(year, 2012:2021)

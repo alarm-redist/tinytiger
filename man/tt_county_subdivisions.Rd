@@ -18,6 +18,8 @@ sf data.frame
 Download TIGER shapes for County Subdivisions
 }
 \examples{
+\dontrun{
 tt_county_subdivisions("DE")
+}
 }
 \concept{cities}

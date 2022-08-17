@@ -8,8 +8,9 @@
 #'
 #' @concept other
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_subbarrios()
+#' }
 tt_subbarrios <- function(year = 2021) {
 
   years_okay(year, 2016:2021)

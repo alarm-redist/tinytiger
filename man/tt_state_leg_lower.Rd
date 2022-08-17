@@ -18,6 +18,8 @@ sf data.frame
 Download TIGER shapes for lower state legislative districts
 }
 \examples{
+\dontrun{
 tt_state_leg_lower("DE")
+}
 }
 \concept{districts}

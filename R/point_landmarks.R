@@ -9,8 +9,9 @@
 #'
 #' @concept landmarks
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_point_landmarks("DE")
+#' }
 tt_point_landmarks <- function(state, year = 2021) {
 
   years_okay(year, 2010:2021)

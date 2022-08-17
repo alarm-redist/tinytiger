@@ -9,8 +9,9 @@
 #'
 #' @concept districts
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_congressional_districts()
+#' }
 tt_congressional_districts <- function(state, year = 2021) {
 
   years_okay(year, 2011:2021)

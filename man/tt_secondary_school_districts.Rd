@@ -18,6 +18,8 @@ sf data.frame
 Download TIGER shapes for Secondary School Districts
 }
 \examples{
+\dontrun{
 tt_secondary_school_districts("AZ")
+}
 }
 \concept{schools}

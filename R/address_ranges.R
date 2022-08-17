@@ -10,8 +10,9 @@
 #'
 #' @concept other
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_address_ranges("DE", county = "001")
+#' }
 tt_address_ranges <- function(state, county, year = 2021) {
 
   years_okay(year, okay = 2011:2021)

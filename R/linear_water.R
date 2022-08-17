@@ -10,8 +10,9 @@
 #'
 #' @concept water
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_linear_water("DE")
+#' }
 tt_linear_water <- function(state, county, year = 2021) {
 
   years_okay(year, 2010:2021)

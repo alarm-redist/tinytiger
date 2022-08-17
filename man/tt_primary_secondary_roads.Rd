@@ -18,6 +18,8 @@ sf data.frame
 Download TIGER shapes for Primary and Secondary Roads
 }
 \examples{
+\dontrun{
 tt_primary_secondary_roads("DE")
+}
 }
 \concept{roads}

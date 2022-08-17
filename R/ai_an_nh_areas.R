@@ -8,8 +8,9 @@
 #'
 #' @concept tribal
 #'
-#' @examples
+#' @examples \dontrun{
 #' tt_ai_an_nh_areas()
+#' }
 tt_ai_an_nh_areas <- function(year = 2021) {
 
   years_okay(year)

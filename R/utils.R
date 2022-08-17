@@ -5,7 +5,7 @@ pad_str <- function(string, width = 2, pad = "0") {
   if (nchar(string) < width) {
     string <- paste0(c(rep("0", width - nchar(string)), string), collapse = "")
   }
-  string
+  as.character(string)
 }
 
 adj_class <- function(shp) {

@@ -16,6 +16,8 @@ sf data.frame
 Download TIGER shapes for Military Installations
 }
 \examples{
+\dontrun{
 tt_military()
+}
 }
 \concept{other}

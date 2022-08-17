@@ -16,6 +16,8 @@ sf data.frame
 Download TIGER shapes for states
 }
 \examples{
+\dontrun{
 tt_states()
+}
 }
 \concept{spine}
