@@ -77,31 +77,9 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_address_ranges</span><span class="op">(</span><span class="st">"DE"</span>, county <span class="op">=</span> <span class="st">"001"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 11312 features and 25 fields</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: LINESTRING</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.7548 ymin: 38.83129 xmax: -75.32479 ymax: 39.34754</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 11,312 × 26</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       TLID  TFIDL  TFIDR ARIDL ARIDR LINEA…¹ FULLN…² LFROMHN LTOHN RFROMHN RTOHN</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>  6.33<span style="color: #949494;">e</span>8 2.22<span style="color: #949494;">e</span>8 2.28<span style="color: #949494;">e</span>8 4001… 4003… 110564… Rockla… 211     299   200     298  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>  6.02<span style="color: #949494;">e</span>8 2.22<span style="color: #949494;">e</span>8 2.28<span style="color: #949494;">e</span>8 4005… 4001… 110448… Tullam… 501     599   500     598  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>  6.02<span style="color: #949494;">e</span>8 2.22<span style="color: #949494;">e</span>8 2.28<span style="color: #949494;">e</span>8 4005… 4005… 110448… Tullam… 401     499   400     498  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>  6.02<span style="color: #949494;">e</span>8 2.28<span style="color: #949494;">e</span>8 2.28<span style="color: #949494;">e</span>8 4005… 4005… 110214… Limeri… 1       199   2       198  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>  6.02<span style="color: #949494;">e</span>8 2.22<span style="color: #949494;">e</span>8 2.28<span style="color: #949494;">e</span>8 4003… 4005… 110448… Tullam… 301     399   300     398  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>  6.02<span style="color: #949494;">e</span>8 2.28<span style="color: #949494;">e</span>8 2.62<span style="color: #949494;">e</span>8 4005… 4005… 110214… Callah… 1       99    2       98   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>  6.02<span style="color: #949494;">e</span>8 2.22<span style="color: #949494;">e</span>8 2.62<span style="color: #949494;">e</span>8 4003… <span style="color: #BB0000;">NA</span>    110448… Tullam… 263     299   <span style="color: #BB0000;">NA</span>      <span style="color: #BB0000;">NA</span>   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>  6.03<span style="color: #949494;">e</span>8 2.68<span style="color: #949494;">e</span>8 2.68<span style="color: #949494;">e</span>8 4003… 4003… 110448… E Payn… 101     199   100     198  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>  6.02<span style="color: #949494;">e</span>8 2.65<span style="color: #949494;">e</span>8 2.22<span style="color: #949494;">e</span>8 4003… 4003… 110343… Winter… 1       191   2       194  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>  6.02<span style="color: #949494;">e</span>8 2.65<span style="color: #949494;">e</span>8 2.22<span style="color: #949494;">e</span>8 4003… 4003… 110608… Winter… 1       191   2       194  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 11,302 more rows, 15 more variables: ZIPL &lt;chr&gt;, ZIPR &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   EDGE_MTFCC &lt;chr&gt;, ROAD_MTFCC &lt;chr&gt;, PARITYL &lt;chr&gt;, PARITYR &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   PLUS4L &lt;chr&gt;, PLUS4R &lt;chr&gt;, LFROMTYP &lt;chr&gt;, LTOTYP &lt;chr&gt;, RFROMTYP &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   RTOTYP &lt;chr&gt;, OFFSETL &lt;chr&gt;, OFFSETR &lt;chr&gt;, geometry &lt;LINESTRING [°]&gt;, and</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   abbreviated variable names ¹​LINEARID, ²​FULLNAME</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="fu">tt_address_ranges</span><span class="op">(</span><span class="st">"DE"</span>, county <span class="op">=</span> <span class="st">"001"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
