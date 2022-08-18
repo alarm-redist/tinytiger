@@ -7,6 +7,9 @@ Authors@R: c(
     person("Cory", "McCartan", email = "cmccartan@g.harvard.edu", role = "aut"))
 Description: Download geographic shapes from the United States Census Bureau 
     TIGER/Line Shapefiles <https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html>.
+    Functions support downloading and reading in geographic boundary data.
+    All downloads can be set up with a cache to avoid multiple downloads.
+    Data is available back to 2000 for most geographies.
 License: MIT + file LICENSE
 Depends: 
     R (>= 2.10)
