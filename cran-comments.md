@@ -1,3 +1,10 @@
+## Resubmission
+This is a resubmission. Thank you for reviewing the first version. In this version I have:
+
+* TODO: Expanded the Description field of the DESCRIPTION file to better explain functionality.
+
+* Made the information message printing (on line 85 of `R/download.R`) use `message()`, rather than `cat()`.
+
 ## Test environments
 * local R installation (Windows 11), R 4.2.1
 * local R installation (macOS), R 4.2.1

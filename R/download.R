@@ -82,7 +82,7 @@ tt_cache_size <- function() {
   files = list.files(tt_download_path(), recursive=TRUE, full.names=TRUE)
   x = sum(vapply(files, file.size, numeric(1)))
   class(x) = "object_size"
-  cat(format(x, unit="auto"), "\n", sep="")
+  message(format(x, unit="auto"), "\n", sep="")
   invisible(as.numeric(x))
 }
 
