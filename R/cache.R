@@ -28,7 +28,7 @@ tt_cache_size <- function() {
 #' @rdname tt_cache
 tt_cache_clear <- function() {
   path <- tt_download_path()
-  del <- askYesNo(
+  del <- utils::askYesNo(
     msg = "Are you sure? All recursive directories will be deleted.",
     default = FALSE
   )
