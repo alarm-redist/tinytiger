@@ -83,10 +83,30 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="co">## requires internet</span></span></span>
 <span class="r-in"><span><span class="fu">tt_roads</span><span class="op">(</span><span class="st">"DE"</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="op">}</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 34448 features and 4 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: LINESTRING</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.78889 ymin: 38.45118 xmax: -75.04984 ymax: 39.83948</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 34,448 × 5</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    LINEARID      FULLNAME          RTTYP MTFCC                          geometry</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                  <span style="color: #949494; font-style: italic;">&lt;LINESTRING [°]&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 110448139428  N High St Exd     M     S1400 (-75.62009 39.30074, -75.62007 3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 110448140003  S Shore Dr Exd    M     S1400 (-75.52436 39.12675, -75.52448 3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 1102186618422 S Lakeview Dr Exd M     S1400 (-75.52004 39.16857, -75.51971 3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 1102186610396 Troon Rd Exd      M     S1400 (-75.56575 39.18153, -75.56637 3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 1103678329515 Arnold Dr Exd     M     S1400 (-75.48887 39.13227, -75.48882 3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 1103623114759 Williams Exd      M     S1400 (-75.4025 39.06012, -75.40293 39…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 110448139723  Clara St Exd      M     S1400 (-75.5445 39.1638, -75.54354 39.…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 110448140186  Center St Exd     M     S1400 (-75.56717 38.92757, -75.5673 38…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 110448139562  Pine St Exn       M     S1740 (-75.50944 38.91027, -75.50948 3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 1104271252090 State Rd 14 Byp   S     S1200 (-75.57154 38.89505, -75.57158 3…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 34,438 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows</span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

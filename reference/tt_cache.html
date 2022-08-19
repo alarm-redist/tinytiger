@@ -49,7 +49,7 @@ temporary directory."><meta property="og:image" content="https://alarm-redist.gi
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Work with the the <code>tinytiger</code> cache</h1>
-      <small class="dont-index">Source: <a href="https://github.com/alarm-redist/tinytiger/blob/HEAD/R/download.R" class="external-link"><code>R/download.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/alarm-redist/tinytiger/blob/HEAD/R/cache.R" class="external-link"><code>R/cache.R</code></a></small>
       <div class="d-none name"><code>tt_cache.Rd</code></div>
     </div>
 
@@ -64,7 +64,7 @@ temporary directory.</p>
 <span></span>
 <span><span class="fu">tt_cache_clear</span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">tt_cache_loc</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">tt_cache_path</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -77,17 +77,18 @@ temporary directory.</p>
 <p>For <code>tt_cache_clear()</code>, the path to the cache, invisbly.</p>
 
 
-<p>For <code>tt_cache_loc()</code>, the path to the cache</p>
+<p>For <code>tt_cache_path()</code>, the path to the cache</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">tt_cache_size</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> 0 bytes</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> 44.9 Mb</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">tt_cache_clear</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Are you sure? All recursive directories will be deleted. (yes/No/cancel) </span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="fu">tt_cache_loc</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">tt_cache_path</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "~/.cache/tinytiger"</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>

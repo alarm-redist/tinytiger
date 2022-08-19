@@ -75,10 +75,32 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="co">## requires internet</span></span></span>
 <span class="r-in"><span><span class="fu">tt_cbsa</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="op">}</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 939 features and 12 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: MULTIPOLYGON</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -178.4436 ymin: 17.83151 xmax: -65.42271 ymax: 65.45352</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 939 × 13</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    CSAFP CBSAFP GEOID NAME      NAMEL…¹ LSAD  MEMI  MTFCC   ALAND AWATER INTPT…²</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 122   12020  12020 Athens-C… Athens… M1    1     G3110 2.65<span style="color: #949494;">e</span> 9 2.61<span style="color: #949494;">e</span>7 +33.94…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 122   12060  12060 Atlanta-… Atlant… M1    1     G3110 2.25<span style="color: #949494;">e</span>10 3.87<span style="color: #949494;">e</span>8 +33.69…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 428   12100  12100 Atlantic… Atlant… M1    1     G3110 1.44<span style="color: #949494;">e</span> 9 3.01<span style="color: #949494;">e</span>8 +39.46…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 426   12120  12120 Atmore, … Atmore… M2    2     G3110 2.45<span style="color: #949494;">e</span> 9 2.00<span style="color: #949494;">e</span>7 +31.12…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 258   12140  12140 Auburn, … Auburn… M2    2     G3110 9.40<span style="color: #949494;">e</span> 8 2.66<span style="color: #949494;">e</span>6 +41.39…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 532   12180  12180 Auburn, … Auburn… M2    2     G3110 1.79<span style="color: #949494;">e</span> 9 4.46<span style="color: #949494;">e</span>8 +43.00…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 194   12220  12220 Auburn-O… Auburn… M1    1     G3110 1.57<span style="color: #949494;">e</span> 9 2.15<span style="color: #949494;">e</span>7 +32.60…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> <span style="color: #BB0000;">NA</span>    12260  12260 Augusta-… August… M1    1     G3110 9.02<span style="color: #949494;">e</span> 9 2.62<span style="color: #949494;">e</span>8 +33.46…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> <span style="color: #BB0000;">NA</span>    12300  12300 Augusta-… August… M2    2     G3110 2.25<span style="color: #949494;">e</span> 9 2.17<span style="color: #949494;">e</span>8 +44.41…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 462   12380  12380 Austin, … Austin… M2    2     G3110 1.84<span style="color: #949494;">e</span> 9 6.17<span style="color: #949494;">e</span>5 +43.66…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 929 more rows, 2 more variables: INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names ¹​NAMELSAD,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​INTPTLAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

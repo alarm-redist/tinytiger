@@ -83,10 +83,36 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="co">## requires internet</span></span></span>
 <span class="r-in"><span><span class="fu">tt_polygon_faces</span><span class="op">(</span><span class="st">"DE"</span>, county <span class="op">=</span> <span class="st">"001"</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="op">}</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 6604 features and 44 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: POLYGON</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.76007 ymin: 38.82985 xmax: -75.13846 ymax: 39.38756</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6,604 × 45</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      TFID STATE…¹ COUNT…² TRACT…³ BLKGR…⁴ BLOCK…⁵ SUFFI…⁶ ZCTA5…⁷ UACE10 PUMAC…⁸</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 2.12<span style="color: #949494;">e</span>8 10      001     040900  1       1024    <span style="color: #BB0000;">NA</span>      19904   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 2.12<span style="color: #949494;">e</span>8 10      001     041802  3       3000    <span style="color: #BB0000;">NA</span>      19904   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 2.12<span style="color: #949494;">e</span>8 10      001     041803  1       1000    <span style="color: #BB0000;">NA</span>      19904   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 2.12<span style="color: #949494;">e</span>8 10      001     043400  1       1036    <span style="color: #BB0000;">NA</span>      19943   <span style="color: #BB0000;">NA</span>     00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 2.12<span style="color: #949494;">e</span>8 10      001     042500  1       1000    <span style="color: #BB0000;">NA</span>      19963   57196  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 2.12<span style="color: #949494;">e</span>8 10      001     043202  1       1003    <span style="color: #BB0000;">NA</span>      19977   <span style="color: #BB0000;">NA</span>     00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 2.12<span style="color: #949494;">e</span>8 10      001     041702  2       2017    <span style="color: #BB0000;">NA</span>      19934   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 2.12<span style="color: #949494;">e</span>8 10      001     043100  1       1062    <span style="color: #BB0000;">NA</span>      19952   <span style="color: #BB0000;">NA</span>     00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 2.12<span style="color: #949494;">e</span>8 10      001     040203  3       3015    <span style="color: #BB0000;">NA</span>      19977   24580  00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 2.65<span style="color: #949494;">e</span>8 10      001     043400  1       1017    <span style="color: #BB0000;">NA</span>      19946   <span style="color: #BB0000;">NA</span>     00200  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 6,594 more rows, 35 more variables: STATEFP &lt;chr&gt;, COUNTYFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   TRACTCE &lt;chr&gt;, BLKGRPCE &lt;chr&gt;, COUSUBFP &lt;chr&gt;, SUBMCDFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ESTATEFP &lt;chr&gt;, CONCTYFP &lt;chr&gt;, PLACEFP &lt;chr&gt;, AIANNHFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   AIANNHCE &lt;chr&gt;, COMPTYP &lt;chr&gt;, TRSUBFP &lt;chr&gt;, TRSUBCE &lt;chr&gt;, ANRCFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   TTRACTCE &lt;chr&gt;, TBLKGPCE &lt;chr&gt;, ELSDLEA &lt;chr&gt;, SCSDLEA &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   UNSDLEA &lt;chr&gt;, CD116FP &lt;chr&gt;, SLDUST &lt;chr&gt;, SLDLST &lt;chr&gt;, CSAFP &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   CBSAFP &lt;chr&gt;, METDIVFP &lt;chr&gt;, CNECTAFP &lt;chr&gt;, NECTAFP &lt;chr&gt;, …</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

@@ -83,10 +83,32 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
 <span class="r-in"><span><span class="co">## requires internet</span></span></span>
 <span class="r-in"><span><span class="fu">tt_tracts</span><span class="op">(</span>state <span class="op">=</span> <span class="st">"DE"</span>, county <span class="op">=</span> <span class="st">"001"</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="op">}</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 42 features and 12 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: MULTIPOLYGON</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.76007 ymin: 38.82985 xmax: -75.13846 ymax: 39.38756</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 42 × 13</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP COUNTYFP TRACTCE GEOID      NAME  NAMEL…¹ MTFCC FUNCS…²  ALAND AWATER</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 10      001      040100  100010401… 401   Census… G5020 S       1.25<span style="color: #949494;">e</span>8      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 10      001      040201  100010402… 402.… Census… G5020 S       9.73<span style="color: #949494;">e</span>6  <span style="text-decoration: underline;">37</span>251</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 10      001      041500  100010415… 415   Census… G5020 S       3.28<span style="color: #949494;">e</span>6      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 10      001      042000  100010420… 420   Census… G5020 S       8.96<span style="color: #949494;">e</span>7 <span style="text-decoration: underline;">162</span>415</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 10      001      041200  100010412… 412   Census… G5020 S       7.04<span style="color: #949494;">e</span>6 <span style="text-decoration: underline;">813</span>440</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 10      001      041000  100010410… 410   Census… G5020 S       2.68<span style="color: #949494;">e</span>7  <span style="text-decoration: underline;">21</span>809</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 10      001      041300  100010413… 413   Census… G5020 S       2.30<span style="color: #949494;">e</span>6      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 10      001      041400  100010414… 414   Census… G5020 S       6.76<span style="color: #949494;">e</span>6      0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 10      001      040900  100010409… 409   Census… G5020 S       1.40<span style="color: #949494;">e</span>6 <span style="text-decoration: underline;">247</span>831</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 10      001      042500  100010425… 425   Census… G5020 S       7.73<span style="color: #949494;">e</span>6  <span style="text-decoration: underline;">53</span>330</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 32 more rows, 3 more variables: INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names ¹​NAMELSAD,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ²​FUNCSTAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
