@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Tribal Tracts
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_tribal_tracts()
 }

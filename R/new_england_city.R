@@ -9,7 +9,7 @@
 #' @concept city
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_new_england_cities()
 #' }

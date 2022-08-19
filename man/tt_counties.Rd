@@ -18,7 +18,7 @@ sf data.frame
 Download TIGER shapes for counties
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_counties(state = "DE")
 }

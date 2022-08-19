@@ -20,7 +20,7 @@ sf data.frame
 Download TIGER shapes for Roads
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_roads("DE")
 }

@@ -18,7 +18,7 @@ sf data.frame
 Download TIGER shapes for Unified School Districts
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_unified_school_districts("DE")
 }

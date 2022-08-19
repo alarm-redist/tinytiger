@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Estates (US Virgin Islands)
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_estates()
 }

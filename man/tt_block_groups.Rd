@@ -20,7 +20,7 @@ sf data.frame
 Download TIGER shapes for block groups
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_block_groups(state = "DE", county = "001")
 }

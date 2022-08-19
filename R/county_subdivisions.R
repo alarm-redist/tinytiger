@@ -10,7 +10,7 @@
 #' @concept cities
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_county_subdivisions("DE")
 #' }

@@ -18,7 +18,7 @@ sf data.frame
 Download TIGER shapes for Places
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_places("DE")
 }

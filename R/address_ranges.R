@@ -11,7 +11,7 @@
 #' @concept other
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_address_ranges("DE", county = "001")
 #' }

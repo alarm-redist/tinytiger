@@ -20,7 +20,7 @@ sf data.frame
 Download TIGER shapes for tracts
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_tracts(state = "DE", county = "001")
 }

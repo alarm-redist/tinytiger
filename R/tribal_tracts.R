@@ -9,7 +9,7 @@
 #' @concept tribal
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_tribal_tracts()
 #' }

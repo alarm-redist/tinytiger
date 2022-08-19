@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for states
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_states()
 }

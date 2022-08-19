@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Zip Code Tabulation Areas
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_zcta()
 }

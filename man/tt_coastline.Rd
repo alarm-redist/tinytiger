@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Coastlines
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_coastline()
 }

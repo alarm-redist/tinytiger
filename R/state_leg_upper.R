@@ -10,7 +10,7 @@
 #' @concept districts
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_state_leg_lower("DE")
 #' }

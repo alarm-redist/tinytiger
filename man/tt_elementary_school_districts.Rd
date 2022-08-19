@@ -18,7 +18,7 @@ sf data.frame
 Download TIGER shapes for Elementary School Districts
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_elementary_school_districts("AZ")
 }

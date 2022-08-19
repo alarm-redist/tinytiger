@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Primary Roads
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_primary_roads()
 }

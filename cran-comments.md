@@ -18,7 +18,7 @@ This is a resubmission. Thank you for reviewing the first version. In this versi
 0 errors | 0 warnings | 1 note
 
 * This is a new release.
-* Examples use `\dontrun{}`, as they require internet to function. All functions
+* Examples use `\donttest{}`, as they require internet to function. All functions
 use a Census FTP which almost always takes more than 5 seconds when successful. 
 The server returns some false positive 304 errors, even when
 the call has not been made from the IP address recently.

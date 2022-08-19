@@ -18,7 +18,7 @@ sf data.frame
 Download TIGER shapes for County Subdivisions
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_county_subdivisions("DE")
 }

@@ -10,7 +10,7 @@
 #' @concept cities
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_consolidated_cities("CT")
 #' }

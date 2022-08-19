@@ -10,7 +10,7 @@
 #' @concept schools
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_secondary_school_districts("AZ")
 #' }

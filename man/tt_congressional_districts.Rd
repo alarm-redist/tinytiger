@@ -18,7 +18,7 @@ sf data.frame
 Download TIGER shapes for congressional districts
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_congressional_districts()
 }

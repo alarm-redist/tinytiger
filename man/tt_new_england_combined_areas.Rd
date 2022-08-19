@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for New England Combined City and Town Areas
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_new_england_combined_areas()
 }

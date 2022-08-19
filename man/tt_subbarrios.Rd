@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Subbarrios (Puerto Rico)
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_subbarrios()
 }

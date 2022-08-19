@@ -18,7 +18,7 @@ sf data.frame
 Download TIGER shapes for Area Landmarks
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_area_landmarks("DE")
 }

@@ -9,7 +9,7 @@
 #' @concept other
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_metropolitan_divisions()
 #' }

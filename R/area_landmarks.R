@@ -10,7 +10,7 @@
 #' @concept landmarks
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_area_landmarks("DE")
 #' }

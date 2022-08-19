@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Tribal Block Groups
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_tribal_block_groups()
 }

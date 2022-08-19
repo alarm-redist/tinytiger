@@ -18,7 +18,7 @@ sf data.frame
 Download TIGER shapes for Public Use Microdata Areas
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_puma("DE")
 }

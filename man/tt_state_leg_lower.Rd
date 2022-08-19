@@ -18,7 +18,7 @@ sf data.frame
 Download TIGER shapes for lower state legislative districts
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_state_leg_lower("DE")
 }

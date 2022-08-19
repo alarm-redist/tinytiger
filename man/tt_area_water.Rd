@@ -20,7 +20,7 @@ sf data.frame
 Download TIGER Shapes for Area Water
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_area_water("DE")
 }

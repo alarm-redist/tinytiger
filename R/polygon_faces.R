@@ -11,7 +11,7 @@
 #' @concept other
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_polygon_faces("DE", county = "001")
 #' }

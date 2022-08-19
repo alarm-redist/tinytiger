@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Combined Statistical Area
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_csa()
 }

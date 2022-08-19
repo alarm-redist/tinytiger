@@ -10,7 +10,7 @@
 #' @concept spine
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_counties(state = "DE")
 #' }

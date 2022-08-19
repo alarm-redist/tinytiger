@@ -11,7 +11,7 @@
 #' @concept spine
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_blocks(state = "DE", county = "001")
 #' }

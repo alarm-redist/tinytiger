@@ -20,7 +20,7 @@ sf data.frame
 Download TIGER shapes for Polygon Faces
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_polygon_faces("DE", county = "001")
 }

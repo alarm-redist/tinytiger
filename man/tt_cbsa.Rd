@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Core Based Statistical Areas
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_cbsa()
 }

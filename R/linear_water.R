@@ -11,7 +11,7 @@
 #' @concept water
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_linear_water("DE")
 #' }

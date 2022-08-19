@@ -10,7 +10,7 @@
 #' @concept roads
 #'
 #' @examples 
-#'\dontrun{
+#'\donttest{
 #' ## requires internet
 #' tt_primary_secondary_roads("DE")
 #' }

@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Rails
 }
 \examples{
-\dontrun{
+\donttest{
 ## requires internet
 tt_rails()
 }
