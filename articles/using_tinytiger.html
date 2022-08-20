@@ -87,8 +87,94 @@
 
     
     
+<p><code>tinytiger</code> is designed to be low dependency to allow packages and newer R users to use TIGER lines and shapefiles without accruing non-standard dependencies. It has four dependencies: - <code>sf</code>, needed to work with shapefiles - <code>curl</code>, needed for downloading the files from the Census Bureau - <code>cli</code>, used to create clear errors, warnings, and messages. - <code>glue</code>, used for constructing complex URLs and already a dependency of <code>cli</code></p>
+<p>While <code>cli</code> is not necessary, it fits within our goals that <code>tinytiger</code> to be friendly for package development and new users, as <code>cli</code> is one of the most-widely downloaded R packages and comes with but one dependency itself.</p>
+<div class="section level2">
+<h2 id="using-tinytiger">Using <code>tinytiger</code><a class="anchor" aria-label="anchor" href="#using-tinytiger"></a>
+</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/alarm-redist/tinytiger" class="external-link">tinytiger</a></span><span class="op">)</span></span></code></pre></div>
+<p><code>tinytiger</code> has methods to download TIGER shapes for most Census geographies. A full list are available on the <a href="https://alarm-redist.github.io/tinytiger/index.html#supported-geographies"><code>tinytiger</code> website</a>.</p>
+<p>To download any shapes, we can use the corresponding function for the geography. All functions are prefixed with <code>tt_</code>.</p>
+<p>For counties, for example, we can run:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">counties</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/tt_counties.html">tt_counties</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">counties</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Simple feature collection with 6 features and 17 fields</span></span>
+<span><span class="co">#&gt; Geometry type: MULTIPOLYGON</span></span>
+<span><span class="co">#&gt; Dimension:     XY</span></span>
+<span><span class="co">#&gt; Bounding box:  xmin: -123.7283 ymin: 18.11774 xmax: -65.81565 ymax: 46.38562</span></span>
+<span><span class="co">#&gt; Geodetic CRS:  NAD83</span></span>
+<span><span class="co">#&gt;   STATEFP COUNTYFP COUNTYNS GEOID        NAME              NAMELSAD LSAD</span></span>
+<span><span class="co">#&gt; 1      31      039 00835841 31039      Cuming         Cuming County   06</span></span>
+<span><span class="co">#&gt; 2      53      069 01513275 53069   Wahkiakum      Wahkiakum County   06</span></span>
+<span><span class="co">#&gt; 3      35      011 00933054 35011     De Baca        De Baca County   06</span></span>
+<span><span class="co">#&gt; 4      31      109 00835876 31109   Lancaster      Lancaster County   06</span></span>
+<span><span class="co">#&gt; 5      31      129 00835886 31129    Nuckolls       Nuckolls County   06</span></span>
+<span><span class="co">#&gt; 6      72      085 01804523 72085 Las Piedras Las Piedras Municipio   13</span></span>
+<span><span class="co">#&gt;   CLASSFP MTFCC CSAFP CBSAFP METDIVFP FUNCSTAT      ALAND   AWATER    INTPTLAT</span></span>
+<span><span class="co">#&gt; 1      H1 G4020  &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;        A 1477645345 10690204 +41.9158651</span></span>
+<span><span class="co">#&gt; 2      H1 G4020  &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;        A  680976231 61568965 +46.2946377</span></span>
+<span><span class="co">#&gt; 3      H1 G4020  &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;        A 6016818946 29090018 +34.3592729</span></span>
+<span><span class="co">#&gt; 4      H1 G4020   339  30700     &lt;NA&gt;        A 2169272970 22847034 +40.7835474</span></span>
+<span><span class="co">#&gt; 5      H1 G4020  &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;        A 1489645185  1718484 +40.1764918</span></span>
+<span><span class="co">#&gt; 6      H1 G4020   490  41980     &lt;NA&gt;        A   87748418    32509 +18.1871483</span></span>
+<span><span class="co">#&gt;       INTPTLON                       geometry</span></span>
+<span><span class="co">#&gt; 1 -096.7885168 MULTIPOLYGON (((-96.55515 4...</span></span>
+<span><span class="co">#&gt; 2 -123.4244583 MULTIPOLYGON (((-123.4908 4...</span></span>
+<span><span class="co">#&gt; 3 -104.3686961 MULTIPOLYGON (((-104.3837 3...</span></span>
+<span><span class="co">#&gt; 4 -096.6886584 MULTIPOLYGON (((-96.6814 41...</span></span>
+<span><span class="co">#&gt; 5 -098.0468422 MULTIPOLYGON (((-98.04802 4...</span></span>
+<span><span class="co">#&gt; 6 -065.8711890 MULTIPOLYGON (((-65.85703 1...</span></span></code></pre></div>
+<p>Other options for downloads are:</p>
+<ul>
+<li>[tt_address_ranges()]</li>
+<li>[tt_ai_an_nh_areas()]</li>
+<li>[tt_anrc()]</li>
+<li>[tt_area_landmarks()]</li>
+<li>[tt_area_water()]</li>
+<li>[tt_block_groups()]</li>
+<li>[tt_blocks()]</li>
+<li>[tt_cbsa()]</li>
+<li>[tt_coastline()]</li>
+<li>[tt_congressional_districts()]</li>
+<li>[tt_consolidated_cities()]</li>
+<li>[tt_counties()]</li>
+<li>[tt_county_subdivisions()]</li>
+<li>[tt_csa()]</li>
+<li>[tt_elementary_school_districts()]</li>
+<li>[tt_estates()]</li>
+<li>[tt_linear_water()]</li>
+<li>[tt_metropolitan_divisions()]</li>
+<li>[tt_military()]</li>
+<li>[tt_new_england_cities()]</li>
+<li>[tt_new_england_city_divisions()]</li>
+<li>[tt_new_england_combined_areas()]</li>
+<li>[tt_places()]</li>
+<li>[tt_point_landmarks()]</li>
+<li>[tt_polygon_edges()]</li>
+<li>[tt_polygon_faces()]</li>
+<li>[tt_primary_roads()]</li>
+<li>[tt_primary_secondary_roads()]</li>
+<li>[tt_puma()]</li>
+<li>[tt_rails()]</li>
+<li>[tt_roads()]</li>
+<li>[tt_secondary_school_districts()]</li>
+<li>[tt_state_leg_lower()]</li>
+<li>[tt_state_leg_upper()]</li>
+<li>[tt_states()]</li>
+<li>[tt_subbarrios()]</li>
+<li>[tt_tracts()]</li>
+<li>[tt_tribal_block_groups()]</li>
+<li>[tt_tribal_subdivisions()]</li>
+<li>[tt_tribal_tracts()]</li>
+<li>[tt_uac()]</li>
+<li>[tt_unified_school_districts()]</li>
+<li>[tt_voting_districts()]</li>
+<li>[tt_zcta()]</li>
+</ul>
+</div>
   </main>
 </div>
 

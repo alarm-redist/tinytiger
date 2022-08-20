@@ -62,11 +62,18 @@ temporary directory.</p>
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_cache_size</span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">tt_cache_clear</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu">tt_cache_clear</span><span class="op">(</span>force <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">tt_cache_path</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
     </div>
 
+    <div class="section level2">
+    <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
+    <dl><dt>force</dt>
+<dd><p>FALSE by default. Asks the user to confirm if interactive. Does
+not clear cache if force is FALSE and not interactive.</p></dd>
+
+</dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
@@ -86,7 +93,6 @@ temporary directory.</p>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> 44.9 Mb</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">tt_cache_clear</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Are you sure? All recursive directories will be deleted. (yes/No/cancel) </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">tt_cache_path</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "~/.cache/tinytiger"</span>
