@@ -19,6 +19,8 @@ tt_cache_size <- function() {
   invisible(as.numeric(x))
 }
 
+#' @param force FALSE by default. Asks the user to confirm if interactive. Does
+#' not clear cache if force is FALSE and not interactive.
 #' @returns For `tt_cache_clear()`, the path to the cache, invisbly.
 #'
 #' @examples
@@ -26,12 +28,16 @@ tt_cache_size <- function() {
 #'
 #' @export
 #' @rdname tt_cache
-tt_cache_clear <- function() {
+tt_cache_clear <- function(force = FALSE) {
   path <- tt_download_path()
-  del <- utils::askYesNo(
-    msg = "Are you sure? All recursive directories will be deleted.",
-    default = FALSE
-  )
+  if (interactive() && !force) {
+    del <- utils::askYesNo(
+      msg = "Are you sure? All recursive directories will be deleted.",
+      default = FALSE
+    )
+  } else {
+    del <- force
+  }
   if (del) unlink(path, recursive = TRUE)
   invisible(path)
 }

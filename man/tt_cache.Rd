@@ -8,9 +8,13 @@
 \usage{
 tt_cache_size()
 
-tt_cache_clear()
+tt_cache_clear(force = FALSE)
 
 tt_cache_path()
+}
+\arguments{
+\item{force}{FALSE by default. Asks the user to confirm if interactive. Does
+not clear cache if force is FALSE and not interactive.}
 }
 \value{
 For \code{tt_cache_size()}, tthe size in bytes, invisbly

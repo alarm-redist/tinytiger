@@ -14,6 +14,45 @@ knitr::opts_chunk$set(
 )
 ```
 
+`tinytiger` is designed to be low dependency to allow packages and newer R users to use TIGER lines and shapefiles without accruing non-standard dependencies. It has four dependencies:
+- `sf`, needed to work with shapefiles
+- `curl`, needed for downloading the files from the Census Bureau
+- `cli`, used to create clear errors, warnings, and messages.
+- `glue`, used for constructing complex URLs and already a dependency of `cli`
+
+While `cli` is not necessary, it fits within our goals that `tinytiger` to be friendly for package development and new users, as `cli` is one of the most-widely downloaded R packages and comes with but one dependency itself.
+
+
+## Using `tinytiger`
+
 ```{r setup}
 library(tinytiger)
 ```
+
+`tinytiger` has methods to download TIGER shapes for most Census geographies.
+A full list are available on the [`tinytiger` website](https://alarm-redist.github.io/tinytiger/index.html#supported-geographies).
+
+To download any shapes, we can use the corresponding function for the geography. 
+All functions are prefixed with `tt_`.
+
+For counties, for example, we can run:
+
+```{r, eval = FALSE}
+counties <- tt_counties()
+```
+
+```{r, echo = FALSE}
+# depends on (1) internet and (2) successful download
+counties <- NULL
+try(counties <- tt_counties())
+dl_success <- !is.null(counties)
+```
+
+```{r, eval = dl_success}
+head(counties)
+```
+
+
+Other options for downloads are:
+
+`r paste0("* [", setdiff(ls("package:tinytiger"), c("county_fips_2020", "tt_cache_clear", "tt_cache_path", "tt_cache_size")), "()]", collapse="\n")`
