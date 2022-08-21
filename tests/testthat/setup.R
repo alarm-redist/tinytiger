@@ -1,0 +1,16 @@
+# return the expression if it works, otherwise
+# return NULL if it likely a 304 error
+# or fail if it is likely not a 304 error
+maybe_304 <- function(expr) {
+  tryCatch({
+  expr
+  },
+  error = function(e) {
+    msg <- conditionMessage(e)
+    if (grep("304", e)) {
+      data.frame()
+    } else {
+      stop(msg)
+    }
+  })
+}
