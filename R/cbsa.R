@@ -9,8 +9,10 @@
 #' @concept other
 #'
 #' @examples
+#' \donttry{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
 #' try({tt_cbsa()})
+#' }
 tt_cbsa <- function(year = 2021) {
   years_okay(year, 2010:2021)
 

@@ -9,8 +9,10 @@
 #' @concept water
 #'
 #' @examples
+#' \donttry{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
 #' try({tt_coastline()})
+#' }
 tt_coastline <- function(year = 2021) {
 
   years_okay(year, 2016:2021)

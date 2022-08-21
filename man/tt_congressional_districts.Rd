@@ -18,7 +18,9 @@ sf data.frame
 Download TIGER shapes for congressional districts
 }
 \examples{
+\donttry{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
 try({tt_congressional_districts()})
+}
 }
 \concept{districts}
