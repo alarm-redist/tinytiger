@@ -16,7 +16,9 @@ sf data.frame
 Download TIGER shapes for Rails
 }
 \examples{
+\donttest{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
 try({tt_rails()})
+}
 }
 \concept{roads}
