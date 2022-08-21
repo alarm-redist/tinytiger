@@ -7,7 +7,7 @@ maybe_304 <- function(expr) {
   },
   error = function(e) {
     msg <- conditionMessage(e)
-    if (grep("304", e)) {
+    if (any(grepl("304", e))) {
       data.frame()
     } else {
       stop(msg)
