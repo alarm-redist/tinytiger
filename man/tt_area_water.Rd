@@ -20,9 +20,7 @@ sf data.frame
 Download TIGER Shapes for Area Water
 }
 \examples{
-\donttest{
-## requires internet
-tt_area_water("DE")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_area_water("DE")})
 }
 \concept{water}

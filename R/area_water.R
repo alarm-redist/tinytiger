@@ -10,11 +10,9 @@
 #'
 #' @concept water
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_area_water("DE")
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_area_water("DE")})
 tt_area_water <- function(state, county, year = 2021) {
 
   years_okay(year, 2010:2021)
