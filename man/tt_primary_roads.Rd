@@ -16,7 +16,7 @@ sf data.frame
 Download TIGER shapes for Primary Roads
 }
 \examples{
-\donttry{ # takes > 5 seconds
+\donttest{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
 try({tt_primary_roads()})
 }

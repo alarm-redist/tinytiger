@@ -10,7 +10,7 @@
 #' @concept districts
 #'
 #' @examples
-#' \donttry{ # takes > 5 seconds
+#' \donttest{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
 #' try({tt_congressional_districts()})
 #' }
