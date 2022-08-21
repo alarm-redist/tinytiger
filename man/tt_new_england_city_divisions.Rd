@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for New England City and Town Area Divisions
 }
 \examples{
-\donttest{
-## requires internet
-tt_new_england_city_divisions()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_new_england_city_divisions()})
 }
 \concept{city}

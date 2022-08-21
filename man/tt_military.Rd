@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for Military Installations
 }
 \examples{
-\donttest{
-## requires internet
-tt_military()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_military()})
 }
 \concept{other}

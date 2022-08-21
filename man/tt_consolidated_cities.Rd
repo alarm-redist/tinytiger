@@ -18,9 +18,7 @@ sf data.frame
 Download TIGER shapes for Public Use Microdata Areas
 }
 \examples{
-\donttest{
-## requires internet
-tt_consolidated_cities("CT")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_consolidated_cities("CT")})
 }
 \concept{cities}

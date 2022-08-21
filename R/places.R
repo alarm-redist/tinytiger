@@ -9,11 +9,9 @@
 #'
 #' @concept cities
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_places("DE")
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_places("DE")})
 tt_places <- function(state, year = 2021) {
 
   years_okay(year)

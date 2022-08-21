@@ -8,11 +8,10 @@
 #'
 #' @concept other
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_csa()
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_csa()})
+#'
 tt_csa <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for Coastlines
 }
 \examples{
-\donttest{
-## requires internet
-tt_coastline()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_coastline()})
 }
 \concept{water}

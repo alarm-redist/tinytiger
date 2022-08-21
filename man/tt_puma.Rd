@@ -18,9 +18,7 @@ sf data.frame
 Download TIGER shapes for Public Use Microdata Areas
 }
 \examples{
-\donttest{
-## requires internet
-tt_puma("DE")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_puma("DE")})
 }
 \concept{cities}

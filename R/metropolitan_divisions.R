@@ -8,11 +8,9 @@
 #'
 #' @concept other
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_metropolitan_divisions()
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_metropolitan_divisions()})
 tt_metropolitan_divisions <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

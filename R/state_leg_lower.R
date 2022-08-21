@@ -9,11 +9,9 @@
 #'
 #' @concept districts
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_state_leg_lower("DE")
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_state_leg_lower("DE")})
 tt_state_leg_lower <- function(state, year = 2021) {
 
   years_okay(year)

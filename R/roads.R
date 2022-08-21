@@ -10,11 +10,9 @@
 #'
 #' @concept roads
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_roads("DE")
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_roads("DE")})
 tt_roads <- function(state, county, year = 2021) {
 
   years_okay(year, 2010:2021)

@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for states
 }
 \examples{
-\donttest{
-## requires internet
-tt_states()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_states()})
 }
 \concept{spine}

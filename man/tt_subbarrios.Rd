@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for Subbarrios (Puerto Rico)
 }
 \examples{
-\donttest{
-## requires internet
-tt_subbarrios()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_subbarrios()})
 }
 \concept{other}

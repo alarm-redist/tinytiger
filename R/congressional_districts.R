@@ -9,11 +9,9 @@
 #'
 #' @concept districts
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_congressional_districts()
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_congressional_districts()})
 tt_congressional_districts <- function(state, year = 2021) {
 
   years_okay(year, 2011:2021)

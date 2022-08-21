@@ -9,11 +9,9 @@
 #'
 #' @concept schools
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_secondary_school_districts("AZ")
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_secondary_school_districts("AZ")})
 tt_secondary_school_districts <- function(state, year = 2021) {
 
   years_okay(year)

@@ -8,11 +8,9 @@
 #'
 #' @concept other
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_zcta()
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_zcta()})
 tt_zcta <- function(year = 2021) {
 
   years_okay(year, c(2000, 2010, 2012:2021))

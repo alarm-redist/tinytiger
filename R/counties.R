@@ -9,11 +9,9 @@
 #'
 #' @concept spine
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_counties(state = "DE")
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_counties(state = "DE")})
 tt_counties <- function(state, year = 2021) {
 
   years_okay(year)

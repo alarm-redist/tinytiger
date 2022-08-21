@@ -20,9 +20,7 @@ sf data.frame
 Download TIGER shapes for Roads
 }
 \examples{
-\donttest{
-## requires internet
-tt_roads("DE")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_roads("DE")})
 }
 \concept{roads}

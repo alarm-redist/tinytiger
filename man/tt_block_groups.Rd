@@ -20,9 +20,7 @@ sf data.frame
 Download TIGER shapes for block groups
 }
 \examples{
-\donttest{
-## requires internet
-tt_block_groups(state = "DE", county = "001")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_block_groups(state = "DE", county = "001")})
 }
 \concept{spine}

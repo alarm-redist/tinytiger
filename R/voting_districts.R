@@ -10,11 +10,9 @@
 #'
 #' @concept districts
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_voting_districts("DE", county = "001")
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_voting_districts("DE", county = "001")})
 tt_voting_districts <- function(state, county, year = 2021) {
 
   year <- year - (year %% 10)

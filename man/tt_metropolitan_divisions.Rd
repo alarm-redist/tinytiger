@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for Metropolitan Divisions
 }
 \examples{
-\donttest{
-## requires internet
-tt_metropolitan_divisions()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_metropolitan_divisions()})
 }
 \concept{other}

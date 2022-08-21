@@ -18,9 +18,7 @@ sf data.frame
 Download TIGER shapes for counties
 }
 \examples{
-\donttest{
-## requires internet
-tt_counties(state = "DE")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_counties(state = "DE")})
 }
 \concept{spine}

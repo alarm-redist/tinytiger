@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for Estates (US Virgin Islands)
 }
 \examples{
-\donttest{
-## requires internet
-tt_estates()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_estates()})
 }
 \concept{other}

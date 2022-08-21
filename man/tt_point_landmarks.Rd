@@ -18,9 +18,7 @@ sf data.frame
 Download TIGER shapes for Point Landmarks
 }
 \examples{
-\donttest{
-## requires internet
-tt_point_landmarks("DE")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_point_landmarks("DE")})
 }
 \concept{landmarks}

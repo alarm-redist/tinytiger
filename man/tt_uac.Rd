@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for Urban Area
 }
 \examples{
-\donttest{
-## requires internet
-tt_uac()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_uac()})
 }
 \concept{other}

@@ -20,9 +20,7 @@ sf data.frame
 Download TIGER Shapes for Linear Water
 }
 \examples{
-\donttest{
-## requires internet
-tt_linear_water("DE")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_linear_water("DE")})
 }
 \concept{water}

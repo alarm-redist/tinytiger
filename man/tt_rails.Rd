@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for Rails
 }
 \examples{
-\donttest{
-## requires internet
-tt_rails()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_rails()})
 }
 \concept{roads}

@@ -10,11 +10,9 @@
 #'
 #' @concept spine
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_block_groups(state = "DE", county = "001")
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_block_groups(state = "DE", county = "001")})
 tt_block_groups <- function(state, county, year = 2021) {
 
   years_okay(year)

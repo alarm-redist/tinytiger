@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for American Indian / Alaska Native / Native Hawaiian Areas
 }
 \examples{
-\donttest{
-## requires internet
-tt_ai_an_nh_areas()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_ai_an_nh_areas()})
 }
 \concept{tribal}

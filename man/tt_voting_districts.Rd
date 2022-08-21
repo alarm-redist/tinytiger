@@ -20,9 +20,7 @@ sf data.frame
 Download TIGER shapes for Voting Districts
 }
 \examples{
-\donttest{
-## requires internet
-tt_voting_districts("DE", county = "001")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_voting_districts("DE", county = "001")})
 }
 \concept{districts}

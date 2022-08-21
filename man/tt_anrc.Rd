@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for Alaska Native Regional Corporation (Alaska)
 }
 \examples{
-\donttest{
-## requires internet
-tt_anrc()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_anrc()})
 }
 \concept{tribal}

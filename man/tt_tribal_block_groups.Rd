@@ -16,9 +16,7 @@ sf data.frame
 Download TIGER shapes for Tribal Block Groups
 }
 \examples{
-\donttest{
-## requires internet
-tt_tribal_block_groups()
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_tribal_block_groups()})
 }
 \concept{tribal}

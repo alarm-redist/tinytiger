@@ -8,11 +8,9 @@
 #'
 #' @concept city
 #'
-#' @examples 
-#'\donttest{
-#' ## requires internet
-#' tt_new_england_combined_areas()
-#' }
+#' @examples
+#' # Wrapped in try due to false positive 304 errors
+#' try({tt_new_england_combined_areas()})
 tt_new_england_combined_areas <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

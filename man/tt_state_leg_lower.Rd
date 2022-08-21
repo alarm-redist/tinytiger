@@ -18,9 +18,7 @@ sf data.frame
 Download TIGER shapes for lower state legislative districts
 }
 \examples{
-\donttest{
-## requires internet
-tt_state_leg_lower("DE")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_state_leg_lower("DE")})
 }
 \concept{districts}

@@ -18,9 +18,7 @@ sf data.frame
 Download TIGER shapes for Elementary School Districts
 }
 \examples{
-\donttest{
-## requires internet
-tt_elementary_school_districts("AZ")
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_elementary_school_districts("AZ")})
 }
 \concept{schools}
