@@ -20,19 +20,7 @@ sf data.frame
 Download TIGER shapes for Address Ranges
 }
 \examples{
-\donttest{
-## requires internet
-tryCatch({
-tt_address_ranges("DE", county = "001")
-},
-error = function(e) {
-  msg <- conditionMessage(e)
-  if (grep('304', e)) {
-    message('304 error thrown. Try again in a bit.')
-  } else {
-    stop(msg)
-  }
-})
-}
+# Wrapped in try due to false positive 304 errors
+try({tt_address_ranges("DE", county = "001")})
 }
 \concept{other}
