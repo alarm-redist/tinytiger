@@ -17,6 +17,6 @@ Download TIGER shapes for Subbarrios (Puerto Rico)
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_subbarrios()})
+try(tt_subbarrios())
 }
 \concept{other}

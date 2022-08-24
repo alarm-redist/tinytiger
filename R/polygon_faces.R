@@ -12,7 +12,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_polygon_faces("DE", county = "001")})
+#' try(tt_polygon_faces("DE", county = "001"))
 tt_polygon_faces <- function(state, county, year = 2021) {
 
   years_okay(year, 2010:2021)

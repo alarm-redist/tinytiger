@@ -17,6 +17,6 @@ Download TIGER shapes for New England Combined City and Town Areas
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_new_england_combined_areas()})
+try(tt_new_england_combined_areas())
 }
 \concept{city}

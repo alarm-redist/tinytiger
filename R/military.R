@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_military()})
+#' try(tt_military())
 tt_military <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

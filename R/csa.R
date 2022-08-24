@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_csa()})
+#' try(tt_csa())
 #'
 tt_csa <- function(year = 2021) {
 

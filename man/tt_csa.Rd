@@ -17,7 +17,7 @@ Download TIGER shapes for Combined Statistical Area
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_csa()})
+try(tt_csa())
 
 }
 \concept{other}

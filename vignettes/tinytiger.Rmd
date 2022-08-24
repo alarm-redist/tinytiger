@@ -55,4 +55,4 @@ head(counties)
 
 Other options for downloads are:
 
-`r paste0("* [", setdiff(ls("package:tinytiger"), c("county_fips_2020", "tt_cache_clear", "tt_cache_path", "tt_cache_size")), "()]", collapse="\n")`
+`r paste0("* \x60", setdiff(ls("package:tinytiger"), c("county_fips_2020", "tt_cache_clear", "tt_cache_path", "tt_cache_size")), "()\x60", collapse="\n")`

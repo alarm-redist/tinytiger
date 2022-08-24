@@ -17,6 +17,6 @@ Download TIGER shapes for Military Installations
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_military()})
+try(tt_military())
 }
 \concept{other}

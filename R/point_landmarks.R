@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_point_landmarks("DE")})
+#' try(tt_point_landmarks("DE"))
 tt_point_landmarks <- function(state, year = 2021) {
 
   years_okay(year, 2010:2021)

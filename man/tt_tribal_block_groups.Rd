@@ -17,6 +17,6 @@ Download TIGER shapes for Tribal Block Groups
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_tribal_block_groups()})
+try(tt_tribal_block_groups())
 }
 \concept{tribal}

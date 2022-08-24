@@ -19,6 +19,6 @@ Download TIGER shapes for Places
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_places("DE")})
+try(tt_places("DE"))
 }
 \concept{cities}

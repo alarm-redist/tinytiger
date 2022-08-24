@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_primary_secondary_roads("DE")})
+#' try(tt_primary_secondary_roads("DE"))
 tt_primary_secondary_roads <- function(state, year = 2021) {
 
   years_okay(year, 2010:2021)

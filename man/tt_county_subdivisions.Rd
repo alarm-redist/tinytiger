@@ -19,6 +19,6 @@ Download TIGER shapes for County Subdivisions
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_county_subdivisions("DE")})
+try(tt_county_subdivisions("DE"))
 }
 \concept{cities}

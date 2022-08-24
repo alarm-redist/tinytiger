@@ -19,6 +19,6 @@ Download TIGER shapes for Primary and Secondary Roads
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_primary_secondary_roads("DE")})
+try(tt_primary_secondary_roads("DE"))
 }
 \concept{roads}

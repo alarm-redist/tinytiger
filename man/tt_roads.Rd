@@ -21,6 +21,6 @@ Download TIGER shapes for Roads
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_roads("DE")})
+try(tt_roads("DE"))
 }
 \concept{roads}

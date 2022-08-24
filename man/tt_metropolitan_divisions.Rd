@@ -17,6 +17,6 @@ Download TIGER shapes for Metropolitan Divisions
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_metropolitan_divisions()})
+try(tt_metropolitan_divisions())
 }
 \concept{other}

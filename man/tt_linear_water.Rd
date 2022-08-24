@@ -21,6 +21,6 @@ Download TIGER Shapes for Linear Water
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_linear_water("DE")})
+try(tt_linear_water("DE"))
 }
 \concept{water}

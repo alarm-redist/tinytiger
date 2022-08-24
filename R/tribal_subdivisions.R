@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_tribal_subdivisions()})
+#' try(tt_tribal_subdivisions())
 tt_tribal_subdivisions <- function(year = 2021) {
 
   years_okay(year, 2015:2021)

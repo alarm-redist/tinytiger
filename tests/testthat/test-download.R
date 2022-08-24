@@ -1,7 +1,7 @@
 test_that('downloads work', {
   skip_on_cran()
   skip_on_ci()
-  testthat::skip_if(Sys.info()['login'] == 'chris')
+  skip_if(Sys.info()['login'] == 'chris')
 
   expect_s3_class(tt_states(), 'sf')
   expect_s3_class(tt_coastline(), 'sf')

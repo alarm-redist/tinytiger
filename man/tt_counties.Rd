@@ -20,7 +20,7 @@ Download TIGER shapes for counties
 \examples{
 \donttest{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
-try({tt_counties(state = "DE")})
+try(tt_counties(state = "DE"))
 }
 }
 \concept{spine}

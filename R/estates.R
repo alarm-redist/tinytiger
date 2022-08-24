@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_estates()})
+#' try(tt_estates())
 tt_estates <- function(year = 2021) {
 
   years_okay(year, 2012:2021)

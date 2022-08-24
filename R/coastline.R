@@ -11,7 +11,7 @@
 #' @examples
 #' \donttest{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_coastline()})
+#' try(tt_coastline())
 #' }
 tt_coastline <- function(year = 2021) {
 

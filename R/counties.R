@@ -12,7 +12,7 @@
 #' @examples
 #' \donttest{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_counties(state = "DE")})
+#' try(tt_counties(state = "DE"))
 #' }
 tt_counties <- function(state, year = 2021) {
 

@@ -19,6 +19,6 @@ Download TIGER shapes for Secondary School Districts
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_secondary_school_districts("AZ")})
+try(tt_secondary_school_districts("AZ"))
 }
 \concept{schools}

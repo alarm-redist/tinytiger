@@ -19,6 +19,6 @@ Download TIGER shapes for upper state legislative districts
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_state_leg_lower("DE")})
+try(tt_state_leg_lower("DE"))
 }
 \concept{districts}

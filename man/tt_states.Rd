@@ -17,6 +17,6 @@ Download TIGER shapes for states
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_states()})
+try(tt_states())
 }
 \concept{spine}

@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_county_subdivisions("DE")})
+#' try(tt_county_subdivisions("DE"))
 tt_county_subdivisions <- function(state, year = 2021) {
 
   years_okay(year)

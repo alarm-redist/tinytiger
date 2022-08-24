@@ -21,6 +21,6 @@ Download TIGER shapes for block groups
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_block_groups(state = "DE", county = "001")})
+try(tt_block_groups(state = "DE", county = "001"))
 }
 \concept{spine}

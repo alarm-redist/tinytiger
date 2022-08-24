@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_new_england_city_divisions()})
+#' try(tt_new_england_city_divisions())
 tt_new_england_city_divisions <- function(year = 2021) {
 
   years_okay(year, 2010:2021)

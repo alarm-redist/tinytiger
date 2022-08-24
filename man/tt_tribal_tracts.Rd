@@ -17,6 +17,6 @@ Download TIGER shapes for Tribal Tracts
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try({tt_tribal_tracts()})
+try(tt_tribal_tracts())
 }
 \concept{tribal}

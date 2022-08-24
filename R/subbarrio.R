@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_subbarrios()})
+#' try(tt_subbarrios())
 tt_subbarrios <- function(year = 2021) {
 
   years_okay(year, 2016:2021)

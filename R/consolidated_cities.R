@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_consolidated_cities("CT")})
+#' try(tt_consolidated_cities("CT"))
 tt_consolidated_cities <- function(state, year = 2021) {
 
   years_okay(year)

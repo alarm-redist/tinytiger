@@ -1,19 +1,3 @@
-## Resubmission
-This is a resubmission. Thank you for reviewing the first version. In this version I have:
-
-* Expanded the Description field of the DESCRIPTION file to better explain functionality.
-
-* All `\dontrun{}`s in examples have been replaced with `try()`. The the Census server throws 304 errors randomly.
-Some examples are wrapped in `\donttest{}` if they may not finish in under 5 seconds.
-
-* Adds `tt_rails()` to `donttest{}` examples, as it was over time on CRAN pre-test, though not on previous checks with Winbuilder.
-
-* Tests have been added to run each of the download functions. As the examples are wrapped in `try()`,
-these tests check that it either downloads sucessfully or that the error is likely a 304 error. 
-If either of those is true, then it succeeds. Other errors will cause it to fail.
-
-* Made the information message printing (on line 85 of `R/download.R`) use `message()`, rather than `cat()`.
-
 ## Test environments
 * local R installation (Windows 11), R 4.2.1
 * local R installation (macOS), R 4.2.1
@@ -24,9 +8,11 @@ If either of those is true, then it succeeds. Other errors will cause it to fail
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
+0 errors | 0 warnings | 0 notes
 
-* This is a new release.
+* This version fixes errors on CRAN regarding the cache location.
+
 * Examples use `try()`, as the server returns some false positive 304 errors, even when
-the call has not been made from the IP address recently. 
+the call has not been made from the IP address recently.
+Some examples are wrapped in `\donttest{}` if they may not finish in under 5 seconds.
 

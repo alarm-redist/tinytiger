@@ -57,8 +57,8 @@ tt_download_path <- function() {
   user_cache <- getOption("tinytiger.cache_dir")
   if (!is.null(user_cache)) {
     user_cache
-  } else if (getOption("tinytiger.use_cache", TRUE) &&
-    requireNamespace("rappdirs", quietly = TRUE)) {
+  } else if (getOption("tinytiger.use_cache", FALSE) &&
+      requireNamespace("rappdirs", quietly = TRUE)) {
     rappdirs::user_cache_dir("tinytiger")
   } else {
     tempdir()

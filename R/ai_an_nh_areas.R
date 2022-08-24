@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_ai_an_nh_areas()})
+#' try(tt_ai_an_nh_areas())
 tt_ai_an_nh_areas <- function(year = 2021) {
 
   years_okay(year)

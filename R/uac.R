@@ -11,7 +11,7 @@
 #' @examples
 #' \donttest{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
-#' try({tt_uac()})
+#' try(tt_uac())
 #' }
 tt_uac <- function(year = 2021) {
 
