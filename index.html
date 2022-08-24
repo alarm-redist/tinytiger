@@ -51,13 +51,10 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
-  <a class="nav-link" href="reference/index.html">Reference</a>
+  <a class="nav-link" href="articles/tinytiger.html">Get started</a>
 </li>
-<li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="articles/using_tinytiger.html">Using `tinytiger`</a>
-  </div>
+<li class="nav-item">
+  <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
 <li class="nav-item">
   <a class="nav-link" href="news/index.html">Changelog</a>
@@ -227,12 +224,13 @@
 <h1 id="downloading-and-caching">Downloading and Caching<a class="anchor" aria-label="anchor" href="#downloading-and-caching"></a>
 </h1>
 <p>By default, downloading will print status messages and/or a progress bar. For silent downloads, set <code>option(tinytiger.curl_quiet = TRUE)</code>.</p>
-<p>Downloads will go to <code>option(tinytiger.cache_dir)</code> if it is set. If it is not, and <code>rappdirs</code> is installed, downloads will be cached between sessions in <code>rappdirs::user_cache_dir("tinytiger")</code>. If it is not installed, or if <code>option(tinytiger.use_cache = FALSE)</code>, then the cache will be in a temporary directory that does not persist between sessions. You can check the size of the cache and clear it with <code><a href="reference/tt_cache.html">tt_cache_size()</a></code> and <code><a href="reference/tt_cache.html">tt_cache_clear()</a></code>.</p>
+<p>Downloads will go to <code>option(tinytiger.cache_dir)</code> if it is set. If it is not, and <code>rappdirs</code> is installed, and <code>option(tinytiger.use_cache = TRUE)</code>, downloads will be cached between sessions in <code>rappdirs::user_cache_dir("tinytiger")</code>. If it is not installed, or if <code>option(tinytiger.use_cache = FALSE)</code>, then the cache will be in a temporary directory that does not persist between sessions. You can check the size of the cache and clear it with <code><a href="reference/tt_cache.html">tt_cache_size()</a></code> and <code><a href="reference/tt_cache.html">tt_cache_clear()</a></code>.</p>
 </div>
 
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
+<li><a href="https://cloud.r-project.org/package=tinytiger" class="external-link">View on CRAN</a></li>
 <li><a href="https://github.com/alarm-redist/tinytiger/" class="external-link">Browse source code</a></li>
 <li><a href="https://github.com/alarm-redist/tinytiger/issues" class="external-link">Report a bug</a></li>
 </ul>
