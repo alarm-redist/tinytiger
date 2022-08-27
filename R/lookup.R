@@ -108,7 +108,7 @@ county_lookup <- function(state, counties) {
 }
 
 county_lookup_all <- function(state) {
-  st <- get("county_fips_2020")
+  st <- get("county_fips_2020") #tinytiger::county_fips_2020
   st <- st[st$state %in% state, ]
   st$county
 }
