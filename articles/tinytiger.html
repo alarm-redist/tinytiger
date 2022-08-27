@@ -96,34 +96,9 @@
 <p>For counties, for example, we can run:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">counties</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/tt_counties.html">tt_counties</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">counties</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Simple feature collection with 6 features and 17 fields</span></span>
-<span><span class="co">#&gt; Geometry type: MULTIPOLYGON</span></span>
-<span><span class="co">#&gt; Dimension:     XY</span></span>
-<span><span class="co">#&gt; Bounding box:  xmin: -123.7283 ymin: 18.11774 xmax: -65.81565 ymax: 46.38562</span></span>
-<span><span class="co">#&gt; Geodetic CRS:  NAD83</span></span>
-<span><span class="co">#&gt;   STATEFP COUNTYFP COUNTYNS GEOID        NAME              NAMELSAD LSAD</span></span>
-<span><span class="co">#&gt; 1      31      039 00835841 31039      Cuming         Cuming County   06</span></span>
-<span><span class="co">#&gt; 2      53      069 01513275 53069   Wahkiakum      Wahkiakum County   06</span></span>
-<span><span class="co">#&gt; 3      35      011 00933054 35011     De Baca        De Baca County   06</span></span>
-<span><span class="co">#&gt; 4      31      109 00835876 31109   Lancaster      Lancaster County   06</span></span>
-<span><span class="co">#&gt; 5      31      129 00835886 31129    Nuckolls       Nuckolls County   06</span></span>
-<span><span class="co">#&gt; 6      72      085 01804523 72085 Las Piedras Las Piedras Municipio   13</span></span>
-<span><span class="co">#&gt;   CLASSFP MTFCC CSAFP CBSAFP METDIVFP FUNCSTAT      ALAND   AWATER    INTPTLAT</span></span>
-<span><span class="co">#&gt; 1      H1 G4020  &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;        A 1477645345 10690204 +41.9158651</span></span>
-<span><span class="co">#&gt; 2      H1 G4020  &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;        A  680976231 61568965 +46.2946377</span></span>
-<span><span class="co">#&gt; 3      H1 G4020  &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;        A 6016818946 29090018 +34.3592729</span></span>
-<span><span class="co">#&gt; 4      H1 G4020   339  30700     &lt;NA&gt;        A 2169272970 22847034 +40.7835474</span></span>
-<span><span class="co">#&gt; 5      H1 G4020  &lt;NA&gt;   &lt;NA&gt;     &lt;NA&gt;        A 1489645185  1718484 +40.1764918</span></span>
-<span><span class="co">#&gt; 6      H1 G4020   490  41980     &lt;NA&gt;        A   87748418    32509 +18.1871483</span></span>
-<span><span class="co">#&gt;       INTPTLON                       geometry</span></span>
-<span><span class="co">#&gt; 1 -096.7885168 MULTIPOLYGON (((-96.55515 4...</span></span>
-<span><span class="co">#&gt; 2 -123.4244583 MULTIPOLYGON (((-123.4908 4...</span></span>
-<span><span class="co">#&gt; 3 -104.3686961 MULTIPOLYGON (((-104.3837 3...</span></span>
-<span><span class="co">#&gt; 4 -096.6886584 MULTIPOLYGON (((-96.6814 41...</span></span>
-<span><span class="co">#&gt; 5 -098.0468422 MULTIPOLYGON (((-98.04802 4...</span></span>
-<span><span class="co">#&gt; 6 -065.8711890 MULTIPOLYGON (((-65.85703 1...</span></span></code></pre></div>
+<pre><code><span><span class="co">#&gt; Error in curl::curl_download(url, path, quiet = quiet) : HTTP error 304.</span></span></code></pre>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">counties</span><span class="op">)</span></span></code></pre></div>
 <p>Other options for downloads are:</p>
 <ul>
 <li><code><a href="../reference/tt_address_ranges.html">tt_address_ranges()</a></code></li>

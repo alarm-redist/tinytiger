@@ -122,8 +122,7 @@
 <span><span class="co">#&gt; # … with 52 more rows, 7 more variables: METDIVFP &lt;chr&gt;, FUNCSTAT &lt;chr&gt;,</span></span>
 <span><span class="co">#&gt; #   ALAND &lt;dbl&gt;, AWATER &lt;dbl&gt;, INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
 <span><span class="co">#&gt; #   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable names ¹​COUNTYNS,</span></span>
-<span><span class="co">#&gt; #   ²​NAMELSAD</span></span>
-<span><span class="co">#&gt; # ℹ Use `print(n = ...)` to see more rows, and `colnames()` to see all variable names</span></span></code></pre></div>
+<span><span class="co">#&gt; #   ²​NAMELSAD</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="supported-geographies">Supported Geographies<a class="anchor" aria-label="anchor" href="#supported-geographies"></a>
@@ -223,8 +222,8 @@
 <div class="section level1">
 <h1 id="downloading-and-caching">Downloading and Caching<a class="anchor" aria-label="anchor" href="#downloading-and-caching"></a>
 </h1>
-<p>By default, downloading will print status messages and/or a progress bar. For silent downloads, set <code>option(tinytiger.curl_quiet = TRUE)</code>.</p>
-<p>Downloads will go to <code>option(tinytiger.cache_dir)</code> if it is set. If it is not, and <code>rappdirs</code> is installed, and <code>option(tinytiger.use_cache = TRUE)</code>, downloads will be cached between sessions in <code>rappdirs::user_cache_dir("tinytiger")</code>. If it is not installed, or if <code>option(tinytiger.use_cache = FALSE)</code>, then the cache will be in a temporary directory that does not persist between sessions. You can check the size of the cache and clear it with <code><a href="reference/tt_cache.html">tt_cache_size()</a></code> and <code><a href="reference/tt_cache.html">tt_cache_clear()</a></code>.</p>
+<p>By default, downloading will print status messages and/or a progress bar. For silent downloads, set <code>options(tinytiger.curl_quiet = TRUE)</code>.</p>
+<p>Downloads will go to <code>options(tinytiger.cache_dir)</code> if it is set. If it is not, and <code>rappdirs</code> is installed, and <code>options(tinytiger.use_cache = TRUE)</code>, downloads will be cached between sessions in <code>rappdirs::user_cache_dir("tinytiger")</code>. If it is not installed, or if <code>options(tinytiger.use_cache = FALSE)</code>, then the cache will be in a temporary directory that does not persist between sessions. You can check the size of the cache and clear it with <code><a href="reference/tt_cache.html">tt_cache_size()</a></code> and <code><a href="reference/tt_cache.html">tt_cache_clear()</a></code>.</p>
 </div>
 
   </main><aside class="col-md-3"><div class="links">
