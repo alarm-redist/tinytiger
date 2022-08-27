@@ -18,4 +18,4 @@ Some examples are wrapped in `\donttest{}` if they may not finish in under 5 sec
 
 ## Downstream dependencies
 
-I ran checks on PL94171, the downstream dependency of `tinytiger` and saw no issues.
+* I ran checks on `PL94171`, the downstream dependency of `tinytiger`, and saw no issues.
