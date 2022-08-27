@@ -16,3 +16,6 @@
 the call has not been made from the IP address recently.
 Some examples are wrapped in `\donttest{}` if they may not finish in under 5 seconds.
 
+## Downstream dependencies
+
+I ran checks on PL94171, the downstream dependency of `tinytiger` and saw no issues.
