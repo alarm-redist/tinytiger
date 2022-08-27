@@ -10,7 +10,7 @@
 
 0 errors | 0 warnings | 0 notes
 
-* This version fixes errors on CRAN regarding the cache location.
+* This version fixes errors on CRAN regarding cached data not being cleared.
 
 * Examples use `try()`, as the server returns some false positive 304 errors, even when
 the call has not been made from the IP address recently.
