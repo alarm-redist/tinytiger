@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # tinytiger <a href="https://alarm-redist.github.io/tinytiger/"><img src="man/figures/logo.png" align="right" height="138" /></a>
 
 <!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/tinytiger)](https://CRAN.R-project.org/package=tinytiger)
 [![R-CMD-check](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
@@ -25,7 +26,13 @@ Download caching is supported; [see below](#downloading-and-caching) for details
 
 ## Installation
 
-You can install the development version of `tinytiger` like so:
+Install `tinytiger` from CRAN with:
+
+``` r
+install.packages("tinytiger")
+```
+
+You can also install the development version of `tinytiger`:
 
 ``` r
 remotes::install_github("alarm-redist/tinytiger")

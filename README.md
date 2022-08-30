@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![CRAN
+status](https://www.r-pkg.org/badges/version/tinytiger)](https://CRAN.R-project.org/package=tinytiger)
 [![R-CMD-check](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
@@ -16,7 +18,13 @@ It has four dependencies other than `sf`. Download caching is supported;
 
 ## Installation
 
-You can install the development version of `tinytiger` like so:
+Install `tinytiger` from CRAN with:
+
+``` r
+install.packages("tinytiger")
+```
+
+You can also install the development version of `tinytiger`:
 
 ``` r
 remotes::install_github("alarm-redist/tinytiger")
@@ -58,55 +66,55 @@ tt_counties("NY")
 
 ## Supported Geographies
 
--   `tt_address_ranges()`: Address Ranges
--   `tt_ai_an_nh_areas()`: American Indian / Alaska Native / Native
-    Hawaiian Areas
--   `tt_tribal_subdivisions()`: Tribal Subdivisions
--   `tt_anrc()`: Alaskan Native Regional Corporations
--   `tt_area_landmarks()`: Area Landmarks
--   `tt_area_water():` Area Water
--   `tt_block_groups()`: Block Groups
--   `tt_cbsa()`: Core Based Statistical Areas
--   `tt_congressional_districts()`: Congressional Districts
--   `tt_new_england_combined_areas()`: Combined New England Towns and
-    Cities
--   `tt_coastline()`: Coastline
--   `tt_consolidated_cities()`: Consolidated Cities
--   `tt_counties()`: Counties
--   `tt_county_subdivisions()`: County Subdivisions
--   `tt_csa()`: Combined Statistical Areas
--   `tt_polygon_edges()`: All Polygon Edges
--   `tt_elementary_school_districts()`: Elementary School Districts
-    (limited states)
--   `tt_estates()`: Estates (Virgin Islands only)
--   `tt_polygon_faces()`: All Polygon Faces
--   `tt_linear_water():` Linear Water
--   `tt_metropolitan_divisions()`: Metropolitan Divisions
--   `tt_military()`: Military Installations
--   `tt_new_england_cities()`: New England Cities and Towns
--   `tt_new_england_city_divisions()`: New England Cities and Towns
-    Divisions
--   `tt_places()`: Census Places
--   `tt_point_landmarks()`: Point Landmarks
--   `tt_primary_roads()`: Primary Roads
--   `tt_primary_secondary_roads()`: Primary and Secondary Roads
--   `tt_puma()`: Public Use Microdata Areas
--   `tt_rails()`: Railroads
--   `tt_roads()`: Roads
--   `tt_secondary_school_districts()`: Secondary School Districts
-    (limited states)
--   `tt_state_leg_lower()`: Lower State Legislative Districts
--   `tt_state_leg_upper()`: Upper State Legislative Districts
--   `tt_states()`: States
--   `tt_subbarrios()`: Subbarios (Puerto Rico only)
--   `tt_blocks()`: Blocks
--   `tt_tribal_block_groups()`: Tribal Block Groups
--   `tt_tracts()`: Tracts
--   `tt_tribal_tracts()`: Tribal Tracts
--   `tt_uac()`: : Urban Areas
--   `tt_unified_school_districts()`: Unified School Districts
--   `tt_voting_districts()`: Voting Districts
--   `tt_zcta()`: Zip Code Tabulation Areas
+- `tt_address_ranges()`: Address Ranges
+- `tt_ai_an_nh_areas()`: American Indian / Alaska Native / Native
+  Hawaiian Areas
+- `tt_tribal_subdivisions()`: Tribal Subdivisions
+- `tt_anrc()`: Alaskan Native Regional Corporations
+- `tt_area_landmarks()`: Area Landmarks
+- `tt_area_water():` Area Water
+- `tt_block_groups()`: Block Groups
+- `tt_cbsa()`: Core Based Statistical Areas
+- `tt_congressional_districts()`: Congressional Districts
+- `tt_new_england_combined_areas()`: Combined New England Towns and
+  Cities
+- `tt_coastline()`: Coastline
+- `tt_consolidated_cities()`: Consolidated Cities
+- `tt_counties()`: Counties
+- `tt_county_subdivisions()`: County Subdivisions
+- `tt_csa()`: Combined Statistical Areas
+- `tt_polygon_edges()`: All Polygon Edges
+- `tt_elementary_school_districts()`: Elementary School Districts
+  (limited states)
+- `tt_estates()`: Estates (Virgin Islands only)
+- `tt_polygon_faces()`: All Polygon Faces
+- `tt_linear_water():` Linear Water
+- `tt_metropolitan_divisions()`: Metropolitan Divisions
+- `tt_military()`: Military Installations
+- `tt_new_england_cities()`: New England Cities and Towns
+- `tt_new_england_city_divisions()`: New England Cities and Towns
+  Divisions
+- `tt_places()`: Census Places
+- `tt_point_landmarks()`: Point Landmarks
+- `tt_primary_roads()`: Primary Roads
+- `tt_primary_secondary_roads()`: Primary and Secondary Roads
+- `tt_puma()`: Public Use Microdata Areas
+- `tt_rails()`: Railroads
+- `tt_roads()`: Roads
+- `tt_secondary_school_districts()`: Secondary School Districts (limited
+  states)
+- `tt_state_leg_lower()`: Lower State Legislative Districts
+- `tt_state_leg_upper()`: Upper State Legislative Districts
+- `tt_states()`: States
+- `tt_subbarrios()`: Subbarios (Puerto Rico only)
+- `tt_blocks()`: Blocks
+- `tt_tribal_block_groups()`: Tribal Block Groups
+- `tt_tracts()`: Tracts
+- `tt_tribal_tracts()`: Tribal Tracts
+- `tt_uac()`: : Urban Areas
+- `tt_unified_school_districts()`: Unified School Districts
+- `tt_voting_districts()`: Voting Districts
+- `tt_zcta()`: Zip Code Tabulation Areas
 
 # Downloading and Caching
 
