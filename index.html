@@ -89,15 +89,18 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of <code>tinytiger</code> like so:</p>
+<p>Install <code>tinytiger</code> from CRAN with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"tinytiger"</span><span class="op">)</span></span></code></pre></div>
+<p>You can also install the development version of <code>tinytiger</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"alarm-redist/tinytiger"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
 <p><code>tinytiger</code> provides lightweight functions to download Census Bureau TIGER/Line Shapefiles. To download a geography, simply use the function corresponding to one of the supported geographies.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/alarm-redist/tinytiger" class="external-link">tinytiger</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/tt_counties.html">tt_counties</a></span><span class="op">(</span><span class="st">"NY"</span><span class="op">)</span></span>
@@ -262,6 +265,7 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
+<li><a href="https://CRAN.R-project.org/package=tinytiger" class="external-link"><img src="https://www.r-pkg.org/badges/version/tinytiger" alt="CRAN status"></a></li>
 <li><a href="https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/alarm-redist/tinytiger/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>
