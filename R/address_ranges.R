@@ -13,9 +13,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' try(tt_address_ranges("DE", county = "001"))
-tt_address_ranges <- function(state, county, year = 2021) {
+tt_address_ranges <- function(state, county, year = 2022) {
 
-  years_okay(year, okay = 2011:2021)
+  years_okay(year, okay = 2011:2022)
 
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_adress_ranges}.")

@@ -4,14 +4,14 @@
 \alias{tt_linear_water}
 \title{Download TIGER Shapes for Linear Water}
 \usage{
-tt_linear_water(state, county, year = 2021)
+tt_linear_water(state, county, year = 2022)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}
 
 \item{county}{FIPS codes or full names of counties. Optional.}
 
-\item{year}{Integer year. Required. 2000 and 2010-2021 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}
 }
 \value{
 sf data.frame

@@ -13,10 +13,10 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' try(tt_voting_districts("DE", county = "001"))
-tt_voting_districts <- function(state, county, year = 2021) {
+tt_voting_districts <- function(state, county, year = 2022) {
 
   year <- year - (year %% 10)
-  cli::cli_inform("Downloading congressional districts for decade {.val {year}}.")
+  cli::cli_inform("Downloading voting districts for decade {.val {year}}.")
   dec_yr <- pad_str(year %% 2000)
 
   if (missing(state)) {

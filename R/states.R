@@ -11,7 +11,7 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' try(tt_states())
-tt_states <- function(year = 2021) {
+tt_states <- function(year = 2022) {
 
   years_okay(year)
 

@@ -4,12 +4,12 @@
 \alias{tt_consolidated_cities}
 \title{Download TIGER shapes for Public Use Microdata Areas}
 \usage{
-tt_consolidated_cities(state, year = 2021)
+tt_consolidated_cities(state, year = 2022)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}
 
-\item{year}{Integer year. Required. 2000 and 2010-2021 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}
 }
 \value{
 sf data.frame

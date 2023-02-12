@@ -4,10 +4,10 @@
 \alias{tt_zcta}
 \title{Download TIGER shapes for Zip Code Tabulation Areas}
 \usage{
-tt_zcta(year = 2021)
+tt_zcta(year = 2022)
 }
 \arguments{
-\item{year}{Integer year. Required. 2000 and 2010-2021 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}
 }
 \value{
 sf data.frame

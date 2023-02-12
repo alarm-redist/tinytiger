@@ -11,7 +11,7 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' try(tt_anrc())
-tt_anrc <- function(year = 2021) {
+tt_anrc <- function(year = 2022) {
 
   years_okay(year)
 

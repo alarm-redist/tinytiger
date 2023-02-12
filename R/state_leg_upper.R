@@ -12,7 +12,7 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' try(tt_state_leg_lower("DE"))
-tt_state_leg_upper <- function(state, year = 2021) {
+tt_state_leg_upper <- function(state, year = 2022) {
 
   years_okay(year)
 

@@ -11,9 +11,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' try(tt_subbarrios())
-tt_subbarrios <- function(year = 2021) {
+tt_subbarrios <- function(year = 2022) {
 
-  years_okay(year, 2016:2021)
+  years_okay(year, 2016:2022)
 
   zip_url <- glue::glue("{base_url(year)}/SUBBARRIO/tl_{year}_72_subbarrio.zip")
   target <- paste0("tl_", year, "_72_subbarrio.shp")

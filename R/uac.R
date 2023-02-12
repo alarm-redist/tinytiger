@@ -13,9 +13,9 @@
 #' # Wrapped in try due to false positive 304 errors
 #' try(tt_uac())
 #' }
-tt_uac <- function(year = 2021) {
+tt_uac <- function(year = 2022) {
 
-  years_okay(year, 2012:2021)
+  years_okay(year, 2012:2022)
 
   zip_url <- glue::glue("{base_url(year)}/UAC/tl_{year}_us_uac10.zip")
   target <- paste0("tl_", year, "_us_uac10.shp")

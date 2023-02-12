@@ -13,9 +13,9 @@
 #' # Wrapped in try due to false positive 304 errors
 #' try(tt_zcta())
 #' }
-tt_zcta <- function(year = 2021) {
+tt_zcta <- function(year = 2022) {
 
-  years_okay(year, c(2000, 2010, 2012:2021))
+  years_okay(year, c(2000, 2010, 2012:2022))
 
   dec_yr <- pad_str(year %% 2000 - (year %% 10))
   url_adj <- ""
