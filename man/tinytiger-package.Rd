@@ -23,7 +23,7 @@ sessions.
 Useful links:
 \itemize{
   \item \url{https://github.com/alarm-redist/tinytiger}
-  \item \url{https://alarm-redist.github.io/tinytiger/}
+  \item \url{https://alarm-redist.org/tinytiger/}
   \item Report bugs at \url{https://github.com/alarm-redist/tinytiger/issues}
 }
 

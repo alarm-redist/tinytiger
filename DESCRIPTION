@@ -29,7 +29,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 LazyData: true
 URL: https://github.com/alarm-redist/tinytiger,
-    https://alarm-redist.github.io/tinytiger/
+    https://alarm-redist.org/tinytiger/
 BugReports: https://github.com/alarm-redist/tinytiger/issues
 Config/testthat/edition: 3
 VignetteBuilder: knitr

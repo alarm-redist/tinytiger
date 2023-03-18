@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# tinytiger <a href="https://alarm-redist.github.io/tinytiger/"><img src="man/figures/logo.png" align="right" height="138" /></a>
+# tinytiger <a href="https://alarm-redist.org/tinytiger/"><img src="man/figures/logo.png" align="right" height="138" /></a>
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/tinytiger)](https://CRAN.R-project.org/package=tinytiger)
