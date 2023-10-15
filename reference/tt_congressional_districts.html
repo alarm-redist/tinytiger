@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">tinytiger</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.5</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.6</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,20 +86,21 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -179.2311 ymin: -14.60181 xmax: 179.8597 ymax: 71.43979</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 444 × 13</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP CD116FP GEOID NAMELSAD    LSAD  CDSESSN MTFCC FUNCS…¹   ALAND  AWATER</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 27      07      2707  Congressio… C2    116     G5200 N       8.66<span style="color: #949494;">e</span>10 5.05<span style="color: #949494;">e</span> 9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 27      02      2702  Congressio… C2    116     G5200 N       6.31<span style="color: #949494;">e</span> 9 2.42<span style="color: #949494;">e</span> 8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 27      06      2706  Congressio… C2    116     G5200 N       7.46<span style="color: #949494;">e</span> 9 4.09<span style="color: #949494;">e</span> 8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 27      08      2708  Congressio… C2    116     G5200 N       7.23<span style="color: #949494;">e</span>10 1.25<span style="color: #949494;">e</span>10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 17      01      1701  Congressio… C2    116     G5200 N       6.69<span style="color: #949494;">e</span> 8 2.07<span style="color: #949494;">e</span> 6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 17      18      1718  Congressio… C2    116     G5200 N       2.72<span style="color: #949494;">e</span>10 3.83<span style="color: #949494;">e</span> 8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 17      07      1707  Congressio… C2    116     G5200 N       1.61<span style="color: #949494;">e</span> 8 5.34<span style="color: #949494;">e</span> 6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 17      02      1702  Congressio… C2    116     G5200 N       2.80<span style="color: #949494;">e</span> 9 2.54<span style="color: #949494;">e</span> 7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 31      01      3101  Congressio… C2    116     G5200 N       2.30<span style="color: #949494;">e</span>10 2.53<span style="color: #949494;">e</span> 8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 06      36      0636  Congressio… C2    116     G5200 N       1.53<span style="color: #949494;">e</span>10 1.95<span style="color: #949494;">e</span> 8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 434 more rows, 3 more variables: INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;, and abbreviated variable name ¹​FUNCSTAT</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP CD116FP GEOID NAMELSAD   LSAD  CDSESSN MTFCC FUNCSTAT   ALAND  AWATER</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 27      07      2707  Congressi… C2    116     G5200 N        8.66<span style="color: #949494;">e</span>10 5.05<span style="color: #949494;">e</span> 9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 27      02      2702  Congressi… C2    116     G5200 N        6.31<span style="color: #949494;">e</span> 9 2.42<span style="color: #949494;">e</span> 8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 27      06      2706  Congressi… C2    116     G5200 N        7.46<span style="color: #949494;">e</span> 9 4.09<span style="color: #949494;">e</span> 8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 27      08      2708  Congressi… C2    116     G5200 N        7.23<span style="color: #949494;">e</span>10 1.25<span style="color: #949494;">e</span>10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 17      01      1701  Congressi… C2    116     G5200 N        6.69<span style="color: #949494;">e</span> 8 2.07<span style="color: #949494;">e</span> 6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 17      18      1718  Congressi… C2    116     G5200 N        2.72<span style="color: #949494;">e</span>10 3.83<span style="color: #949494;">e</span> 8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 17      07      1707  Congressi… C2    116     G5200 N        1.61<span style="color: #949494;">e</span> 8 5.34<span style="color: #949494;">e</span> 6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 17      02      1702  Congressi… C2    116     G5200 N        2.80<span style="color: #949494;">e</span> 9 2.54<span style="color: #949494;">e</span> 7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 31      01      3101  Congressi… C2    116     G5200 N        2.30<span style="color: #949494;">e</span>10 2.53<span style="color: #949494;">e</span> 8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 06      36      0636  Congressi… C2    116     G5200 N        1.53<span style="color: #949494;">e</span>10 1.95<span style="color: #949494;">e</span> 8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 434 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 3 more variables: INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;</span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
