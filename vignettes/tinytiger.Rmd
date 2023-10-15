@@ -30,7 +30,7 @@ library(tinytiger)
 ```
 
 `tinytiger` has methods to download TIGER shapes for most Census geographies.
-A full list are available on the [`tinytiger` website](https://alarm-redist.github.io/tinytiger/index.html#supported-geographies).
+A full list are available on the [`tinytiger` website](https://alarm-redist.org/tinytiger/index.html#supported-geographies).
 
 To download any shapes, we can use the corresponding function for the geography. 
 All functions are prefixed with `tt_`.
