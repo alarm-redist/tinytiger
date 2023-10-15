@@ -1,3 +1,7 @@
+# tinytiger 0.0.6
+
+* Resolves a CRAN check error when a 503 occurs. 
+
 # tinytiger 0.0.5
 
 * Adds support for 2022 TIGER geographies. No corresponding TIGER geography updates exist for `tt_cbsa()`, `tt_csa()`, `tt_metropolitan_divisions()`, `tt_new_england_city_division()`, `tt_new_england_combined_areas()`, or `tt_puma()`.
