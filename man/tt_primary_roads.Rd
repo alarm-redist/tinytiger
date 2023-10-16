@@ -18,7 +18,7 @@ Download TIGER shapes for Primary Roads
 \examples{
 \donttest{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
-try(tt_primary_roads())
+\donttest{try(tt_primary_roads())} # downloads slow on CRAN
 }
 }
 \concept{roads}

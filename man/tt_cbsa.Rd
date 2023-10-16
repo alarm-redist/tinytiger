@@ -18,7 +18,7 @@ Download TIGER shapes for Core Based Statistical Areas
 \examples{
 \donttest{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
-try(tt_cbsa())
+\donttest{try(tt_cbsa())} # downloads slow on CRAN
 }
 }
 \concept{other}

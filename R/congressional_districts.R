@@ -12,7 +12,7 @@
 #' @examples
 #' \donttest{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_congressional_districts())
+#' \donttest{try(tt_congressional_districts())} # downloads slow on CRAN
 #' }
 tt_congressional_districts <- function(state, year = 2022) {
 

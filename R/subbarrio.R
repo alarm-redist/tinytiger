@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_subbarrios())
+#' \donttest{try(tt_subbarrios())} # downloads slow on CRAN
 tt_subbarrios <- function(year = 2022) {
 
   years_okay(year, 2016:2022)

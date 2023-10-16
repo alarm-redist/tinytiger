@@ -11,7 +11,7 @@
 #' @examples
 #' \donttest{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_zcta())
+#' \donttest{try(tt_zcta())} # downloads slow on CRAN
 #' }
 tt_zcta <- function(year = 2022) {
 

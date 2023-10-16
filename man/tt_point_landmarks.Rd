@@ -19,6 +19,6 @@ Download TIGER shapes for Point Landmarks
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_point_landmarks("DE"))
+\donttest{try(tt_point_landmarks("DE"))} # downloads slow on CRAN
 }
 \concept{landmarks}

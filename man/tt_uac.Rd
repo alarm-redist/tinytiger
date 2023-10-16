@@ -18,7 +18,7 @@ Download TIGER shapes for Urban Area
 \examples{
 \donttest{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
-try(tt_uac())
+\donttest{try(tt_uac())} # downloads slow on CRAN
 }
 }
 \concept{other}

@@ -12,7 +12,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_polygon_edges("DE", county = "001"))
+#' \donttest{try(tt_polygon_edges("DE", county = "001"))} # downloads slow on CRAN
 tt_polygon_edges <- function(state, county, year = 2022) {
 
   years_okay(year, 2010:2022)

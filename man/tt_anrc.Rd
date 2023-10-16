@@ -17,6 +17,6 @@ Download TIGER shapes for Alaska Native Regional Corporation (Alaska)
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_anrc())
+\donttest{try(tt_anrc())} # downloads slow on CRAN
 }
 \concept{tribal}

@@ -11,7 +11,7 @@
 #' @examples
 #' \donttest{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_rails())
+#' \donttest{try(tt_rails())} # downloads slow on CRAN
 #' }
 tt_rails <- function(year = 2022) {
 

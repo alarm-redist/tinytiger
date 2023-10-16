@@ -11,7 +11,7 @@
 #' @examples
 #' \donttest{ # takes > 5 seconds
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_cbsa())
+#' \donttest{try(tt_cbsa())} # downloads slow on CRAN
 #' }
 tt_cbsa <- function(year = 2021) {
   years_okay(year, 2010:2021)

@@ -21,6 +21,6 @@ Download TIGER shapes for Roads
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_roads("DE"))
+\donttest{try(tt_roads("DE"))} # downloads slow on CRAN
 }
 \concept{roads}

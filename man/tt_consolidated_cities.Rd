@@ -19,6 +19,6 @@ Download TIGER shapes for Public Use Microdata Areas
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_consolidated_cities("CT"))
+\donttest{try(tt_consolidated_cities("CT"))} # downloads slow on CRAN
 }
 \concept{cities}

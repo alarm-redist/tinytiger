@@ -20,7 +20,7 @@ Download TIGER shapes for congressional districts
 \examples{
 \donttest{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
-try(tt_congressional_districts())
+\donttest{try(tt_congressional_districts())} # downloads slow on CRAN
 }
 }
 \concept{districts}

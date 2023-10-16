@@ -18,7 +18,7 @@ Download TIGER shapes for Zip Code Tabulation Areas
 \examples{
 \donttest{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
-try(tt_zcta())
+\donttest{try(tt_zcta())} # downloads slow on CRAN
 }
 }
 \concept{other}

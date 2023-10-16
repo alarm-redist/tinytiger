@@ -17,6 +17,6 @@ Download TIGER shapes for New England City and Town Area
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_new_england_cities())
+\donttest{try(tt_new_england_cities())} # downloads slow on CRAN
 }
 \concept{city}

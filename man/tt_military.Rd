@@ -17,6 +17,6 @@ Download TIGER shapes for Military Installations
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_military())
+\donttest{try(tt_military())} # downloads slow on CRAN
 }
 \concept{other}

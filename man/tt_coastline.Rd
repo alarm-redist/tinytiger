@@ -18,7 +18,7 @@ Download TIGER shapes for Coastlines
 \examples{
 \donttest{ # takes > 5 seconds
 # Wrapped in try due to false positive 304 errors
-try(tt_coastline())
+\donttest{try(tt_coastline())} # downloads slow on CRAN
 }
 }
 \concept{water}

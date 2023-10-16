@@ -19,6 +19,6 @@ Download TIGER shapes for Unified School Districts
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_unified_school_districts("DE"))
+\donttest{try(tt_unified_school_districts("DE"))} # downloads slow on CRAN
 }
 \concept{schools}

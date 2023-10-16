@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_new_england_cities())
+#' \donttest{try(tt_new_england_cities())} # downloads slow on CRAN
 tt_new_england_cities <- function(year = 2022) {
 
   years_okay(year, 2010:2022)

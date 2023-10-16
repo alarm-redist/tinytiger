@@ -21,6 +21,6 @@ Download TIGER shapes for Polygon Faces
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_polygon_faces("DE", county = "001"))
+\donttest{try(tt_polygon_faces("DE", county = "001"))} # downloads slow on CRAN
 }
 \concept{other}

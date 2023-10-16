@@ -17,6 +17,6 @@ Download TIGER shapes for Estates (US Virgin Islands)
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_estates())
+\donttest{try(tt_estates())} # downloads slow on CRAN
 }
 \concept{other}

@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_puma("DE"))
+#' \donttest{try(tt_puma("DE"))} # downloads slow on CRAN
 tt_puma <- function(state, year = 2021) {
 
   years_okay(year, 2012:2021)

@@ -21,6 +21,6 @@ Download TIGER Shapes for Area Water
 }
 \examples{
 # Wrapped in try due to false positive 304 errors
-try(tt_area_water("DE"))
+\donttest{try(tt_area_water("DE"))} # downloads slow on CRAN
 }
 \concept{water}

@@ -12,7 +12,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_linear_water("DE"))
+#' \donttest{try(tt_linear_water("DE"))} # downloads slow on CRAN
 tt_linear_water <- function(state, county, year = 2022) {
 
   years_okay(year, 2010:2022)
