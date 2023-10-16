@@ -12,7 +12,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_blocks(state = "DE", county = "001"))
+#' \donttest{try(tt_blocks(state = "DE", county = "001"))}
 tt_blocks <- function(state, county, year = 2022) {
 
   if (missing(state)) {

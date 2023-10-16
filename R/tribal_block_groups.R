@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
-#' try(tt_tribal_block_groups())
+#' \donttest{try(tt_tribal_block_groups())}
 tt_tribal_block_groups <- function(year = 2022) {
 
   years_okay(year, 2010:2022)

@@ -1,3 +1,7 @@
+# tinytiger 0.0.7
+
+* Wrap slow downloads in `\donttest{}`
+
 # tinytiger 0.0.6
 
 * Resolves a CRAN check error when a 503 occurs. 
