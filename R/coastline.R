@@ -13,9 +13,9 @@
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_coastline())} # downloads slow on CRAN
 #' }
-tt_coastline <- function(year = 2022) {
+tt_coastline <- function(year = 2023) {
 
-  years_okay(year, 2016:2022)
+  years_okay(year, 2016:2023)
 
   zip_url <- glue::glue("{base_url(year)}/COASTLINE/tl_{year}_us_coastline.zip")
   target <- paste0("tl_", year, "_us_coastline.shp")

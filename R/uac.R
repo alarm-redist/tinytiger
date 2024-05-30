@@ -13,12 +13,18 @@
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_uac())} # downloads slow on CRAN
 #' }
-tt_uac <- function(year = 2022) {
+tt_uac <- function(year = 2023) {
 
-  years_okay(year, 2012:2022)
+  years_okay(year, 2012:2023)
 
-  zip_url <- glue::glue("{base_url(year)}/UAC/tl_{year}_us_uac10.zip")
-  target <- paste0("tl_", year, "_us_uac10.shp")
+  if (year > 2021) {
+    dec_yr <- '20'
+  } else{
+    dec_yr <- '10'
+  }
+
+  zip_url <- glue::glue("{base_url(year)}/UAC/tl_{year}_us_uac{dec_yr}.zip")
+  target <- glue::glue("tl_{year}_us_uac{dec_yr}.shp")
   shp <- tt_download_read(url = zip_url, target_file = target)
 
   adj_class(shp)

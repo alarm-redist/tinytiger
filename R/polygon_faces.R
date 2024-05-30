@@ -13,9 +13,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_polygon_faces("DE", county = "001"))} # downloads slow on CRAN
-tt_polygon_faces <- function(state, county, year = 2022) {
+tt_polygon_faces <- function(state, county, year = 2023) {
 
-  years_okay(year, 2010:2022)
+  years_okay(year, 2010:2023)
 
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_roads}.")

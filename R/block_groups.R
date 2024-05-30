@@ -13,7 +13,7 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_block_groups(state = "DE", county = "001"))} # downloads slow on CRAN
-tt_block_groups <- function(state, county, year = 2022) {
+tt_block_groups <- function(state, county, year = 2023) {
 
   years_okay(year)
 

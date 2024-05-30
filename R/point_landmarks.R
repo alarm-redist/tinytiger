@@ -12,9 +12,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_point_landmarks("DE"))} # downloads slow on CRAN
-tt_point_landmarks <- function(state, year = 2022) {
+tt_point_landmarks <- function(state, year = 2023) {
 
-  years_okay(year, 2010:2022)
+  years_okay(year, 2010:2023)
 
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_point_landmarks}.")

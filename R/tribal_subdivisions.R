@@ -11,9 +11,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_tribal_subdivisions())}
-tt_tribal_subdivisions <- function(year = 2022) {
+tt_tribal_subdivisions <- function(year = 2023) {
 
-  years_okay(year, 2015:2022)
+  years_okay(year, 2015:2023)
 
   zip_url <- glue::glue("{base_url(year)}/AITSN/tl_{year}_us_aitsn.zip")
   target <- paste0("tl_", year, "_us_aitsn.shp")

@@ -13,9 +13,9 @@
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_rails())} # downloads slow on CRAN
 #' }
-tt_rails <- function(year = 2022) {
+tt_rails <- function(year = 2023) {
 
-  years_okay(year, 2010:2022)
+  years_okay(year, 2010:2023)
 
   zip_url <- glue::glue("{base_url(year)}/RAILS/tl_{year}_us_rails.zip")
   target <- glue::glue("tl_{year}_us_rails.shp")

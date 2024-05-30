@@ -14,7 +14,7 @@
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_counties(state = "DE"))} # downloads slow on CRAN
 #' }
-tt_counties <- function(state, year = 2022) {
+tt_counties <- function(state, year = 2023) {
 
   years_okay(year)
 

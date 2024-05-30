@@ -11,9 +11,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_new_england_cities())} # downloads slow on CRAN
-tt_new_england_cities <- function(year = 2022) {
+tt_new_england_cities <- function(year = 2023) {
 
-  years_okay(year, 2010:2022)
+  years_okay(year, 2010:2023)
 
   dec_yr <- pad_str(year %% 2000 - (year %% 10))
   url_adj <- ""
