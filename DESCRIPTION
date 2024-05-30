@@ -1,6 +1,6 @@
 Package: tinytiger
 Title: Lightweight Interface to TIGER/Line Shapefiles
-Version: 0.0.8
+Version: 0.0.9
 Authors@R: c(
     person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu", 
     role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9386-6860")),

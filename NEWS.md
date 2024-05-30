@@ -1,3 +1,7 @@
+# tinytiger 0.0.9
+
+* Adds support for 2023 TIGER geographies.
+
 # tinytiger 0.0.7
 
 * Wrap slow downloads in `\donttest{}`
