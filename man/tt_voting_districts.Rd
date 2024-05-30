@@ -4,7 +4,7 @@
 \alias{tt_voting_districts}
 \title{Download TIGER shapes for Voting Districts}
 \usage{
-tt_voting_districts(state, county, year = 2022)
+tt_voting_districts(state, county, year = 2023)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

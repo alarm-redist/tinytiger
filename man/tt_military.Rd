@@ -4,7 +4,7 @@
 \alias{tt_military}
 \title{Download TIGER shapes for Military Installations}
 \usage{
-tt_military(year = 2022)
+tt_military(year = 2023)
 }
 \arguments{
 \item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}

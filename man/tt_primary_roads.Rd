@@ -4,7 +4,7 @@
 \alias{tt_primary_roads}
 \title{Download TIGER shapes for Primary Roads}
 \usage{
-tt_primary_roads(year = 2022)
+tt_primary_roads(year = 2023)
 }
 \arguments{
 \item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}

@@ -4,7 +4,7 @@
 \alias{tt_block_groups}
 \title{Download TIGER shapes for block groups}
 \usage{
-tt_block_groups(state, county, year = 2022)
+tt_block_groups(state, county, year = 2023)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

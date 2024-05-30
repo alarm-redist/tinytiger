@@ -4,7 +4,7 @@
 \alias{tt_unified_school_districts}
 \title{Download TIGER shapes for Unified School Districts}
 \usage{
-tt_unified_school_districts(state, year = 2022)
+tt_unified_school_districts(state, year = 2023)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

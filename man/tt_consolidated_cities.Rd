@@ -4,7 +4,7 @@
 \alias{tt_consolidated_cities}
 \title{Download TIGER shapes for Public Use Microdata Areas}
 \usage{
-tt_consolidated_cities(state, year = 2022)
+tt_consolidated_cities(state, year = 2023)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

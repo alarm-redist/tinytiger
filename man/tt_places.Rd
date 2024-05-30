@@ -4,7 +4,7 @@
 \alias{tt_places}
 \title{Download TIGER shapes for Places}
 \usage{
-tt_places(state, year = 2022)
+tt_places(state, year = 2023)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

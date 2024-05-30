@@ -4,7 +4,7 @@
 \alias{tt_polygon_faces}
 \title{Download TIGER shapes for Polygon Faces}
 \usage{
-tt_polygon_faces(state, county, year = 2022)
+tt_polygon_faces(state, county, year = 2023)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

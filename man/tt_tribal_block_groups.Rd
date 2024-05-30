@@ -4,7 +4,7 @@
 \alias{tt_tribal_block_groups}
 \title{Download TIGER shapes for Tribal Block Groups}
 \usage{
-tt_tribal_block_groups(year = 2022)
+tt_tribal_block_groups(year = 2023)
 }
 \arguments{
 \item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}

@@ -4,7 +4,7 @@
 \alias{tt_uac}
 \title{Download TIGER shapes for Urban Area}
 \usage{
-tt_uac(year = 2022)
+tt_uac(year = 2023)
 }
 \arguments{
 \item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}

@@ -4,7 +4,7 @@
 \alias{tt_puma}
 \title{Download TIGER shapes for Public Use Microdata Areas}
 \usage{
-tt_puma(state, year = 2021)
+tt_puma(state, year = 2023)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}
