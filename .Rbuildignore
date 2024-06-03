@@ -11,3 +11,4 @@ man-roxygen
 ^CRAN-SUBMISSION$
 ^inst/templates/test_tinytiger\.R$
 ^R/non-exported_helpers\.R$
+^revdep$
