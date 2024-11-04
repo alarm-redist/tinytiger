@@ -4,7 +4,7 @@
 \alias{tt_tracts}
 \title{Download TIGER shapes for tracts}
 \usage{
-tt_tracts(state, county, year = 2023)
+tt_tracts(state, county, year = 2024)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

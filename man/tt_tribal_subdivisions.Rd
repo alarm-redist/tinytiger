@@ -4,7 +4,7 @@
 \alias{tt_tribal_subdivisions}
 \title{Download TIGER shapes for American Indian Tribal Subdivision National}
 \usage{
-tt_tribal_subdivisions(year = 2023)
+tt_tribal_subdivisions(year = 2024)
 }
 \arguments{
 \item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}

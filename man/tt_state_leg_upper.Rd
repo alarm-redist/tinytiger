@@ -4,7 +4,7 @@
 \alias{tt_state_leg_upper}
 \title{Download TIGER shapes for upper state legislative districts}
 \usage{
-tt_state_leg_upper(state, year = 2023)
+tt_state_leg_upper(state, year = 2024)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

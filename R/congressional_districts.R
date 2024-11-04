@@ -14,20 +14,20 @@
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_congressional_districts())} # downloads slow on CRAN
 #' }
-tt_congressional_districts <- function(state, year = 2023) {
+tt_congressional_districts <- function(state, year = 2024) {
 
-  years_okay(year, 2011:2023)
+  years_okay(year, 2011:2024)
 
   cong <- switch(
     as.character(year),
-    "2023" = "118",
-    "2023" = "116", "2020" = "116", "2019" = "116", "2018" = "116",
+    "2024" = "119", "2023" = "118", "2022" = "116",
+    "2021" = "116", "2020" = "116", "2019" = "116", "2018" = "116",
     "2017" = "115", "2016" = "115", "2015" = "114",  "2014" = "114",
     "2013" = "113", "2012" = "112",  "2011" = "112"
   )
   cli::cli_inform("Downloading congressional districts for Congress {.val {cong}}.")
 
-  if (year == 2023) {
+  if (year >= 2023) {
     # by state only
     if (missing(state)) {
       state <- setdiff(all_state_fips, '74') # no UM

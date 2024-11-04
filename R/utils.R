@@ -13,7 +13,7 @@ adj_class <- function(shp) {
   shp
 }
 
-years_okay <- function(year, okay = c(2000, 2010:2023)) {
+years_okay <- function(year, okay = c(2000, 2010:2024)) {
   if (!year %in% okay) {
     cli::cli_abort('{.arg year} must be in {.val {okay}}.')
   }

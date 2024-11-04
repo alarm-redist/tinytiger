@@ -4,7 +4,7 @@
 \alias{tt_new_england_cities}
 \title{Download TIGER shapes for New England City and Town Area}
 \usage{
-tt_new_england_cities(year = 2023)
+tt_new_england_cities(year = 2024)
 }
 \arguments{
 \item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}

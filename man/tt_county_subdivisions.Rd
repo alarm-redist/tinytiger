@@ -4,7 +4,7 @@
 \alias{tt_county_subdivisions}
 \title{Download TIGER shapes for County Subdivisions}
 \usage{
-tt_county_subdivisions(state, year = 2023)
+tt_county_subdivisions(state, year = 2024)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

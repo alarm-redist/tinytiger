@@ -11,9 +11,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_military())} # downloads slow on CRAN
-tt_military <- function(year = 2023) {
+tt_military <- function(year = 2024) {
 
-  years_okay(year, 2010:2023)
+  years_okay(year, 2010:2024)
 
   zip_url <- glue::glue("{base_url(year)}/MIL/tl_{year}_us_mil.zip")
   target <- glue::glue("tl_{year}_us_mil.shp")

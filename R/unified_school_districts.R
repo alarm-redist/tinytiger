@@ -12,7 +12,7 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_unified_school_districts("DE"))} # downloads slow on CRAN
-tt_unified_school_districts <- function(state, year = 2023) {
+tt_unified_school_districts <- function(state, year = 2024) {
 
   years_okay(year)
 

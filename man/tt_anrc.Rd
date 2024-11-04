@@ -4,7 +4,7 @@
 \alias{tt_anrc}
 \title{Download TIGER shapes for Alaska Native Regional Corporation (Alaska)}
 \usage{
-tt_anrc(year = 2023)
+tt_anrc(year = 2024)
 }
 \arguments{
 \item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}

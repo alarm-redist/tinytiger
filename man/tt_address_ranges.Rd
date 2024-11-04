@@ -4,7 +4,7 @@
 \alias{tt_address_ranges}
 \title{Download TIGER shapes for Address Ranges}
 \usage{
-tt_address_ranges(state, county, year = 2023)
+tt_address_ranges(state, county, year = 2024)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

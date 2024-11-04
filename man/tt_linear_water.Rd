@@ -4,7 +4,7 @@
 \alias{tt_linear_water}
 \title{Download TIGER Shapes for Linear Water}
 \usage{
-tt_linear_water(state, county, year = 2023)
+tt_linear_water(state, county, year = 2024)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

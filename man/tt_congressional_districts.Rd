@@ -4,7 +4,7 @@
 \alias{tt_congressional_districts}
 \title{Download TIGER shapes for congressional districts}
 \usage{
-tt_congressional_districts(state, year = 2023)
+tt_congressional_districts(state, year = 2024)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}

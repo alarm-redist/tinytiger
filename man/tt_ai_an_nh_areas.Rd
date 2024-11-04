@@ -4,7 +4,7 @@
 \alias{tt_ai_an_nh_areas}
 \title{Download TIGER shapes for American Indian / Alaska Native / Native Hawaiian Areas}
 \usage{
-tt_ai_an_nh_areas(year = 2023)
+tt_ai_an_nh_areas(year = 2024)
 }
 \arguments{
 \item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}

@@ -1,3 +1,7 @@
+# tinytiger 0.0.10
+
+* Adds support for 2024 TIGER geographies.
+
 # tinytiger 0.0.9
 
 * Adds support for 2023 TIGER geographies.

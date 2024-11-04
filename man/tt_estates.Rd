@@ -4,7 +4,7 @@
 \alias{tt_estates}
 \title{Download TIGER shapes for Estates (US Virgin Islands)}
 \usage{
-tt_estates(year = 2023)
+tt_estates(year = 2024)
 }
 \arguments{
 \item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}

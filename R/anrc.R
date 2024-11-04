@@ -11,7 +11,7 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_anrc())} # downloads slow on CRAN
-tt_anrc <- function(year = 2023) {
+tt_anrc <- function(year = 2024) {
 
   years_okay(year)
 
