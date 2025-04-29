@@ -1,9 +1,9 @@
 pandoc: 3.1.11
-pkgdown: 2.1.1
+pkgdown: 2.1.2
 pkgdown_sha: ~
 articles:
   tinytiger: tinytiger.html
-last_built: 2024-11-04T21:14Z
+last_built: 2025-04-29T21:12Z
 urls:
   reference: https://alarm-redist.org/tinytiger/reference
   article: https://alarm-redist.org/tinytiger/articles
