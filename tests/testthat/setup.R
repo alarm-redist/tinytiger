@@ -7,7 +7,7 @@ maybe_304 <- function(expr) {
   },
   error = function(e) {
     msg <- conditionMessage(e)
-    if (any(grepl("304", e)) | any(grepl("503", e)) | any(grpl("Failure when receiving data", e))) {
+    if (any(grepl("304", e)) | any(grepl("503", e)) | any(grepl("Failure when receiving data", e))) {
       data.frame()
     } else {
       stop(msg)
