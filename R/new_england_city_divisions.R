@@ -1,7 +1,7 @@
 #' Download TIGER shapes for New England City and Town Area Divisions
 #'
-#' @templateVar year TRUE
-#' @template template
+#' @param year `r template_var_year()`
+#' 
 #'
 #' @return sf data.frame
 #' @export

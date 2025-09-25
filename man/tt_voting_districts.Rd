@@ -11,7 +11,7 @@ tt_voting_districts(state, county, year = 2024)
 
 \item{county}{FIPS codes or full names of counties. Optional.}
 
-\item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2024 are currently supported.}
 }
 \value{
 sf data.frame

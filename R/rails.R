@@ -1,7 +1,7 @@
 #' Download TIGER shapes for Rails
 #'
-#' @templateVar year TRUE
-#' @template template
+#' @param year `r template_var_year()`
+#' 
 #'
 #' @return sf data.frame
 #' @export

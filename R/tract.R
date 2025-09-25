@@ -1,9 +1,9 @@
 #' Download TIGER shapes for tracts
 #'
-#' @templateVar state TRUE
-#' @templateVar county TRUE
-#' @templateVar year TRUE
-#' @template template
+#' @param state `r template_var_state()`
+#' @param county `r template_var_county()`
+#' @param year `r template_var_year()`
+#' 
 #'
 #' @return sf data.frame
 #' @export

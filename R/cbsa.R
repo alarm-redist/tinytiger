@@ -1,7 +1,7 @@
 #' Download TIGER shapes for Core Based Statistical Areas
 #'
-#' @templateVar year TRUE
-#' @template template
+#' @param year `r template_var_year()`
+#' 
 #'
 #' @return sf data.frame
 #' @export

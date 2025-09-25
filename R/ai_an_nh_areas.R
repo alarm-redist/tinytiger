@@ -1,7 +1,7 @@
 #' Download TIGER shapes for American Indian / Alaska Native / Native Hawaiian Areas
 #'
-#' @templateVar year TRUE
-#' @template template
+#' @param year `r template_var_year()`
+#' 
 #'
 #' @return sf data.frame
 #' @export

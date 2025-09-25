@@ -7,7 +7,7 @@
 tt_metropolitan_divisions(year = 2021)
 }
 \arguments{
-\item{year}{Integer year. Required. 2000 and 2010-2022 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2024 are currently supported.}
 }
 \value{
 sf data.frame
