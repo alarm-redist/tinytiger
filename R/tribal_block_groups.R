@@ -11,9 +11,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_tribal_block_groups())}
-tt_tribal_block_groups <- function(year = 2024) {
+tt_tribal_block_groups <- function(year = 2025) {
 
-  years_okay(year, 2010:2024)
+  years_okay(year, 2010:2025)
 
   dec_yr <- pad_str(year %% 2000 - (year %% 10))
   url_adj <- ""

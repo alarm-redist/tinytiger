@@ -12,9 +12,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_puma("DE"))} # downloads slow on CRAN
-tt_puma <- function(state, year = 2024) {
+tt_puma <- function(state, year = 2025) {
 
-  years_okay(year, 2012:2024)
+  years_okay(year, 2012:2025)
 
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_puma}.")
@@ -26,7 +26,7 @@ tt_puma <- function(state, year = 2024) {
   } else{
     dec_yr <- '10'
   }
-  if (year >= 2024) {
+  if (year >= 2025) {
     url_add <- '20'
   } else {
     url_add <- ''

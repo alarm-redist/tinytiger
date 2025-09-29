@@ -4,10 +4,10 @@
 \alias{tt_military}
 \title{Download TIGER shapes for Military Installations}
 \usage{
-tt_military(year = 2024)
+tt_military(year = 2025)
 }
 \arguments{
-\item{year}{Integer year. Required. 2000 and 2010-2024 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2025 are currently supported.}
 }
 \value{
 sf data.frame

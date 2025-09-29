@@ -4,10 +4,10 @@
 \alias{tt_uac}
 \title{Download TIGER shapes for Urban Area}
 \usage{
-tt_uac(year = 2024)
+tt_uac(year = 2025)
 }
 \arguments{
-\item{year}{Integer year. Required. 2000 and 2010-2024 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2025 are currently supported.}
 }
 \value{
 sf data.frame

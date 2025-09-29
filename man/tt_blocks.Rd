@@ -4,14 +4,14 @@
 \alias{tt_blocks}
 \title{Download TIGER shapes for blocks}
 \usage{
-tt_blocks(state, county, year = 2024)
+tt_blocks(state, county, year = 2025)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}
 
 \item{county}{FIPS codes or full names of counties. Optional.}
 
-\item{year}{Integer year. Required. 2000 and 2010-2024 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2025 are currently supported.}
 }
 \value{
 sf data.frame

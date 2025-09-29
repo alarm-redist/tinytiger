@@ -7,5 +7,5 @@ template_var_county <- function() { # nocov start
 } # nocov end
 
 template_var_year <- function() { # nocov start
-  'Integer year. Required. 2000 and 2010-2024 are currently supported.'
+  'Integer year. Required. 2000 and 2010-2025 are currently supported.'
 } # nocov end

@@ -13,7 +13,7 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_blocks(state = "DE", county = "001"))}
-tt_blocks <- function(state, county, year = 2024) {
+tt_blocks <- function(state, county, year = 2025) {
 
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_blocks}.")

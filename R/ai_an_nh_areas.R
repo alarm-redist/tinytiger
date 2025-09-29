@@ -11,7 +11,7 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_ai_an_nh_areas())}
-tt_ai_an_nh_areas <- function(year = 2024) {
+tt_ai_an_nh_areas <- function(year = 2025) {
 
   years_okay(year)
 

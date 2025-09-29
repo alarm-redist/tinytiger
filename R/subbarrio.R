@@ -11,9 +11,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_subbarrios())} # downloads slow on CRAN
-tt_subbarrios <- function(year = 2024) {
+tt_subbarrios <- function(year = 2025) {
 
-  years_okay(year, 2016:2024)
+  years_okay(year, 2016:2025)
 
   zip_url <- glue::glue("{base_url(year)}/SUBBARRIO/tl_{year}_72_subbarrio.zip")
   target <- paste0("tl_", year, "_72_subbarrio.shp")

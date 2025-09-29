@@ -4,12 +4,12 @@
 \alias{tt_state_leg_upper}
 \title{Download TIGER shapes for upper state legislative districts}
 \usage{
-tt_state_leg_upper(state, year = 2024)
+tt_state_leg_upper(state, year = 2025)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}
 
-\item{year}{Integer year. Required. 2000 and 2010-2024 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2025 are currently supported.}
 }
 \value{
 sf data.frame

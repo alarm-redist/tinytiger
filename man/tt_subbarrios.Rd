@@ -4,10 +4,10 @@
 \alias{tt_subbarrios}
 \title{Download TIGER shapes for Subbarrios (Puerto Rico)}
 \usage{
-tt_subbarrios(year = 2024)
+tt_subbarrios(year = 2025)
 }
 \arguments{
-\item{year}{Integer year. Required. 2000 and 2010-2024 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2025 are currently supported.}
 }
 \value{
 sf data.frame

@@ -13,7 +13,7 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_voting_districts("DE", county = "001"))} # downloads slow on CRAN
-tt_voting_districts <- function(state, county, year = 2024) {
+tt_voting_districts <- function(state, county, year = 2025) {
 
   year <- year - (year %% 10)
   cli::cli_inform("Downloading voting districts for decade {.val {year}}.")

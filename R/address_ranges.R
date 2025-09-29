@@ -13,9 +13,9 @@
 #' @examples
 #' # Wrapped in try due to false positive 304 errors
 #' \donttest{try(tt_address_ranges("DE", county = "001"))} # downloads slow on CRAN
-tt_address_ranges <- function(state, county, year = 2024) {
+tt_address_ranges <- function(state, county, year = 2025) {
 
-  years_okay(year, okay = 2011:2024)
+  years_okay(year, okay = 2011:2025)
 
   if (missing(state)) {
     cli::cli_abort("{.arg state} is required for {.fn tt_adress_ranges}.")

@@ -4,12 +4,12 @@
 \alias{tt_primary_secondary_roads}
 \title{Download TIGER shapes for Primary and Secondary Roads}
 \usage{
-tt_primary_secondary_roads(state, year = 2024)
+tt_primary_secondary_roads(state, year = 2025)
 }
 \arguments{
 \item{state}{FIPS, postal codes, or full names of states.}
 
-\item{year}{Integer year. Required. 2000 and 2010-2024 are currently supported.}
+\item{year}{Integer year. Required. 2000 and 2010-2025 are currently supported.}
 }
 \value{
 sf data.frame
