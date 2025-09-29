@@ -39,7 +39,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_military</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">2024</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_military</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">2025</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -47,7 +47,7 @@
 
 
 <dl><dt id="arg-year">year<a class="anchor" aria-label="anchor" href="#arg-year"></a></dt>
-<dd><p>Integer year. Required. 2000 and 2010-2024 are currently supported.</p></dd>
+<dd><p>Integer year. Required. 2000 and 2010-2025 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -59,25 +59,25 @@
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Wrapped in try due to false positive 304 errors</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/try.html" class="external-link">try</a></span><span class="op">(</span><span class="fu">tt_military</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="co"># downloads slow on CRAN</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 858 features and 7 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 706 features and 7 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: MULTIPOLYGON</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -159.7881 ymin: 13.30706 xmax: 174.156 ymax: 64.87795</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 858 × 8</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    AREAID        FULLNAME                  MTFCC  ALAND AWATER INTPTLAT INTPTLON</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 110509768024  Tripler Army Medical Ctr  K2110 1.44<span style="color: #949494;">e</span>6      0 +21.362… -157.88…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 110509767829  Makua Mil Res             K2110 1.74<span style="color: #949494;">e</span>7      0 +21.530… -158.20…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 110435324283  Stone Ranch Mil Res       K2110 7.44<span style="color: #949494;">e</span>6      0 +41.365… -72.271…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 110507841923  Ng Havre de Grace Mil Res K2110 3.04<span style="color: #949494;">e</span>5      0 +39.532… -76.104…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 110509768183  Aliamanu Mil Res          K2110 2.10<span style="color: #949494;">e</span>6      0 +21.360… -157.91…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 110509768096  Waianae-Kai Mil Res       K2110 3.44<span style="color: #949494;">e</span>4      0 +21.446… -158.19…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 110509768142  Schofield Barracks Mil R… K2110 2.05<span style="color: #949494;">e</span>7      0 +21.499… -158.08…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 110509768059  Helemano Mil Res          K2110 1.20<span style="color: #949494;">e</span>6      0 +21.536… -158.01…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 1108310660208 Ng Mta Gunpowder Mil Res  K2110 1.03<span style="color: #949494;">e</span>6  <span style="text-decoration: underline;">10</span>372 +39.430… -76.506…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 1108301385692 Ng Papago Mil Res         K2110 1.84<span style="color: #949494;">e</span>6      0 +33.467… -111.96…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 848 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 706 × 8</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    AREAID           FULLNAME               MTFCC  ALAND AWATER INTPTLAT INTPTLON</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 2899039483766321 National Guard Willia… G6500 4.09<span style="color: #949494;">e</span>5 0   <span style="color: #949494;"> </span>  +39.353… -081.44…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 2899039483766323 Naval Academy North S… G6500 3.35<span style="color: #949494;">e</span>6 1.54<span style="color: #949494;">e</span>3 +38.993… -076.46…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 2899039483766330 National Guard Gunpow… G6500 1.03<span style="color: #949494;">e</span>6 1.04<span style="color: #949494;">e</span>4 +39.430… -076.50…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 2899039483766334 Mission Gorge Recreat… G6500 1.77<span style="color: #949494;">e</span>6 0   <span style="color: #949494;"> </span>  +32.809… -117.08…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 2899039483766342 Coast Guard Station C… G6500 1.37<span style="color: #949494;">e</span>4 0   <span style="color: #949494;"> </span>  +42.046… -124.26…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 2899039483766347 Marine Corps Base Cam… G6500 5.07<span style="color: #949494;">e</span>8 1.47<span style="color: #949494;">e</span>6 +33.380… -117.39…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 2899039483766352 Fort Carson            G6500 5.59<span style="color: #949494;">e</span>8 8.24<span style="color: #949494;">e</span>5 +38.560… -104.82…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 2899039483766358 Naval Air Station Pat… G6500 2.49<span style="color: #949494;">e</span>7 2.25<span style="color: #949494;">e</span>6 +38.284… -076.40…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 2899039483766359 Ellsworth Air Force B… G6500 2.19<span style="color: #949494;">e</span>7 4.92<span style="color: #949494;">e</span>4 +44.150… -103.08…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 2899039483766360 Marine Corps Recruit … G6500 2.97<span style="color: #949494;">e</span>7 2.56<span style="color: #949494;">e</span>6 +32.340… -080.69…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 696 more rows</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 1 more variable: geometry &lt;MULTIPOLYGON [°]&gt;</span></span>
 </code></pre></div>
     </div>

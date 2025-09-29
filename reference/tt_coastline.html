@@ -39,7 +39,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_coastline</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">2024</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_coastline</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">2025</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -47,7 +47,7 @@
 
 
 <dl><dt id="arg-year">year<a class="anchor" aria-label="anchor" href="#arg-year"></a></dt>
-<dd><p>Integer year. Required. 2000 and 2010-2024 are currently supported.</p></dd>
+<dd><p>Integer year. Required. 2000 and 2010-2025 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -60,25 +60,25 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span> <span class="co"># takes &gt; 5 seconds</span></span></span>
 <span class="r-in"><span><span class="co"># Wrapped in try due to false positive 304 errors</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/try.html" class="external-link">try</a></span><span class="op">(</span><span class="fu">tt_coastline</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="co"># downloads slow on CRAN</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 4241 features and 2 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 4240 features and 2 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: LINESTRING</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -179.1472 ymin: -14.5487 xmax: 179.7785 ymax: 71.39038</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4,241 × 3</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4,240 × 3</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    NAME      MTFCC                                                      geometry</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                              <span style="color: #949494; font-style: italic;">&lt;LINESTRING [°]&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Atlántico L4150 (-66.43881 18.48599, -66.43874 18.48603, -66.43814 18.48624,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Atlántico L4150 (-66.95752 18.48919, -66.95759 18.48918, -66.95764 18.48918,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Atlántico L4150 (-66.53321 18.48155, -66.53323 18.48161, -66.53324 18.48185,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Atlántico L4150 (-65.9928 18.45854, -65.99266 18.45868, -65.99267 18.45889, …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Atlántico L4150 (-66.90139 18.48343, -66.9014 18.48342, -66.90141 18.48342, …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Atlántico L4150 (-66.86914 18.49233, -66.86899 18.49227, -66.86888 18.49224,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Atlántico L4150 (-66.85677 18.49236, -66.85676 18.4923, -66.85675 18.49227, …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Atlántico L4150 (-66.85888 18.4923, -66.85883 18.49228, -66.85879 18.49231, …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Atlántico L4150 (-66.85344 18.49238, -66.85341 18.49232, -66.85338 18.49228,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Atlántico L4150 (-66.85475 18.49204, -66.85465 18.49195, -66.85457 18.49193,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 4,231 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Atlántico L4150 (-67.27126 18.36305, -67.27121 18.36307, -67.27115 18.36309,…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Atlántico L4150 (-66.90139 18.48343, -66.9014 18.48342, -66.90141 18.48342, …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Atlántico L4150 (-65.56333 18.37807, -65.56335 18.37808, -65.56338 18.37809,…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Atlántico L4150 (-65.59793 18.39765, -65.59792 18.39771, -65.59793 18.39778,…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> Atlántico L4150 (-65.55133 18.37372, -65.55134 18.37376, -65.55137 18.37381,…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Atlántico L4150   (-65.56089 18.3754, -65.56091 18.37545, -65.56096 18.37548)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Atlántico L4150 (-65.5664 18.37839, -65.56637 18.37848, -65.56639 18.37851, …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Atlántico L4150  (-65.57711 18.38454, -65.57712 18.38456, -65.57714 18.38457)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Atlántico L4150 (-65.61158 18.40186, -65.61161 18.4019, -65.61169 18.40191, …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Atlántico L4150 (-65.61158 18.40058, -65.61163 18.40056, -65.61167 18.40053,…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 4,230 more rows</span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

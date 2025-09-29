@@ -39,7 +39,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_subbarrios</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">2024</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_subbarrios</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">2025</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -47,7 +47,7 @@
 
 
 <dl><dt id="arg-year">year<a class="anchor" aria-label="anchor" href="#arg-year"></a></dt>
-<dd><p>Integer year. Required. 2000 and 2010-2024 are currently supported.</p></dd>
+<dd><p>Integer year. Required. 2000 and 2010-2025 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -59,25 +59,25 @@
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Wrapped in try due to false positive 304 errors</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/try.html" class="external-link">try</a></span><span class="op">(</span><span class="fu">tt_subbarrios</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="co"># downloads slow on CRAN</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 145 features and 17 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 143 features and 17 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: MULTIPOLYGON</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -67.19246 ymin: 17.91081 xmax: -65.6246 ymax: 18.4876</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -67.19246 ymin: 17.91081 xmax: -65.6246 ymax: 18.48101</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 145 × 18</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 143 × 18</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP COUNTYFP COUSUBFP SUBMCDFP SUBMCDNS GEOID      GEOIDFQ NAME  NAMELSAD</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 72      131      77543    56650    02415726 721317754… 067000… Norz… Norzaga…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 72      131      77543    84470    02416083 721317754… 067000… Urré… Urréjol…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 72      097      52474    12405    02415239 720975247… 067000… Cand… Candela…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 72      097      52474    75200    02415984 720975247… 067000… Salud Salud s…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 72      127      79693    42932    02415573 721277969… 067000… Las … Las Cas…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 72      127      79693    30080    02415430 721277969… 067000… Gand… Gandul …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 72      127      79693    53638    02415686 721277969… 067000… Mira… Miramar…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 72      127      84079    84771    02416087 721278407… 067000… Vale… Valenci…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 72      127      79693    52900    02415673 721277969… 067000… Meli… Melilla…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 72      127      34070    39714    02415560 721273407… 067000… La 37 La 37 s…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 135 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 72      013      03411    53940    02415691 720130341… 067000… Mons… Monserr…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 72      013      03411    72325    02415953 720130341… 067000… Rosa… Rosario…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 72      035      15537    65040    02415842 720351553… 067000… Pueb… Pueblo …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 72      059      32350    63658    02415799 720593235… 067000… Pobl… Poblado…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 72      123      01175    20315    02415005 721230117… 067000… Coquí Coquí s…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 72      011      02637    21884    02415022 720110263… 067000… Cuar… Cuartel…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 72      011      02637    21888    02415023 720110263… 067000… Cuar… Cuartel…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 72      127      79693    74580    02415975 721277969… 067000… Sagr… Sagrado…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 72      127      79693    34520    02415495 721277969… 067000… Herr… Herrera…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 72      097      52474    14018    02415261 720975247… 067000… Cárc… Cárcel …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 133 more rows</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 9 more variables: LSAD &lt;chr&gt;, CLASSFP &lt;chr&gt;, MTFCC &lt;chr&gt;, FUNCSTAT &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ALAND &lt;dbl&gt;, AWATER &lt;dbl&gt;, INTPTLAT &lt;chr&gt;, INTPTLON &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   geometry &lt;MULTIPOLYGON [°]&gt;</span></span>

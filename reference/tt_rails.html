@@ -39,7 +39,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_rails</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">2024</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_rails</span><span class="op">(</span>year <span class="op">=</span> <span class="fl">2025</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -47,7 +47,7 @@
 
 
 <dl><dt id="arg-year">year<a class="anchor" aria-label="anchor" href="#arg-year"></a></dt>
-<dd><p>Integer year. Required. 2000 and 2010-2024 are currently supported.</p></dd>
+<dd><p>Integer year. Required. 2000 and 2010-2025 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -60,25 +60,25 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span> <span class="co"># takes &gt; 5 seconds</span></span></span>
 <span class="r-in"><span><span class="co"># Wrapped in try due to false positive 304 errors</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/try.html" class="external-link">try</a></span><span class="op">(</span><span class="fu">tt_rails</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="co"># downloads slow on CRAN</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 112760 features and 3 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 113047 features and 3 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: LINESTRING</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -158.1354 ymin: 17.99774 xmax: -65.90612 ymax: 64.92612</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 112,760 × 4</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    LINEARID       FULLNAME        MTFCC                                 geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                         <span style="color: #949494; font-style: italic;">&lt;LINESTRING [°]&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 110457927262   Sandersville RR R1011 (-82.79997 32.97728, -82.79899 32.97608…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 110457927263   Sandersville RR R1011 (-82.8064 32.99565, -82.80536 32.99464,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 11036352186070 Sandersville RR R1011 (-82.79417 32.96733, -82.79398 32.9669,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 11036352186069 Sandersville RR R1011 (-82.79908 32.94594, -82.79933 32.94557…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 11036352707025 Sandersville RR R1011 (-82.87502 33.01534, -82.87098 33.0139,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 11036352707024 Sandersville RR R1011 (-82.87009 33.01358, -82.86802 33.01288…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 11036352185264 Sandersville RR R1011 (-82.79908 32.94594, -82.79905 32.94617…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 11036352703728 Sandersville RR R1011 (-82.87569 33.00828, -82.87527 33.00853…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 110241458321   Sc Central RR   R1011 (-80.11278 34.28801, -80.11293 34.2877,…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 1101735899354  S54             R1011 (-90.80581 43.08884, -90.80548 43.08899…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 112,750 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 113,047 × 4</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    LINEARID       FULLNAME                       MTFCC                  geometry</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;LINESTRING [°]&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 11035783463712 Pennsylvania &amp; Southern Railw… R1011 (-77.63079 39.99208, -77…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 11035783463859 Pennsylvania &amp; Southern Railw… R1011 (-77.63353 39.99495, -77…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 11035783463879 Pennsylvania &amp; Southern Railw… R1011 (-77.63319 39.99483, -77…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 11035783639538 Pennsylvania &amp; Southern Railw… R1011 (-77.63107 39.99248, -77…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 11035783639541 Pennsylvania &amp; Southern Railw… R1011 (-77.63079 39.99208, -77…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 11035783639542 Pennsylvania &amp; Southern Railw… R1011 (-77.63292 39.9939, -77.…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 11035783639543 Pennsylvania &amp; Southern Railw… R1011 (-77.63053 39.99128, -77…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 11035783639545 Pennsylvania &amp; Southern Railw… R1011 (-77.63169 39.98965, -77…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 11035783639546 Pennsylvania &amp; Southern Railw… R1011 (-77.63097 39.99092, -77…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 11035783639547 Pennsylvania &amp; Southern Railw… R1011 (-77.63097 39.99092, -77…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 113,037 more rows</span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

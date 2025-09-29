@@ -39,7 +39,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_point_landmarks</span><span class="op">(</span><span class="va">state</span>, year <span class="op">=</span> <span class="fl">2024</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tt_point_landmarks</span><span class="op">(</span><span class="va">state</span>, year <span class="op">=</span> <span class="fl">2025</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -51,7 +51,7 @@
 
 
 <dt id="arg-year">year<a class="anchor" aria-label="anchor" href="#arg-year"></a></dt>
-<dd><p>Integer year. Required. 2000 and 2010-2024 are currently supported.</p></dd>
+<dd><p>Integer year. Required. 2000 and 2010-2025 are currently supported.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -63,25 +63,25 @@
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Wrapped in try due to false positive 304 errors</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/try.html" class="external-link">try</a></span><span class="op">(</span><span class="fu">tt_point_landmarks</span><span class="op">(</span><span class="st">"DE"</span><span class="op">)</span><span class="op">)</span> <span class="co"># downloads slow on CRAN</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 5206 features and 5 fields</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 5209 features and 5 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: POINT</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -75.78852 ymin: 38.45149 xmax: -75.05042 ymax: 39.83727</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geodetic CRS:  NAD83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 5,206 × 6</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP ANSICODE POINTID      FULLNAME MTFCC             geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;POINT [°]&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 10      <span style="color: #BB0000;">NA</span>       110330069432 <span style="color: #BB0000;">NA</span>       C3061   (-75.582 39.72362)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 10      <span style="color: #BB0000;">NA</span>       110330069440 <span style="color: #BB0000;">NA</span>       C3061 (-75.58098 39.72348)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 10      <span style="color: #BB0000;">NA</span>       110330069442 <span style="color: #BB0000;">NA</span>       C3061 (-75.58004 39.72325)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 10      <span style="color: #BB0000;">NA</span>       110330070541 <span style="color: #BB0000;">NA</span>       C3061 (-75.70188 39.44609)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 10      <span style="color: #BB0000;">NA</span>       110330073459 <span style="color: #BB0000;">NA</span>       C3061 (-75.71771 39.57529)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 10      <span style="color: #BB0000;">NA</span>       110330073467 <span style="color: #BB0000;">NA</span>       C3061 (-75.72453 39.57754)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 10      <span style="color: #BB0000;">NA</span>       110330075139 <span style="color: #BB0000;">NA</span>       C3061 (-75.78852 39.67784)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 10      <span style="color: #BB0000;">NA</span>       110330075165 <span style="color: #BB0000;">NA</span>       C3061 (-75.78372 39.69201)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 10      <span style="color: #BB0000;">NA</span>       110330075191 <span style="color: #BB0000;">NA</span>       C3061 (-75.78509 39.69262)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 10      <span style="color: #BB0000;">NA</span>       110330075205 <span style="color: #BB0000;">NA</span>       C3061 (-75.77761 39.65732)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 5,196 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 5,209 × 6</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    STATEFP ANSICODE POINTID        FULLNAME      MTFCC             geometry</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  <span style="color: #BCBCBC;">*</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;POINT [°]&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 10      <span style="color: #BB0000;">NA</span>       11015504289662 Bayhealth Me… K2460 (-75.52416 39.15139)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 10      00217778 1102652910156  Sunset Memor… K2582 (-75.54854 39.17872)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 10      00214013 1102652909901  Gracelawn Me… K2582 (-75.56784 39.69886)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 10      00216460 1102652909927  Henlopen Mem… K2582 (-75.24602 38.79178)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 10      00214438 1102652910073  Peoples Memo… K2582 (-75.13352 38.73233)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 10      <span style="color: #BB0000;">NA</span>       11015504289631 Dover Air Fo… K2451 (-75.46596 39.12954)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 10      <span style="color: #BB0000;">NA</span>       11015504289658 Spirit Airpa… K2451 (-75.74456 39.37304)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 10      <span style="color: #BB0000;">NA</span>       11015504289677 Delaware Air… K2451 (-75.59667 39.21833)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 10      <span style="color: #BB0000;">NA</span>       11015504289647 Pevey Arprt   K2451 (-75.69838 38.61205)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 10      <span style="color: #BB0000;">NA</span>       11015504289664 West Private… K2451 (-75.16419 38.51677)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 5,199 more rows</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
