@@ -1,7 +1,12 @@
+## Additional notes
+
+* This adds another check for download errors, as the US Government shutdown results in failures that do not have correct HTTP status codes.
+
 ## Test environments
-* local R installation (Windows 11), R 4.5.0
-* local R installation (macOS), R 4.5.0
-* ubuntu 22.04 (on GitHub Actions), (devel and release)
+
+* local R installation (Windows 11), R 4.5.1
+* local R installation (macOS), R 4.5.1
+* ubuntu-latest (on GitHub Actions), (oldrel-1, devel, and release)
 * windows-latest (on GitHub Actions), (release)
 * macOS-latest (on GitHub Actions), (release)
 * Windows (on Winbuilder), (release)
