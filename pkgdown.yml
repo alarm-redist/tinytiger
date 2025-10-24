@@ -3,7 +3,7 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   tinytiger: tinytiger.html
-last_built: 2025-10-24T13:29Z
+last_built: 2025-10-24T14:34Z
 urls:
   reference: https://alarm-redist.org/tinytiger/reference
   article: https://alarm-redist.org/tinytiger/articles
