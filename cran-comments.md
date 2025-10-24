@@ -1,6 +1,7 @@
 ## Additional notes
 
 * This adds another check for download errors, as the US Government shutdown results in failures that do not have correct HTTP status codes.
+* This includes updating the maintainer email to ctkenny@proton.me. Please see the email from christopherkenny@fas.harvard.edu on 2025-08-29 for confirmation.
 
 ## Test environments
 
@@ -13,7 +14,12 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 0 notes
+0 errors | 0 warnings | 1 note
+
+New maintainer:
+  Christopher T. Kenny <ctkenny@proton.me>
+Old maintainer(s):
+  Christopher T. Kenny <christopherkenny@fas.harvard.edu>
 
 ## Downstream dependencies
 
