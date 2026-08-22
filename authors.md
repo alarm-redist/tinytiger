@@ -13,13 +13,13 @@ Source:
 [`DESCRIPTION`](https://github.com/alarm-redist/tinytiger/blob/main/DESCRIPTION)
 
 Kenny C, McCartan C (2026). *tinytiger: Lightweight Interface to
-TIGER/Line Shapefiles*. R package version 0.0.11,
+TIGER/Line Shapefiles*. R package version 0.0.12,
 <https://github.com/alarm-redist/tinytiger>.
 
     @Manual{,
       title = {tinytiger: Lightweight Interface to TIGER/Line Shapefiles},
       author = {Christopher T. Kenny and Cory McCartan},
       year = {2026},
-      note = {R package version 0.0.11},
+      note = {R package version 0.0.12},
       url = {https://github.com/alarm-redist/tinytiger},
     }

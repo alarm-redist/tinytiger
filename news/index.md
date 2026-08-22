@@ -1,5 +1,12 @@
 # Changelog
 
+## tinytiger 0.0.12
+
+- Improves printing from `curl` behavior to default to no text in
+  non-interactive sessions.
+  ([\#5](https://github.com/alarm-redist/tinytiger/issues/5))
+- Skips download tests on CRAN due to recent failures.
+
 ## tinytiger 0.0.11
 
 CRAN release: 2025-10-24
