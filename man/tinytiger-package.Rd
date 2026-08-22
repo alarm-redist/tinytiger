@@ -9,13 +9,14 @@
 Download geographic shapes from the \href{https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html}{United States Census Bureau TIGER/Line Shapefiles}.
 }
 \details{
-By default, downloading will print status messages and/or a progress bar.
-For silent downloads, set \code{option(tinytiger.curl_quiet = TRUE)}.
+By default, downloads show a progress bar in interactive sessions and are
+quiet in non-interactive sessions. Override this with
+\code{options(tinytiger.curl_quiet = TRUE)} or \code{FALSE}.
 
-Downloads will go to \code{option(tinytiger.cache_dir)} if it is set. If it is not,
+Downloads will go to \code{options(tinytiger.cache_dir)} if it is set. If it is not,
 and \code{rappdirs} is installed, downloads will be cached between sessions in
 \code{rappdirs::user_cache_dir("tinytiger")}.
-If it is not installed, or if \code{option(tinytiger.use_cache = FALSE)}, then the
+If it is not installed, or if \code{options(tinytiger.use_cache = FALSE)}, then the
 cache will be in a temporary directory that does not persist between
 sessions.
 }
@@ -29,11 +30,12 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Christopher T. Kenny \email{christopherkenny@fas.harvard.edu} (\href{https://orcid.org/0000-0002-9386-6860}{ORCID})
+\strong{Maintainer}: Christopher T. Kenny \email{ctkenny@proton.me} (\href{https://orcid.org/0000-0002-9386-6860}{ORCID})
 
 Authors:
 \itemize{
-  \item Cory McCartan \email{cmccartan@g.harvard.edu}
+  \item Christopher T. Kenny \email{ctkenny@proton.me} (\href{https://orcid.org/0000-0002-9386-6860}{ORCID})
+  \item Cory McCartan \email{mccartan@psu.edu}
 }
 
 }
