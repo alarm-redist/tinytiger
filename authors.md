@@ -10,7 +10,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/alarm-redist/tinytiger/blob/v0.0.11/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/alarm-redist/tinytiger/blob/main/DESCRIPTION)
 
 Kenny C, McCartan C (2026). *tinytiger: Lightweight Interface to
 TIGER/Line Shapefiles*. R package version 0.0.11,
