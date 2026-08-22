@@ -1,0 +1,328 @@
+# tinytiger
+
+`tinytiger` is to provide a lightweight interface to the [US Census
+Bureau’s TIGER/Line
+Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
+It has four dependencies other than `sf`. Download caching is supported;
+[see below](#downloading-and-caching) for details.
+
+## Installation
+
+Install `tinytiger` from CRAN with:
+
+``` r
+
+install.packages("tinytiger")
+```
+
+You can also install the development version of `tinytiger`:
+
+``` r
+
+remotes::install_github("alarm-redist/tinytiger")
+```
+
+## Example
+
+`tinytiger` provides lightweight functions to download Census Bureau
+TIGER/Line Shapefiles. To download a geography, simply use the function
+corresponding to one of the supported geographies.
+
+``` r
+
+library(tinytiger)
+
+tt_counties("NY")
+#> Simple feature collection with 62 features and 17 fields
+#> Geometry type: MULTIPOLYGON
+#> Dimension:     XY
+#> Bounding box:  xmin: -79.76259 ymin: 40.47658 xmax: -71.77749 ymax: 45.01586
+#> Geodetic CRS:  NAD83
+#> # A tibble: 62 × 18
+#>    STATEFP COUNTYFP COUNT…¹ GEOID NAME  NAMEL…² LSAD  CLASSFP MTFCC CSAFP CBSAFP
+#>  * <chr>   <chr>    <chr>   <chr> <chr> <chr>   <chr> <chr>   <chr> <chr> <chr> 
+#>  1 36      101      009741… 36101 Steu… Steube… 06    H1      G4020 236   18500 
+#>  2 36      091      009741… 36091 Sara… Sarato… 06    H1      G4020 104   10580 
+#>  3 36      003      009741… 36003 Alle… Allega… 06    H1      G4020 <NA>  <NA>  
+#>  4 36      075      009741… 36075 Oswe… Oswego… 06    H1      G4020 532   45060 
+#>  5 36      111      009741… 36111 Ulst… Ulster… 06    H1      G4020 408   28740 
+#>  6 36      089      009773… 36089 St. … St. La… 06    H1      G4020 <NA>  36300 
+#>  7 36      097      009741… 36097 Schu… Schuyl… 06    H1      G4020 <NA>  <NA>  
+#>  8 36      031      009741… 36031 Essex Essex … 06    H1      G4020 <NA>  <NA>  
+#>  9 36      103      009741… 36103 Suff… Suffol… 06    H1      G4020 408   35620 
+#> 10 36      041      009741… 36041 Hami… Hamilt… 06    H1      G4020 <NA>  <NA>  
+#> # … with 52 more rows, 7 more variables: METDIVFP <chr>, FUNCSTAT <chr>,
+#> #   ALAND <dbl>, AWATER <dbl>, INTPTLAT <chr>, INTPTLON <chr>,
+#> #   geometry <MULTIPOLYGON [°]>, and abbreviated variable names ¹​COUNTYNS,
+#> #   ²​NAMELSAD
+```
+
+## Supported Geographies
+
+- [`tt_address_ranges()`](https://alarm-redist.org/tinytiger/reference/tt_address_ranges.md):
+  Address Ranges
+- [`tt_ai_an_nh_areas()`](https://alarm-redist.org/tinytiger/reference/tt_ai_an_nh_areas.md):
+  American Indian / Alaska Native / Native Hawaiian Areas
+- [`tt_tribal_subdivisions()`](https://alarm-redist.org/tinytiger/reference/tt_tribal_subdivisions.md):
+  Tribal Subdivisions
+- [`tt_anrc()`](https://alarm-redist.org/tinytiger/reference/tt_anrc.md):
+  Alaskan Native Regional Corporations
+- [`tt_area_landmarks()`](https://alarm-redist.org/tinytiger/reference/tt_area_landmarks.md):
+  Area Landmarks
+- `tt_area_water():` Area Water
+- [`tt_block_groups()`](https://alarm-redist.org/tinytiger/reference/tt_block_groups.md):
+  Block Groups
+- [`tt_cbsa()`](https://alarm-redist.org/tinytiger/reference/tt_cbsa.md):
+  Core Based Statistical Areas
+- [`tt_congressional_districts()`](https://alarm-redist.org/tinytiger/reference/tt_congressional_districts.md):
+  Congressional Districts
+- [`tt_new_england_combined_areas()`](https://alarm-redist.org/tinytiger/reference/tt_new_england_combined_areas.md):
+  Combined New England Towns and Cities
+- [`tt_coastline()`](https://alarm-redist.org/tinytiger/reference/tt_coastline.md):
+  Coastline
+- [`tt_consolidated_cities()`](https://alarm-redist.org/tinytiger/reference/tt_consolidated_cities.md):
+  Consolidated Cities
+- [`tt_counties()`](https://alarm-redist.org/tinytiger/reference/tt_counties.md):
+  Counties
+- [`tt_county_subdivisions()`](https://alarm-redist.org/tinytiger/reference/tt_county_subdivisions.md):
+  County Subdivisions
+- [`tt_csa()`](https://alarm-redist.org/tinytiger/reference/tt_csa.md):
+  Combined Statistical Areas
+- [`tt_polygon_edges()`](https://alarm-redist.org/tinytiger/reference/tt_polygon_edges.md):
+  All Polygon Edges
+- [`tt_elementary_school_districts()`](https://alarm-redist.org/tinytiger/reference/tt_elementary_school_districts.md):
+  Elementary School Districts (limited states)
+- [`tt_estates()`](https://alarm-redist.org/tinytiger/reference/tt_estates.md):
+  Estates (Virgin Islands only)
+- [`tt_polygon_faces()`](https://alarm-redist.org/tinytiger/reference/tt_polygon_faces.md):
+  All Polygon Faces
+- `tt_linear_water():` Linear Water
+- [`tt_metropolitan_divisions()`](https://alarm-redist.org/tinytiger/reference/tt_metropolitan_divisions.md):
+  Metropolitan Divisions
+- [`tt_military()`](https://alarm-redist.org/tinytiger/reference/tt_military.md):
+  Military Installations
+- [`tt_new_england_cities()`](https://alarm-redist.org/tinytiger/reference/tt_new_england_cities.md):
+  New England Cities and Towns
+- [`tt_new_england_city_divisions()`](https://alarm-redist.org/tinytiger/reference/tt_new_england_city_divisions.md):
+  New England Cities and Towns Divisions
+- [`tt_places()`](https://alarm-redist.org/tinytiger/reference/tt_places.md):
+  Census Places
+- [`tt_point_landmarks()`](https://alarm-redist.org/tinytiger/reference/tt_point_landmarks.md):
+  Point Landmarks
+- [`tt_primary_roads()`](https://alarm-redist.org/tinytiger/reference/tt_primary_roads.md):
+  Primary Roads
+- [`tt_primary_secondary_roads()`](https://alarm-redist.org/tinytiger/reference/tt_primary_secondary_roads.md):
+  Primary and Secondary Roads
+- [`tt_puma()`](https://alarm-redist.org/tinytiger/reference/tt_puma.md):
+  Public Use Microdata Areas
+- [`tt_rails()`](https://alarm-redist.org/tinytiger/reference/tt_rails.md):
+  Railroads
+- [`tt_roads()`](https://alarm-redist.org/tinytiger/reference/tt_roads.md):
+  Roads
+- [`tt_secondary_school_districts()`](https://alarm-redist.org/tinytiger/reference/tt_secondary_school_districts.md):
+  Secondary School Districts (limited states)
+- [`tt_state_leg_lower()`](https://alarm-redist.org/tinytiger/reference/tt_state_leg_lower.md):
+  Lower State Legislative Districts
+- [`tt_state_leg_upper()`](https://alarm-redist.org/tinytiger/reference/tt_state_leg_upper.md):
+  Upper State Legislative Districts
+- [`tt_states()`](https://alarm-redist.org/tinytiger/reference/tt_states.md):
+  States
+- [`tt_subbarrios()`](https://alarm-redist.org/tinytiger/reference/tt_subbarrios.md):
+  Subbarios (Puerto Rico only)
+- [`tt_blocks()`](https://alarm-redist.org/tinytiger/reference/tt_blocks.md):
+  Blocks
+- [`tt_tribal_block_groups()`](https://alarm-redist.org/tinytiger/reference/tt_tribal_block_groups.md):
+  Tribal Block Groups
+- [`tt_tracts()`](https://alarm-redist.org/tinytiger/reference/tt_tracts.md):
+  Tracts
+- [`tt_tribal_tracts()`](https://alarm-redist.org/tinytiger/reference/tt_tribal_tracts.md):
+  Tribal Tracts
+- [`tt_uac()`](https://alarm-redist.org/tinytiger/reference/tt_uac.md):
+  : Urban Areas
+- [`tt_unified_school_districts()`](https://alarm-redist.org/tinytiger/reference/tt_unified_school_districts.md):
+  Unified School Districts
+- [`tt_voting_districts()`](https://alarm-redist.org/tinytiger/reference/tt_voting_districts.md):
+  Voting Districts
+- [`tt_zcta()`](https://alarm-redist.org/tinytiger/reference/tt_zcta.md):
+  Zip Code Tabulation Areas
+
+# Downloading and Caching
+
+By default, downloading will print status messages and/or a progress
+bar. For silent downloads, set `options(tinytiger.curl_quiet = TRUE)`.
+
+Downloads will go to `options(tinytiger.cache_dir)` if it is set. If it
+is not, and `rappdirs` is installed, and
+`options(tinytiger.use_cache = TRUE)`, downloads will be cached between
+sessions in `rappdirs::user_cache_dir("tinytiger")`. If it is not
+installed, or if `options(tinytiger.use_cache = FALSE)`, then the cache
+will be in a temporary directory that does not persist between sessions.
+You can check the size of the cache and clear it with
+[`tt_cache_size()`](https://alarm-redist.org/tinytiger/reference/tt_cache.md)
+and
+[`tt_cache_clear()`](https://alarm-redist.org/tinytiger/reference/tt_cache.md).
+
+# Package index
+
+## Primary Geographies
+
+Download the geographies along the central spine of the Census
+
+- [`tt_block_groups()`](https://alarm-redist.org/tinytiger/reference/tt_block_groups.md)
+  : Download TIGER shapes for block groups
+- [`tt_blocks()`](https://alarm-redist.org/tinytiger/reference/tt_blocks.md)
+  : Download TIGER shapes for blocks
+- [`tt_counties()`](https://alarm-redist.org/tinytiger/reference/tt_counties.md)
+  : Download TIGER shapes for counties
+- [`tt_states()`](https://alarm-redist.org/tinytiger/reference/tt_states.md)
+  : Download TIGER shapes for states
+- [`tt_tracts()`](https://alarm-redist.org/tinytiger/reference/tt_tracts.md)
+  : Download TIGER shapes for tracts
+
+## Transportation
+
+Download the geographies for transportation routes
+
+- [`tt_primary_roads()`](https://alarm-redist.org/tinytiger/reference/tt_primary_roads.md)
+  : Download TIGER shapes for Primary Roads
+- [`tt_primary_secondary_roads()`](https://alarm-redist.org/tinytiger/reference/tt_primary_secondary_roads.md)
+  : Download TIGER shapes for Primary and Secondary Roads
+- [`tt_rails()`](https://alarm-redist.org/tinytiger/reference/tt_rails.md)
+  : Download TIGER shapes for Rails
+- [`tt_roads()`](https://alarm-redist.org/tinytiger/reference/tt_roads.md)
+  : Download TIGER shapes for Roads
+
+## Schools
+
+Download the boundaries for public school districts
+
+- [`tt_elementary_school_districts()`](https://alarm-redist.org/tinytiger/reference/tt_elementary_school_districts.md)
+  : Download TIGER shapes for Elementary School Districts
+- [`tt_secondary_school_districts()`](https://alarm-redist.org/tinytiger/reference/tt_secondary_school_districts.md)
+  : Download TIGER shapes for Secondary School Districts
+- [`tt_unified_school_districts()`](https://alarm-redist.org/tinytiger/reference/tt_unified_school_districts.md)
+  : Download TIGER shapes for Unified School Districts
+
+## Cities
+
+Download the boundaries for cities, towns, and other sub county units
+
+- [`tt_consolidated_cities()`](https://alarm-redist.org/tinytiger/reference/tt_consolidated_cities.md)
+  : Download TIGER shapes for Public Use Microdata Areas
+- [`tt_county_subdivisions()`](https://alarm-redist.org/tinytiger/reference/tt_county_subdivisions.md)
+  : Download TIGER shapes for County Subdivisions
+- [`tt_places()`](https://alarm-redist.org/tinytiger/reference/tt_places.md)
+  : Download TIGER shapes for Places
+- [`tt_puma()`](https://alarm-redist.org/tinytiger/reference/tt_puma.md)
+  : Download TIGER shapes for Public Use Microdata Areas
+- [`tt_new_england_cities()`](https://alarm-redist.org/tinytiger/reference/tt_new_england_cities.md)
+  : Download TIGER shapes for New England City and Town Area
+- [`tt_new_england_city_divisions()`](https://alarm-redist.org/tinytiger/reference/tt_new_england_city_divisions.md)
+  : Download TIGER shapes for New England City and Town Area Divisions
+- [`tt_new_england_combined_areas()`](https://alarm-redist.org/tinytiger/reference/tt_new_england_combined_areas.md)
+  : Download TIGER shapes for New England Combined City and Town Areas
+
+## Electoral Districts
+
+Download the boundaries for statewide electoral districts
+
+- [`tt_congressional_districts()`](https://alarm-redist.org/tinytiger/reference/tt_congressional_districts.md)
+  : Download TIGER shapes for congressional districts
+- [`tt_state_leg_lower()`](https://alarm-redist.org/tinytiger/reference/tt_state_leg_lower.md)
+  : Download TIGER shapes for lower state legislative districts
+- [`tt_state_leg_upper()`](https://alarm-redist.org/tinytiger/reference/tt_state_leg_upper.md)
+  : Download TIGER shapes for upper state legislative districts
+- [`tt_voting_districts()`](https://alarm-redist.org/tinytiger/reference/tt_voting_districts.md)
+  : Download TIGER shapes for Voting Districts
+
+## Landmarks
+
+Download the boundaries for landmarks
+
+- [`tt_area_landmarks()`](https://alarm-redist.org/tinytiger/reference/tt_area_landmarks.md)
+  : Download TIGER shapes for Area Landmarks
+- [`tt_point_landmarks()`](https://alarm-redist.org/tinytiger/reference/tt_point_landmarks.md)
+  : Download TIGER shapes for Point Landmarks
+
+## Tribal Land
+
+Download the boundaries for variants of tribal and native lands
+
+- [`tt_ai_an_nh_areas()`](https://alarm-redist.org/tinytiger/reference/tt_ai_an_nh_areas.md)
+  : Download TIGER shapes for American Indian / Alaska Native / Native
+  Hawaiian Areas
+- [`tt_anrc()`](https://alarm-redist.org/tinytiger/reference/tt_anrc.md)
+  : Download TIGER shapes for Alaska Native Regional Corporation
+  (Alaska)
+- [`tt_tribal_block_groups()`](https://alarm-redist.org/tinytiger/reference/tt_tribal_block_groups.md)
+  : Download TIGER shapes for Tribal Block Groups
+- [`tt_tribal_subdivisions()`](https://alarm-redist.org/tinytiger/reference/tt_tribal_subdivisions.md)
+  : Download TIGER shapes for American Indian Tribal Subdivision
+  National
+- [`tt_tribal_tracts()`](https://alarm-redist.org/tinytiger/reference/tt_tribal_tracts.md)
+  : Download TIGER shapes for Tribal Tracts
+
+## Water
+
+Download the boundaries for water areas and lines
+
+- [`tt_area_water()`](https://alarm-redist.org/tinytiger/reference/tt_area_water.md)
+  : Download TIGER Shapes for Area Water
+- [`tt_coastline()`](https://alarm-redist.org/tinytiger/reference/tt_coastline.md)
+  : Download TIGER shapes for Coastlines
+- [`tt_linear_water()`](https://alarm-redist.org/tinytiger/reference/tt_linear_water.md)
+  : Download TIGER Shapes for Linear Water
+
+## Other
+
+Download the boundaries for public school districts
+
+- [`tt_address_ranges()`](https://alarm-redist.org/tinytiger/reference/tt_address_ranges.md)
+  : Download TIGER shapes for Address Ranges
+
+- [`tt_cache_size()`](https://alarm-redist.org/tinytiger/reference/tt_cache.md)
+  [`tt_cache_clear()`](https://alarm-redist.org/tinytiger/reference/tt_cache.md)
+  [`tt_cache_path()`](https://alarm-redist.org/tinytiger/reference/tt_cache.md)
+  :
+
+  Work with the the `tinytiger` cache
+
+- [`tt_cbsa()`](https://alarm-redist.org/tinytiger/reference/tt_cbsa.md)
+  : Download TIGER shapes for Core Based Statistical Areas
+
+- [`tt_csa()`](https://alarm-redist.org/tinytiger/reference/tt_csa.md) :
+  Download TIGER shapes for Combined Statistical Area
+
+- [`tt_estates()`](https://alarm-redist.org/tinytiger/reference/tt_estates.md)
+  : Download TIGER shapes for Estates (US Virgin Islands)
+
+- [`tt_metropolitan_divisions()`](https://alarm-redist.org/tinytiger/reference/tt_metropolitan_divisions.md)
+  : Download TIGER shapes for Metropolitan Divisions
+
+- [`tt_military()`](https://alarm-redist.org/tinytiger/reference/tt_military.md)
+  : Download TIGER shapes for Military Installations
+
+- [`tt_polygon_edges()`](https://alarm-redist.org/tinytiger/reference/tt_polygon_edges.md)
+  : Download TIGER shapes for Polygon Edges
+
+- [`tt_polygon_faces()`](https://alarm-redist.org/tinytiger/reference/tt_polygon_faces.md)
+  : Download TIGER shapes for Polygon Faces
+
+- [`tt_subbarrios()`](https://alarm-redist.org/tinytiger/reference/tt_subbarrios.md)
+  : Download TIGER shapes for Subbarrios (Puerto Rico)
+
+- [`tt_uac()`](https://alarm-redist.org/tinytiger/reference/tt_uac.md) :
+  Download TIGER shapes for Urban Area
+
+- [`tt_zcta()`](https://alarm-redist.org/tinytiger/reference/tt_zcta.md)
+  : Download TIGER shapes for Zip Code Tabulation Areas
+
+- [`county_fips_2020`](https://alarm-redist.org/tinytiger/reference/county_fips_2020.md)
+  : Counties FIPS 2020
+
+# Articles
+
+### All vignettes
+
+- [Using
+  \`tinytiger\`](https://alarm-redist.org/tinytiger/articles/tinytiger.md):
