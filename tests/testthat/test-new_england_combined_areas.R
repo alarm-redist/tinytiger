@@ -1,4 +1,5 @@
 test_that("tt_new_england_combined_areas works", {
-  actual <- maybe_304(tt_new_england_combined_areas())
-  expect_s3_class(actual, "data.frame")
+  skip_on_cran()
+  actual <- tt_new_england_combined_areas()
+  expect_s3_class(actual, "sf")
 })

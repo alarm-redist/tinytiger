@@ -3,13 +3,14 @@
 #' Download geographic shapes from the [United States Census Bureau TIGER/Line
 #' Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
 #'
-#' By default, downloading will print status messages and/or a progress bar.
-#' For silent downloads, set `option(tinytiger.curl_quiet = TRUE)`.
+#' By default, downloads show a progress bar in interactive sessions and are
+#' quiet in non-interactive sessions. Override this with
+#' `options(tinytiger.curl_quiet = TRUE)` or `FALSE`.
 #'
-#' Downloads will go to `option(tinytiger.cache_dir)` if it is set. If it is not,
+#' Downloads will go to `options(tinytiger.cache_dir)` if it is set. If it is not,
 #' and `rappdirs` is installed, downloads will be cached between sessions in
 #' `rappdirs::user_cache_dir("tinytiger")`.
-#' If it is not installed, or if `option(tinytiger.use_cache = FALSE)`, then the
+#' If it is not installed, or if `options(tinytiger.use_cache = FALSE)`, then the
 #' cache will be in a temporary directory that does not persist between
 #' sessions.
 #'

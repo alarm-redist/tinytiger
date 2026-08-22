@@ -1,4 +1,5 @@
 test_that("tt_puma works", {
-  actual <- maybe_304(tt_puma("DE"))
-  expect_s3_class(actual, "data.frame")
+  skip_on_cran()
+  actual <- tt_puma("DE")
+  expect_s3_class(actual, "sf")
 })

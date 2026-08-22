@@ -10,7 +10,8 @@
 #' @returns the `curl` request
 #'
 #' @noRd
-tt_download <- function(url, path, overwrite = FALSE, quiet = FALSE) {
+tt_download <- function(url, path, overwrite = FALSE,
+                        quiet = getOption("tinytiger.curl_quiet", !interactive())) {
   dir <- dirname(path)
   if (!dir.exists(dir)) dir.create(dir, recursive = TRUE)
   if (!file.exists(path) || overwrite) {
@@ -35,7 +36,7 @@ tt_download <- function(url, path, overwrite = FALSE, quiet = FALSE) {
 #'
 #' @noRd
 tt_download_read <- function(url, target_file, overwrite = FALSE,
-                             quiet = getOption("tinytiger.curl_quiet", FALSE)) {
+                             quiet = getOption("tinytiger.curl_quiet", !interactive())) {
   base_path <- tt_download_path()
   base_name <- basename(url)
   subdir <- substr(base_name, 1, nchar(base_name) - 4)
