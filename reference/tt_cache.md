@@ -37,5 +37,5 @@ tt_cache_size()
 tt_cache_clear()
 
 tt_cache_path()
-#> [1] "/tmp/RtmpOeJw5L"
+#> [1] "/tmp/Rtmprok6b0"
 ```
