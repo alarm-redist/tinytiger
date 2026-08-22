@@ -80,7 +80,7 @@ state_lookup <- function(state) {
   }, "")
   matched <- pmatch(state, pos, duplicates.ok=FALSE)
 
-  if (length(matched) != length(state) || any(is.na(matched))) {
+  if (length(matched) != length(state) || anyNA(matched)) {
     cli::cli_abort(c("{.arg state} could not be matched to a state for every entry.",
       "Please supply one of the full name, FIPS code, or postal abbreaviation for each entry."))
   }
@@ -106,7 +106,7 @@ county_lookup <- function(state, counties) {
 
   matched <- pmatch(counties, pos)
 
-  if (length(matched) != length(counties) || any(is.na(matched))) {
+  if (length(matched) != length(counties) || anyNA(matched)) {
     cli::cli_abort(c("{.arg counties} could not be matched to a county for every entry.",
                      ">"="Please supply one of the FIPS code or full name."))
   }
