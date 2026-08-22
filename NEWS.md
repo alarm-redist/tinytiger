@@ -1,3 +1,8 @@
+# tinytiger 0.0.12
+
+* Improves printing from `curl` behavior to default to no text in non-interactive sessions. (#5)
+* Skips download tests on CRAN due to recent failures.
+
 # tinytiger 0.0.11
 
 * Adds support for 2025 TIGER geographies.
@@ -16,7 +21,7 @@
 
 # tinytiger 0.0.6
 
-* Resolves a CRAN check error when a 503 occurs. 
+* Resolves a CRAN check error when a 503 occurs.
 
 # tinytiger 0.0.5
 
